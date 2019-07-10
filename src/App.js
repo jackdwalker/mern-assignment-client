@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { api } from './studentAPI'
+import bulma from 'bulma'
+import { Box } from 'bloomer/lib/elements/Box';
+import { Title } from 'bloomer/lib/elements/Title';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  state = {
+    students: [],
+    studentName: ""
+  }
+
+  componentDidMount = () => {
+    api.get('/students').then(result => {
+      console.log(result.data)
+      this.setState({
+        students: result.data
+      })
+    })
+  }
+  
+  render() {
+    return (
+      <Box>
+        <Title isSize={1}>Students</Title>
+        {this.state.students.map((student, index) => (
+          <Title isSize={6}>{student.name}</Title>
+        ))}
+      </Box>
+    )
+  }
 }
-
-export default App;
