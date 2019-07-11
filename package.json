@@ -18,7 +18,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "css-build": "node-sass --omit-source-map-url src/App.scss src/App.css",
+    "css-watch": "npm run css-build -- --watch",
+    "sass-start": "npm run css-watch"
   },
   "eslintConfig": {
     "extends": "react-app"

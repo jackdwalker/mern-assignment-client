@@ -6,3 +6,81 @@
 
 $primary: #343867;
 $secondary: #FD7447;
+$control-box-shadow: none;
+$input-box-shadow: none;
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+.font-primary {
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    color: $primary;
+}
+
+.font-secondary {
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    color: $secondary;
+}
+
+.background-primary {
+    background-color: $primary;
+}
+
+.background-secondary {
+    background-color: $secondary;
+}
+
+.is-full-vh {
+    height: 100vh;
+}
+
+.title {
+    &.font-primary {
+        color: $primary;
+    }
+    &.font-secondary {
+        color: $secondary;
+    }
+}
+
+.subtitle {
+    &.font-primary {
+        color: $primary;
+    }
+    &.font-secondary {
+        color: $secondary;
+    }
+}
+
+.label {
+    &.font-primary {
+        color: $primary;
+    }
+    &.font-secondary {
+        color: $secondary;
+    }
+}
+
+.input {
+    &.font-primary {
+        color: $primary;
+    }
+    &.font-secondary {
+        color: $secondary;
+    }
+    &.transparent-background {
+        background-color: transparent;
+    }
+    &.fuck-you {
+        box-shadow: none;
+    }
+}
