@@ -6967,6 +6967,15 @@ label.panel-block {
 html {
   height: 100vh; }
 
+.big-margin-top {
+  margin-top: 20vh; }
+
+.medium-margin-top {
+  margin-top: 10vh; }
+
+.small-margin-top {
+  margin-top: 2.5vh; }
+
 .font-primary {
   font-family: 'Work Sans', Arial, Helvetica, sans-serif;
   color: #343867; }
@@ -7010,6 +7019,3 @@ html {
 
 .input.transparent-background {
   background-color: transparent; }
-
-.input.fuck-you {
-  box-shadow: none; }
