@@ -4,5 +4,99 @@
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400');
 
+// Set previous own colour variables
 $primary: #343867;
 $secondary: #FD7447;
+
+// Set own colour variables
+$purple: #8a4d76;
+$pink: #fa7c91;
+$brown: #757763;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+
+// Overwrite Bulma global variables
+$family-sans-serif: 'Nunito',
+sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Overwrite Bulma component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Log In & Sign Up
+.loginContainer,
+.signupContainer {
+  background: grey;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loginLeft,
+.signupLeft {
+  width: 40%;
+  height: 100vh;
+}
+
+.loginRight,
+.signupRight {
+  background: white;
+  width: 60%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.signupBox {
+  width: 660px;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.loginBox {
+  width: 660px;
+  height: 600px;
+}
+
+.loginInput[type=text],
+.loginInput[type=password],
+.signupInput[type=text],
+.signupInput[type=password],
+.signupInput[type=textarea],
+textarea {
+  width: 500px;
+  padding: 20px;
+  border: 2px solid #d0d1cd;
+}
+
+// Import what is needed from Bulma
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/elements/button.sass';
+@import '../node_modules/bulma/sass/elements/container.sass';
+@import '../node_modules/bulma/sass/form/_all.sass';
+@import '../node_modules/bulma/sass/elements/_all.sass';
+@import '../node_modules/bulma/sass/components/navbar.sass';
+@import '../node_modules/bulma/sass/layout/hero.sass';
+@import '../node_modules/bulma/sass/layout/section.sass';
+@import '../node_modules/bulma/sass/layout/footer.sass';
+@import '../node_modules/bulma/sass/grid/_all.sass';
+@import '../node_modules/bulma/sass/grid/columns.sass';
+@import '../node_modules/bulma/sass/grid/tiles.sass';
