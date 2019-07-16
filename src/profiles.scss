@@ -10,3 +10,24 @@
 .profileList_tagGroup {}
 
 .profileList_tag {}
+
+.profileList_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  min-height: 100%;
+}
+
+.profileList_jobTypeList {
+  margin-top: auto;
+  text-align: left;
+}
+
+.profileList_jobType {
+  margin-bottom: -5px;
+}
+
+.profileList_viewProfileBttn {
+  margin-bottom: auto;
+}
