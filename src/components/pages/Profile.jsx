@@ -1,12 +1,22 @@
 import React from 'react'
-import {Container, Columns, Column, Box, Content, Title, Button} from "bloomer"
+import "../../styles/profile.scss"
+import {Container, Columns, Column, Notification, Section, Box, Image, Icon, Content, Title, Button} from "bloomer"
 
 const Profile = () => {
   return (
-    <div>
-      <h1>View single profile</h1>
-      <h4>Removed for reworking</h4>
-    </div>
+    <Container>
+      <Columns isCentered>
+    <Column isSize='1/3'>
+        <Notification isColor='success' hasTextAlign='centered'> 1/3 </Notification>
+    </Column>
+        <Column isSize='1/2'>
+        <Notification isColor='success' hasTextAlign='centered'> 1/2 </Notification>
+    </Column>
+        <Column isSize='1/4'>
+        <Notification isColor='success' hasTextAlign='centered'> 1/4 </Notification>
+    </Column>
+</Columns>
+</Container>
   )
 }
 
