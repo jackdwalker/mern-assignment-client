@@ -9,13 +9,13 @@ const SignUp = () => {
     </div>
         <div className="signupRight">
         <div className="signupBox">
-        <Title isSize={4}>Create a Graduate Profile</Title>
+        <Title isSize={3}>Create a Profile</Title>
         <br/>
         
         {/* GIVEN NAMES */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Given Names</Label>
+                <Label>Given Names*</Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -29,7 +29,7 @@ const SignUp = () => {
         {/* SURNAME */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Surname</Label>
+                <Label>Surname*</Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -43,12 +43,40 @@ const SignUp = () => {
         {/* EMAIL */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Email</Label>
+                <Label>Email*</Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
                         <Input className="signupInput" type="text" placeholder='Contact email address' value=""/>
+                    </Control>
+                </Field>
+            </FieldBody>
+        </Field>
+
+        {/* PASSWORD */}
+        <Field isHorizontal>
+            <FieldLabel isNormal>
+                <Label>Password</Label>
+            </FieldLabel>
+            <FieldBody>
+                <Field isGrouped>
+                    <Control isExpanded>
+                        <Input className="signupInput" type="password" placeholder='' value=""/>
+                    </Control>
+                </Field>
+            </FieldBody>
+        </Field>
+
+        {/* PASSWORD CONFIRM */}
+        <Field isHorizontal>
+            <FieldLabel isNormal>
+                <Label>Confirm Password</Label>
+            </FieldLabel>
+            <FieldBody>
+                <Field isGrouped>
+                    <Control isExpanded>
+                        <Input className="signupInput" type="password" placeholder='' value=""/>
                     </Control>
                 </Field>
             </FieldBody>

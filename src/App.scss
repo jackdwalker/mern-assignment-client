@@ -41,14 +41,26 @@ $input-shadow: none;
   display: flex;
 }
 
-.loginLeft,
-.signupLeft {
+.loginLeft {
   width: 40%;
   height: 100vh;
 }
 
-.loginRight,
+.signupLeft {
+  width: 35%;
+  height: 100vh;
+}
+
 .signupRight {
+  background: white;
+  width: 65%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginRight {
   background: white;
   width: 60%;
   min-height: 100vh;
