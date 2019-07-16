@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import { api } from './studentAPI'
 import {BrowserRouter as Router, Route, Redirect, Switch} from "react-router-dom"
 import {Box, Title} from "bloomer"
@@ -31,12 +31,12 @@ export default class App extends React.Component {
     return (
       <div>
         <Nav />
-          <Box>
+          {/* <Box>
             <Title isSize={1}>Students</Title>
             {this.state.students.map((student, index) => (
               <Title isSize={6}>{student.name}</Title>
             ))}
-          </Box>
+          </Box> */}
             <Router>
               <Switch>
                 <Route exact path="/" component={Home} />
@@ -44,7 +44,7 @@ export default class App extends React.Component {
                 <Route path="/signup" component={SignUp} />
                 <Route path="/login" component={LogIn} />
                 <Route path="/viewall" component={ViewAll} />
-                <Route path="/profiles" component={Profile} />
+                <Route path="/profile" component={Profile} />
                 <Redirect from="*" to="/" />
               </Switch>
             </Router>
