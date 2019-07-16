@@ -31,12 +31,6 @@ export default class App extends React.Component {
     return (
       <div>
         <Nav />
-          <Box>
-            <Title isSize={1}>Students</Title>
-            {this.state.students.map((student, index) => (
-              <Title isSize={6}>{student.name}</Title>
-            ))}
-          </Box>
             <Router>
               <Switch>
                 <Route exact path="/" component={Home} />
