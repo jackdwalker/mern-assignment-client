@@ -223,7 +223,7 @@ const SignUp = () => {
                 </Control>
             </FieldBody>
         </Field>
-
+        <br/>
         {/* SUBMIT BUTTON */}
         <Field isGrouped>
             <Control>

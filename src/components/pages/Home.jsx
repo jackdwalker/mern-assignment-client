@@ -17,7 +17,6 @@ const Home = () => {
         <Section>
       <Columns isCentered>
                     <Column isSize='1/4'>
-
 <Card>
     <CardImage>
       <Image isRatio="3:2" src="https://via.placeholder.com/480x320" />
