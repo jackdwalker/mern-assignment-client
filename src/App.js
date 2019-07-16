@@ -44,7 +44,7 @@ export default class App extends React.Component {
                 <Route path="/signup" component={SignUp} />
                 <Route path="/login" component={LogIn} />
                 <Route path="/viewall" component={ViewAll} />
-                <Route path="/profiles" component={Profile} />
+                <Route path="/profile" component={Profile} />
                 <Redirect from="*" to="/" />
               </Switch>
             </Router>
