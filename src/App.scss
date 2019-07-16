@@ -2,7 +2,9 @@
 
 @import "../node_modules/bulma/bulma.sass";
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400');
+// @import url('https://fonts.googleapis.com/css?family=Work+Sans:400');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900|Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap');
 
 // Set previous own colour variables
 $primary: #343867;
@@ -14,6 +16,11 @@ $pink: #fa7c91;
 $brown: #757763;
 $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
+
+$raleway: 'Raleway',
+sans-serif;
+$montserrat: 'Montserrat',
+sans-serif;
 
 // Overwrite Bulma global variables
 $family-sans-serif: 'Nunito',
