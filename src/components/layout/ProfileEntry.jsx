@@ -40,7 +40,7 @@ const ProfileEntry = () => {
                         </Title>
                       </div>
                     <div className="profileList_viewProfileBttn">
-                      <Button isColor='success'>View Profile</Button>
+                      <Button isColor='success' to="/profile">View Profile</Button>
                     </div>
                   </MediaRight>
                 </div>
