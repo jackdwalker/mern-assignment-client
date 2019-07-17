@@ -4,12 +4,11 @@ import "../../styles/login.scss"
 
 const EditProfile = () => { 
   return (
-<div className="signupContainer" >
-    <div className="signupLeft">
-        <img src="/src/assets/tech-meeting-flatlay.jpg" alt="test"/>
+<div className="editProfileContainer" >
+    <div className="editProfileLeft">
     </div>
-        <div className="signupRight">
-        <div className="signupBox">
+        <div className="editProfileRight">
+        <div className="editProfileBox">
         <Title isSize={3}>Edit Your Profile</Title>
         <br/>
         
@@ -21,7 +20,7 @@ const EditProfile = () => {
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
-                        <Input className="signupInput" type="text" placeholder='Given Names' value=""/>
+                        <Input className="editProfileInput" type="text" placeholder='Given Names' value=""/>
                     </Control>
                 </Field>
             </FieldBody>
@@ -35,7 +34,7 @@ const EditProfile = () => {
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
-                        <Input className="signupInput" type="text" placeholder='Surname' value=""/>
+                        <Input className="editProfileInput" type="text" placeholder='Surname' value=""/>
                     </Control>
                 </Field>
             </FieldBody>
@@ -49,7 +48,7 @@ const EditProfile = () => {
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
-                        <Input className="signupInput" type="text" placeholder='Contact email address' value=""/>
+                        <Input className="editProfileInput" type="text" placeholder='Contact email address' value=""/>
                     </Control>
                 </Field>
             </FieldBody>
@@ -63,7 +62,7 @@ const EditProfile = () => {
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
-                        <Input className="signupInput" type="password" placeholder='' value=""/>
+                        <Input className="editProfileInput" type="password" placeholder='' value=""/>
                     </Control>
                 </Field>
             </FieldBody>
@@ -77,7 +76,7 @@ const EditProfile = () => {
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
-                        <Input className="signupInput" type="password" placeholder='' value=""/>
+                        <Input className="editProfileInput" type="password" placeholder='' value=""/>
                     </Control>
                 </Field>
             </FieldBody>
@@ -91,7 +90,7 @@ const EditProfile = () => {
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
-                        <Input className="signupInput" type="text" placeholder='http://...' value=""/>
+                        <Input className="editProfileInput" type="text" placeholder='http://...' value=""/>
                     </Control>
                 </Field>
             </FieldBody>
@@ -105,7 +104,7 @@ const EditProfile = () => {
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
-                        <Input className="signupInput" type="text" placeholder='LinkedIn URL' value=""/>
+                        <Input className="editProfileInput" type="text" placeholder='LinkedIn URL' value=""/>
                     </Control>
                 </Field>
             </FieldBody>
@@ -119,7 +118,7 @@ const EditProfile = () => {
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
-                        <Input className="signupInput" type="text" placeholder='Your Twitter account handle' value=""/>
+                        <Input className="editProfileInput" type="text" placeholder='Your Twitter account handle' value=""/>
                     </Control>
                 </Field>
             </FieldBody>
@@ -133,7 +132,7 @@ const EditProfile = () => {
             <FieldBody>
                 <Field>
                     <Control>
-                        <TextArea className="signupInput" placeholder='Your goals, achievements in the course, what you are interested in, the direction you want to take your career' />
+                        <TextArea className="editProfileInput" placeholder='Your goals, achievements in the course, what you are interested in, the direction you want to take your career' />
                     </Control>
                 </Field>
             </FieldBody>
@@ -172,7 +171,7 @@ const EditProfile = () => {
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
-                        <Input className="signupInput dateofgraduate" type="date" value=""/>
+                        <Input className="editProfileInput dateofgraduate" type="date" value=""/>
                     </Control>
                 </Field>
             </FieldBody>
