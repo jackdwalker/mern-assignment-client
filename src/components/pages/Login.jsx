@@ -23,7 +23,8 @@ export default class Login extends Component {
         api.post('/auth/login', {
             email: this.state.email,
             password: this.state.password
-        }, {
+        },
+        {
             withCredentials: true
         })        
         .then(result => {
@@ -31,7 +32,7 @@ export default class Login extends Component {
             setState({ isLoggedIn: localStorage.getItem('isLoggedIn') })
             this.props.history.push('/')
         })
-        .catch(function(error){
+        .catch(error => {
             console.log(error)
         })
     }
