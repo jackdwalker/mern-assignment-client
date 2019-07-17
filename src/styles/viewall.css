@@ -1,0 +1,30 @@
+.profileList_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  min-height: 100%;
+}
+
+.profileList_jobTypeList {
+  margin-top: auto;
+  text-align: left;
+}
+
+.profileList_jobType {
+  margin-bottom: -5px;
+}
+
+.profileList_viewProfileBttn {
+  margin-bottom: auto;
+}
+/*# sourceMappingURL=viewall.css.map */
