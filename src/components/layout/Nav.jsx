@@ -23,7 +23,6 @@ class NavBarEndLoggedIn extends Component {
         .then(result => {
             localStorage.setItem('isLoggedIn', false)
             setState({ isLoggedIn: localStorage.getItem('isLoggedIn') })
-            window.location.reload()
         })
         .catch(err => {
             console.log(err.message)
