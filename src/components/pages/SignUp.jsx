@@ -91,27 +91,27 @@ const SignUp = () => {
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
-                        <Input className="signupInput" type="text" placeholder='http://...' value=""/>
+                        <Input className="signupInput" type="text" placeholder='http://github.com/...' value=""/>
                     </Control>
                 </Field>
             </FieldBody>
         </Field>
 
-        {/* LINKEDIN */}
+        {/* WEBSITE URL */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>LinkedIn: </Label>
+                <Label>Website: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
                     <Control isExpanded>
-                        <Input className="signupInput" type="text" placeholder='LinkedIn URL' value=""/>
+                        <Input className="signupInput" type="text" placeholder='Your portfolio URL' value=""/>
                     </Control>
                 </Field>
             </FieldBody>
         </Field>
 
-        {/* TWITTER */}
+        {/* TWITTER URL*/}
         <Field isHorizontal>
             <FieldLabel isNormal>
                 <Label>Twitter: </Label>

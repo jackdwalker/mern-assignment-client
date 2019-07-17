@@ -10,6 +10,7 @@ import SignUp from "./components/pages/SignUp"
 import LogIn from "./components/pages/Login"
 import ViewAll from "./components/pages/ViewAll"
 import Profile from "./components/pages/Profile"
+import EditProfile from "./components/pages/EditProfile"
 
 export default WithState(() => {
   return (
@@ -22,7 +23,8 @@ export default WithState(() => {
               <Route path="/signup" component={SignUp} />
               <Route path="/login" component={LogIn} />
               <Route path="/viewall" component={ViewAll} />
-              <Route path="/profiles" component={Profile} />
+              <Route path="/profile" component={Profile} />
+              <Route path="/editprofile" component={EditProfile} />
               <Redirect from="*" to="/" />
             </Switch>
           </Router>

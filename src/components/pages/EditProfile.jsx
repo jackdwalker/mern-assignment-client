@@ -10,13 +10,13 @@ const EditProfile = () => {
     </div>
         <div className="signupRight">
         <div className="signupBox">
-        <Title isSize={4}>Edit my Profile</Title>
+        <Title isSize={3}>Edit Your Profile</Title>
         <br/>
         
         {/* GIVEN NAMES */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Given Names</Label>
+                <Label>Given Names: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -30,7 +30,7 @@ const EditProfile = () => {
         {/* SURNAME */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Surname</Label>
+                <Label>Surname: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -44,7 +44,7 @@ const EditProfile = () => {
         {/* EMAIL */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Email</Label>
+                <Label>Email: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -55,10 +55,38 @@ const EditProfile = () => {
             </FieldBody>
         </Field>
 
+        {/* PASSWORD */}
+        <Field isHorizontal>
+            <FieldLabel isNormal>
+                <Label>Password: </Label>
+            </FieldLabel>
+            <FieldBody>
+                <Field isGrouped>
+                    <Control isExpanded>
+                        <Input className="signupInput" type="password" placeholder='' value=""/>
+                    </Control>
+                </Field>
+            </FieldBody>
+        </Field>
+
+        {/* PASSWORD CONFIRM */}
+        <Field isHorizontal>
+            <FieldLabel isNormal>
+                <Label>Confirm Password</Label>
+            </FieldLabel>
+            <FieldBody>
+                <Field isGrouped>
+                    <Control isExpanded>
+                        <Input className="signupInput" type="password" placeholder='' value=""/>
+                    </Control>
+                </Field>
+            </FieldBody>
+        </Field>
+
         {/* WEBSITE */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Github</Label>
+                <Label>Github: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -69,10 +97,10 @@ const EditProfile = () => {
             </FieldBody>
         </Field>
 
-        {/* LinkedIn */}
+        {/* LINKEDIN */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>LinkedIn</Label>
+                <Label>LinkedIn: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -83,10 +111,10 @@ const EditProfile = () => {
             </FieldBody>
         </Field>
 
-        {/* Twitter */}
+        {/* TWITTER */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Twitter</Label>
+                <Label>Twitter: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -100,7 +128,7 @@ const EditProfile = () => {
         {/* BIO */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Bio</Label>
+                <Label>Bio: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field>
@@ -114,7 +142,7 @@ const EditProfile = () => {
         {/* UPLOAD IMAGE FILE */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Photo:</Label>
+                <Label>Photo: </Label>
             </FieldLabel>
             <FieldBody>
             <div class="file has-name">
@@ -133,6 +161,20 @@ const EditProfile = () => {
                     </span>
                 </label>
                 </div>
+            </FieldBody>
+        </Field>
+
+        {/* GRADUATED */}
+        <Field isHorizontal>
+            <FieldLabel isNormal>
+                <Label>Graduated: </Label>
+            </FieldLabel>
+            <FieldBody>
+                <Field isGrouped>
+                    <Control isExpanded>
+                        <Input className="signupInput dateofgraduate" type="date" value=""/>
+                    </Control>
+                </Field>
             </FieldBody>
         </Field>
 
