@@ -5,6 +5,7 @@ import { api } from '../../studentAPI';
 
 function NavBarEndLoggedOut() {
     return (
+
         <NavbarEnd>
             <NavbarItem href='/login'>Login</NavbarItem>
             <NavbarItem href='/signup'>Signup</NavbarItem>
