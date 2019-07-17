@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { setState } from '../WithState'
 import { Title, Field, Label, Control, Input, Button } from 'bloomer'
 import { api } from '../../studentAPI'
+import "../../styles/login.scss"
 
 export default class Login extends Component {
     constructor(props) {

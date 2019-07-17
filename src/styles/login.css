@@ -1,0 +1,97 @@
+.loginContainer,
+.signupContainer {
+  background: grey;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loginLeft {
+  width: 40%;
+  height: 100vh;
+}
+
+.signupLeft {
+  width: 35%;
+  height: 100vh;
+}
+
+.signupRight {
+  background: white;
+  width: 65%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loginRight {
+  background: white;
+  width: 60%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signupBox {
+  width: 660px;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.loginBox {
+  width: 660px;
+  height: 600px;
+}
+
+.loginInput[type=text],
+.loginInput[type=password],
+.signupInput[type=text],
+.signupInput[type=password],
+textarea {
+  width: 500px;
+  padding: 20px;
+  border: 2px solid #d0d1cd;
+}
+
+.signupLeft {
+  background: url("../assets/business-team-meeting-boardroom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.loginLeft {
+  background: url("../assets/students-working-on-project.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+[type="date"] {
+  background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+/*# sourceMappingURL=login.css.map */

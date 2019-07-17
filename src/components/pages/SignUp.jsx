@@ -3,6 +3,7 @@ import { setState } from '../WithState'
 import { api } from '../../studentAPI'
 import { Title, FieldBody, Radio, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button } from 'bloomer'
 import { thisExpression } from '@babel/types';
+import "../../styles/login.scss"
 
 export default class SignUp extends Component {
     constructor(props) {

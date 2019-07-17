@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Content, Title, Button, Media, MediaContent, MediaLeft, MediaRight, Image, Icon} from "bloomer"
+import { Box, Content, Title, Button, Media, MediaContent, MediaLeft, MediaRight, Image, Tag, Icon} from "bloomer"
 import "../../styles/viewall.scss"
 
 const ProfileEntry = () => {
@@ -19,11 +19,12 @@ const ProfileEntry = () => {
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed eros quis est eleifend imperdiet sit amet quis est. Pellentesque id molestie metus. Cras imperdiet ut odio in tristique. Aenean nec lectus velit... (more) </p>
                     </Content>
                     <div className="tags are-small profileList_tagGroup">
-                        <span className="tag is-rounded is-danger profileList_tag">Ruby</span>
-                        <span className="tag is-rounded is-warning profileList_tag">Rails</span>
-                        <span className="tag is-rounded is-light profileList_tag">HTML5</span>
-                        <span className="tag is-rounded is-light profileList_tag">CSS3</span>
-                        <span className="tag is-rounded is-link profileList_tag">Javascript</span>
+
+                      <Tag isColor='black' className="is-rounded">Javascript</Tag>
+                      <Tag isColor='light' className="is-rounded">Rails</Tag>
+                      <Tag isColor='success' className="is-rounded">HTML5</Tag>
+                      <Tag isColor='danger' className="is-rounded">Ruby</Tag>
+                      <Tag isColor='info' className="is-rounded">CSS3</Tag>
                     </div>
                 </MediaContent>
                 <div className="profileList_right">
