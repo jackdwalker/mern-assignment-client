@@ -1,5 +1,6 @@
 import React from 'react'
 import {Title, FieldBody, Radio, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button} from 'bloomer'
+import "../../styles/login.scss"
 
 const SignUp = () => { 
   return (
@@ -15,7 +16,7 @@ const SignUp = () => {
         {/* GIVEN NAMES */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Given Names*</Label>
+                <Label>Given Names: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -29,7 +30,7 @@ const SignUp = () => {
         {/* SURNAME */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Surname*</Label>
+                <Label>Surname: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -43,7 +44,7 @@ const SignUp = () => {
         {/* EMAIL */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Email*</Label>
+                <Label>Email: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -57,7 +58,7 @@ const SignUp = () => {
         {/* PASSWORD */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Password</Label>
+                <Label>Password: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -85,7 +86,7 @@ const SignUp = () => {
         {/* WEBSITE */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Github</Label>
+                <Label>Github: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -96,10 +97,10 @@ const SignUp = () => {
             </FieldBody>
         </Field>
 
-        {/* LinkedIn */}
+        {/* LINKEDIN */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>LinkedIn</Label>
+                <Label>LinkedIn: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -110,10 +111,10 @@ const SignUp = () => {
             </FieldBody>
         </Field>
 
-        {/* Twitter */}
+        {/* TWITTER */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Twitter</Label>
+                <Label>Twitter: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field isGrouped>
@@ -127,7 +128,7 @@ const SignUp = () => {
         {/* BIO */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Bio</Label>
+                <Label>Bio: </Label>
             </FieldLabel>
             <FieldBody>
                 <Field>
@@ -141,7 +142,7 @@ const SignUp = () => {
         {/* UPLOAD IMAGE FILE */}
         <Field isHorizontal>
             <FieldLabel isNormal>
-                <Label>Photo:</Label>
+                <Label>Photo: </Label>
             </FieldLabel>
             <FieldBody>
             <div class="file has-name">
@@ -160,6 +161,20 @@ const SignUp = () => {
                     </span>
                 </label>
                 </div>
+            </FieldBody>
+        </Field>
+
+        {/* GRADUATED */}
+        <Field isHorizontal>
+            <FieldLabel isNormal>
+                <Label>Graduated: </Label>
+            </FieldLabel>
+            <FieldBody>
+                <Field isGrouped>
+                    <Control isExpanded>
+                        <Input className="signupInput dateofgraduate" type="date" value=""/>
+                    </Control>
+                </Field>
             </FieldBody>
         </Field>
 

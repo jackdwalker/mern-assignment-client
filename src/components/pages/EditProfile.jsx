@@ -1,5 +1,6 @@
 import React from 'react'
 import {Title, FieldBody, Radio, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button} from 'bloomer'
+import "../../styles/login.scss"
 
 const EditProfile = () => { 
   return (
