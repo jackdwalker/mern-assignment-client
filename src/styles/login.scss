@@ -56,6 +56,20 @@ textarea {
   border: 2px solid #d0d1cd;
 }
 
+.signupLeft {
+  background: url("../assets/business-team-meeting-boardroom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.loginLeft {
+  background: url("../assets/students-working-on-project.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
 //** GRADUATION DATE PICKER **//
 [type="date"] {
   background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;

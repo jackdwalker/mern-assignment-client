@@ -6,7 +6,6 @@ const SignUp = () => {
   return (
 <div className="signupContainer" >
     <div className="signupLeft">
-        <img src="/src/assets/tech-meeting-flatlay.jpg" alt="test"/>
     </div>
         <div className="signupRight">
         <div className="signupBox">
