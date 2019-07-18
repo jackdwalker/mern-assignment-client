@@ -1,5 +1,6 @@
 import React from 'react'
-import {Columns, Container, Column, Footer, Field, Label,Input, Control, Button} from 'bloomer'
+import {Columns,Container, Column, Footer, Field, Label,Input, Control, Button, Title, Icon} from 'bloomer'
+import bulma from 'bulma'
 
 const Foot = () => {
   return (
@@ -7,6 +8,11 @@ const Foot = () => {
       <Footer id='footer'>
     <Container>
 <Columns isCentered>
+    <Column isSize='1/4'>
+            <Title isSize={3}>
+                <Icon isSize="medium" className="fas fa-link" />  LinkedOut
+            </Title>
+    </Column>
     <Column isSize='1/4'>
     <ul>
         <li><a href="#">Test Link</a></li>

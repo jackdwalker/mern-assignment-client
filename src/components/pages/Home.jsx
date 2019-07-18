@@ -4,7 +4,9 @@ import '../../styles/home.scss'
 
 const Home = () => {
     return (
-        <div style={{ background: "", width: "100%" }}>
+        <div>
+                            <div className="bg_rect"></div>
+
             <Hero className="hero_full_contain" isSize='medium'>
                 <div className="hero_back_rect"></div>
                 <div className="hero_rectangle"></div>
@@ -31,11 +33,11 @@ const Home = () => {
                     <Column isSize='1/4'>
                         <Card>
                             <CardImage>
-                                <Image isRatio="3:2" src="https://via.placeholder.com/480x320" />
+                            <Image isRatio="3:2" src="/src/assets/designers-desk-with-coffee-wireframes.jpg" />
                             </CardImage>
                             <CardContent>
                                 <Content>
-                                    <Title isSize={4}>Heading 1</Title>
+                                    <Title isSize={4}>Local Developers</Title>
                                     Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.        </Content>
                             </CardContent>
                         </Card>
@@ -47,7 +49,7 @@ const Home = () => {
                             </CardImage>
                             <CardContent>
                                 <Content>
-                                    <Title isSize={4}>Heading 2</Title>
+                                    <Title isSize={4}>Job-ready skills</Title>
                                     Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.        </Content>
                             </CardContent>
                         </Card>          </Column>
@@ -58,7 +60,7 @@ const Home = () => {
                             </CardImage>
                             <CardContent>
                                 <Content>
-                                    <Title isSize={4}>Heading 3</Title>
+                                    <Title isSize={4}>Join our network</Title>
                                     Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.        </Content>
                             </CardContent>
                         </Card>          </Column>
@@ -67,7 +69,7 @@ const Home = () => {
             </Section>
 
             <br /><br />
-            <Section>
+            {/* <Section>
                 <p style={{ textAlign: "center", textTransform: "uppercase" }}>Testimonials</p>
                 <Title hasTextAlign='centered' isSize={2}>What are people saying about our graduates</Title>
                 <br /><br />
@@ -122,8 +124,7 @@ const Home = () => {
                         </Media>
                     </Column>
                 </Columns>
-            </Section>
-            <br /><br /><br /><br /><br />
+            </Section> */}
             <Section>
                 <Columns isCentered>
                     <Column isSize='1/4' offset="2">
