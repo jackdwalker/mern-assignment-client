@@ -1,16 +1,28 @@
 import React from 'react'
-import { Container, Hero, HeroBody, Title, Section, Columns, Column, Card, CardImage, CardContent, Content, Image, Media, MediaLeft, MediaContent } from 'bloomer'
+import { Container, Hero, HeroBody, Title, Section, Columns, Column, Card, CardImage, CardContent, Content, Image, Media, Button, MediaLeft, MediaContent } from 'bloomer'
+import '../../styles/home.scss'
 
 const Home = () => {
     return (
         <div style={{ background: "", width: "100%" }}>
-            <Hero isColor='info' isSize='medium'>
+            <Hero className="hero_full_contain" isSize='medium'>
+                <div className="hero_back_rect"></div>
+                <div className="hero_rectangle"></div>
+                <div className="hero_front_rect"></div>
+                <div className="hero_small_front_rect"></div>
                 <HeroBody>
-                    <Container hasTextAlign='centered'>
-                        <Title isSize={1}>Coder Academy Talent Board</Title>
-                        <Title isSize={4}>Matching Graduates of Fast-track and Gen-Tech streams with
-              <br /> Internships in Brisbane, Melbourne and Sydney</Title>
-                    </Container>
+                <Container className="hero_container">
+                <Columns>
+                    <Column isSize='1/2'>
+                        <Container hasTextAlign='centered'>
+                            <Title className="hero_Title" isSize={1}>Coder Academy <br/>Talent Board</Title>
+                            <p className="hero_blurb">Matching our Graduates of <br/>Fast-track and Gen-Tech Diplomas <br/>with Internship opportunities <br/>in Brisbane, Melbourne and Sydney</p>
+                            <Button isSize={"medium"} className='browseBttn'>Start Browsing</Button>
+                        </Container>
+                    </Column>
+                    <Column isSize='1/2'></Column>
+                </Columns>
+                </Container>
                 </HeroBody>
             </Hero>
             <br /><br />

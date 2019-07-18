@@ -19,7 +19,6 @@ const ProfileEntry = () => {
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed eros quis est eleifend imperdiet sit amet quis est. Pellentesque id molestie metus. Cras imperdiet ut odio in tristique. Aenean nec lectus velit... (more) </p>
                     </Content>
                     <div className="tags are-small profileList_tagGroup">
-
                       <Tag isColor='black' className="is-rounded">Javascript</Tag>
                       <Tag isColor='light' className="is-rounded">Rails</Tag>
                       <Tag isColor='success' className="is-rounded">HTML5</Tag>

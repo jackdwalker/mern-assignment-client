@@ -2,28 +2,46 @@
 
 @import "../node_modules/bulma/bulma.sass";
 
-// @import url('https://fonts.googleapis.com/css?family=Work+Sans:400');
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900|Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap');
 
 // Set previous own colour variables
 $primary: #343867;
-$secondary: #FD7447;
+// $secondary: #FD7447;
 
 // Set own colour variables
-$purple: #8a4d76;
-$pink: #fa7c91;
+$darkBlue: #2434a1;
+$medBlue: #356af1;
+$yellow: #ffc651;
+$pink: #ffcbc4;
+$coral: #ff6550;
+$lightGrey: #e9e9e9;
+$medGrey: #eeeeee;
+
+$navbar-height: 5rem;
+$navbar-background-color: $medBlue;
+
+
+// $purple: #8a4d76;
+// $pink: #fa7c91;
+// $brown: #757763;
+// $beige-light: #d0d1cd;
+// $beige-lighter: #eff0eb;
+
+// // Set own font family
+// $raleway: 'Raleway',
+// sans-serif;
+// $montserrat: 'Montserrat',
+// sans-serif;
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
 $brown: #757763;
-$beige-light: #d0d1cd;
-$beige-lighter: #eff0eb;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
 
-$raleway: 'Raleway',
-sans-serif;
-$montserrat: 'Montserrat',
-sans-serif;
-
-// Overwrite Bulma global variables
-$family-sans-serif: 'Nunito',
+// Update Bulma's global variables
+$family-sans-serif: "Nunito",
 sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
@@ -32,23 +50,19 @@ $link: $pink;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
-// Overwrite Bulma component variables
+// Update some of Bulma's component variables
 $body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
-// Import what is needed from Bulma
-@import '../node_modules/bulma/sass/utilities/_all.sass';
-@import '../node_modules/bulma/sass/base/_all.sass';
-@import '../node_modules/bulma/sass/elements/button.sass';
-@import '../node_modules/bulma/sass/elements/container.sass';
-@import '../node_modules/bulma/sass/form/_all.sass';
-@import '../node_modules/bulma/sass/elements/_all.sass';
-@import '../node_modules/bulma/sass/components/navbar.sass';
-@import '../node_modules/bulma/sass/layout/hero.sass';
-@import '../node_modules/bulma/sass/layout/section.sass';
-@import '../node_modules/bulma/sass/layout/footer.sass';
-@import '../node_modules/bulma/sass/grid/_all.sass';
-@import '../node_modules/bulma/sass/grid/columns.sass';
-@import '../node_modules/bulma/sass/grid/tiles.sass';
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";

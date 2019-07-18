@@ -11,7 +11,6 @@ const ViewAll = () => {
     <Section isCentered>
       <Container>
         <Title isSize={3}>View All Profiles</Title>
-        
         <Columns isCentered>
           <Column isSize='1/5'>
                     <Panel>

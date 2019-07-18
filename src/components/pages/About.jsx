@@ -1,12 +1,13 @@
 import React from 'react'
-import {Section, Container, Column, Title, Columns, Image, Content } from "bloomer"
+import { Section, Container, Column, Title, Columns, Image, Content } from "bloomer"
+import "../../styles/about.scss"
 
 const About = () => {
   return (
     <div>
       <Section>
-        <Container>
-        <Title isSize={2}>About this application</Title>
+        <Container className="about_Title">
+          <Title isSize={2}>About this application</Title>
         </Container>
         <br/><br/>
   <Columns isCentered>
