@@ -71,64 +71,7 @@ const Home = () => {
 
                 </Columns>
             </Section>
-
             <br /><br />
-            {/* <Section>
-                <p style={{ textAlign: "center", textTransform: "uppercase" }}>Testimonials</p>
-                <Title hasTextAlign='centered' isSize={2}>What are people saying about our graduates</Title>
-                <br /><br />
-                <Columns isCentered>
-                    <Column isSize='1/4'>
-                        <Media>
-                            <MediaLeft>
-                                <Image isSize='64x64' src='https://via.placeholder.com/128x128' />
-                            </MediaLeft>
-                            <MediaContent>
-                                <Content>
-                                    <p>
-                                        <strong>John Wick</strong> <small>@JohnWick</small> <small>31m</small>
-                                        <br />
-                                        People Keep Asking If I’m Back, And I Haven’t Really Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
-            </p>
-                                </Content>
-                            </MediaContent>
-                        </Media>
-                    </Column>
-                    <Column isSize='1/4'>
-                        <Media>
-                            <MediaLeft>
-                                <Image isSize='64x64' src='https://via.placeholder.com/128x128' />
-                            </MediaLeft>
-                            <MediaContent>
-                                <Content>
-                                    <p>
-                                        <strong>John Wick</strong> <small>@JohnWick</small> <small>31m</small>
-                                        <br />
-                                        People Keep Asking If I’m Back, And I Haven’t Really Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
-            </p>
-                                </Content>
-                            </MediaContent>
-                        </Media>
-                    </Column>
-
-                    <Column isSize='1/4'>
-                        <Media>
-                            <MediaLeft>
-                                <Image isSize='64x64' src='https://via.placeholder.com/128x128' />
-                            </MediaLeft>
-                            <MediaContent>
-                                <Content>
-                                    <p>
-                                        <strong>John Wick</strong> <small>@JohnWick</small> <small>31m</small>
-                                        <br />
-                                        People Keep Asking If I’m Back, And I Haven’t Really Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
-            </p>
-                                </Content>
-                            </MediaContent>
-                        </Media>
-                    </Column>
-                </Columns>
-            </Section> */}
             <Section>
                 <Columns isCentered>
                     <Column isSize='1/4' offset="2">
@@ -136,7 +79,7 @@ const Home = () => {
                     </Column>
                     <Column isSize='1/2'>
                         <Content>
-                            <Title isSize={2}>Why Coder Academy grads?</Title>
+                            <Title className="home_title" isSize={2}>Why Coder Academy grads?</Title>
                             <br />
                             Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.
 <br /><br />
@@ -151,7 +94,7 @@ const Home = () => {
                 <Columns isCentered>
                     <Column isSize='1/2'>
                         <Content>
-                            <Title isSize={2}>What can you expect?</Title>
+                            <Title className="home_title" isSize={2}>What can you expect?</Title>
                             <br />
                             Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.
 <br /><br />

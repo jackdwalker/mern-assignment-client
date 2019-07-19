@@ -1,4 +1,8 @@
 // Style for VIEW ALL PROFILES page
+$raleway: "Raleway",
+sans-serif;
+$montserrat: "Montserrat",
+sans-serif;
 
 $darkBlue: #2434a1;
 $medBlue: #356af1;
@@ -23,6 +27,11 @@ $white: #ffffff;
 .profileList_container{
   width:80%;
   margin:auto;
+}
+
+.profileList_title {
+  font-family: $raleway;
+  font-weight: 800;
 }
 
 h1.title{

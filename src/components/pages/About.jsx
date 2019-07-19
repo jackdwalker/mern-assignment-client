@@ -21,7 +21,7 @@ const About = () => {
     </Column>
     <Column isSize='1/2'>
         <Content>
-          <Title isSize={2}>What we do</Title>
+          <Title className="about_title" isSize={2}>What we do</Title>
           <br/>
 Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.
 <br/><br/>
@@ -35,7 +35,7 @@ Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ul
   <Columns isCentered>
     <Column isSize='1/2'>
         <Content>
-          <Title isSize={2}>What we offer</Title>
+          <Title className="about_title" isSize={2}>What we offer</Title>
           <br/>
 Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.
 <br/><br/>
@@ -48,6 +48,8 @@ Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ul
     </Column>
     
     </Columns>
+            <br/><br/>
+
 </Section>
 
     </div>
