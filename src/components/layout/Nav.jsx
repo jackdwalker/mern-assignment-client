@@ -57,7 +57,8 @@ export default class Nav extends Component {
                 <Container className="nav_container">
                 <NavbarBrand>
                     <NavbarItem className="linkedOut_logo" exact href='/'>
-                        <Title isSize={3}><Icon isSize="medium" className="fas fa-link" />  LinkedOut</Title>
+                        <Title isSize={3}>
+                            <Icon isSize="medium" className="fas fa-link" />  LinkedOut</Title>
                     </NavbarItem>
                     </NavbarBrand>
                     <NavbarMenu isActive={""} onClick={""}>

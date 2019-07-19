@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Hero, HeroBody, Title, Section, Columns, Column, Card, CardImage, CardContent, Content, Image, Media, Button, MediaLeft, MediaContent } from 'bloomer'
+import { Container, Hero, HeroBody, Title, Section, Columns, Column, Card, CardImage, CardContent, Content, Image, Button } from 'bloomer'
 import '../../styles/home.scss'
 
 import local_devs_image from "../../assets/undraw_landing_page_q6hh.svg"
@@ -105,7 +105,6 @@ const Home = () => {
                     <Column isSize='1/4' offset="2">
                         <Image isRatio="4:3" src={expect_image} />
                     </Column>
-
                 </Columns>
             </Section>
             <br /><br />

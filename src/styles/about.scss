@@ -18,27 +18,27 @@ $medGrey: #eeeeee;
 $white: #ffffff;
 $deepBlue: #162380;
 
-.about_container{
-  width:70%;
+.about_container {
+  width: 70%;
 }
 
-.about_back_rect{
-  position:absolute;
+.about_back_rect {
+  position: absolute;
   transform: rotate(20deg);
-  width:1800px;
-  height:800px;
-  border-radius:160px;
+  width: 1800px;
+  height: 800px;
+  border-radius: 160px;
   background: $medGrey;
-  z-index:-999;
+  z-index: -999;
   margin-left: 100px;
 }
 
-.about_container > h1.title{
+.about_container>h1.title {
   font-family: $raleway;
   font-weight: 800;
 }
 
 h1.about_title {
   font-family: $raleway;
-  font-weight: 500;
+  font-weight: 900;
 }

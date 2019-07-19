@@ -17,189 +17,194 @@ $medGrey: #eeeeee;
 $white: #ffffff;
 
 // background rectangles
-.bg_rect{
-    background-color: $pink;
-    position:absolute;
-    width:1600px;
-    height:900px;
-    transform: rotate(20deg);
-    border-radius:80px;
-    left:400px;
-    margin-top:1200px;
-    z-index:-2;
+.bg_rect {
+  background-color: $pink;
+  position: absolute;
+  width: 1600px;
+  height: 900px;
+  transform: rotate(20deg);
+  border-radius: 80px;
+  left: 400px;
+  margin-top: 1200px;
+  z-index: -2;
+}
+
+body {
+  background: red;
 }
 
 // Hero section
-.hero_container{
-  width:75% !important;
+.hero_container {
+  width: 75% !important;
 }
 
-.hero-body{
-  overflow:hidden !important;
+.hero-body {
+  overflow: hidden !important;
   margin-bottom: 100px;
 }
 
-h1.hero_Title{
+h1.hero_Title {
   font-family: $raleway;
-  font-weight:800;
+  font-weight: 800;
   color: $white;
-  font-size:4rem !important;
+  font-size: 4rem !important;
 }
 
-p.hero_blurb{
+p.hero_blurb {
   font-family: $montserrat;
-  line-height:1.8rem;
+  line-height: 1.8rem;
   color: $white;
-  font-weight:100;
-  font-size:1.2rem;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 
-button.browseBttn{
-  top:20px;
-  border:none;
+button.browseBttn {
+  top: 20px;
+  border: none;
   background-color: $coral;
-  color:white;
+  color: white;
   font-weight: 600;
 }
 
-button.browseBttn:hover{
+button.browseBttn:hover {
   background-color: $darkCoral;
-    color:white;
+  color: white;
   font-weight: 600;
 }
 
-.hero{
-  overflow:hidden;
+.hero {
+  overflow: hidden;
 }
 
-.hero_full_contain{
-  overflow:hidden;
+.hero_full_contain {
+  overflow: hidden;
 }
-.hero_rectangle{
-  margin-top:100px;
+
+.hero_rectangle {
+  margin-top: 100px;
   background-color: $medBlue;
   border-radius: 100px;
-  width:1000px;
-  height:450px;
-  position:absolute;
-  margin-left:200px;
+  width: 1000px;
+  height: 450px;
+  position: absolute;
+  margin-left: 200px;
   transform: rotate(20deg);
 }
 
-.hero_rectangle::before{
-  content:"";
-  margin-top:-90px;
+.hero_rectangle::before {
+  content: "";
+  margin-top: -90px;
   background-color: $darkBlue;
   border-radius: 120px;
-  width:1200px;
-  height:660px;
-  position:absolute;
+  width: 1200px;
+  height: 660px;
+  position: absolute;
   transform: rotate(0deg);
-  margin-left:-600px;
+  margin-left: -600px;
 }
 
-.hero_rectangle::after{
-  content:"";
-  margin-top:500px;
+.hero_rectangle::after {
+  content: "";
+  margin-top: 500px;
   background-color: $yellow;
   border-radius: 40px;
-  width:500px;
-  height:220px;
-  position:absolute;
-  left:-400px;
+  width: 500px;
+  height: 220px;
+  position: absolute;
+  left: -400px;
   transform: rotate(0deg);
 }
 
-.hero_back_rect{
-  background-color:$yellow;
+.hero_back_rect {
+  background-color: $yellow;
   border-radius: 80px;
-  width:600px;
-  height:220px;
+  width: 600px;
+  height: 220px;
   transform: rotate(20deg);
-  right:-200px;
-  top:50px;
-  position:absolute;
+  right: -200px;
+  top: 50px;
+  position: absolute;
 }
 
-.hero_front_rect{
+.hero_front_rect {
   background-color: $medBlue;
-  border-radius:20px;
-  width:90px;
-  height:90px;
+  border-radius: 20px;
+  width: 90px;
+  height: 90px;
   transform: rotate(20deg);
-  position:absolute;
-  top:700px;
-  left:100px;
-}
-
-.hero_front_rect::after{
-  content:"";
-  background-color: $pink;
-  border-radius:10px;
-  width:40px;
-  height:40px;
-  transform: rotate(0deg);
-  position:absolute;
+  position: absolute;
+  top: 700px;
   left: 100px;
-  top:-60px;
 }
 
-.hero_small_front_rect{
-    background-color: $medBlue;
-    position:absolute;
-    width:65px;
-    height:65px;
-    transform: rotate(20deg);
-    border-radius:20px;
-    left:100px;
-    margin-top:30px;
+.hero_front_rect::after {
+  content: "";
+  background-color: $pink;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  transform: rotate(0deg);
+  position: absolute;
+  left: 100px;
+  top: -60px;
 }
 
-.hero_small_front_rect::after{
-    content:"";
-    background-color: $medBlue;
-    position:absolute;
-    width:36px;
-    height:36px;
-    transform: rotate(0deg);
-    border-radius:10px;
-    left:630px;
-    margin-top:340px;
+.hero_small_front_rect {
+  background-color: $medBlue;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  transform: rotate(20deg);
+  border-radius: 20px;
+  left: 100px;
+  margin-top: 30px;
 }
 
-.hero_small_front_rect::before{
-    content:"";
-    background-color: $pink;
-    position:absolute;
-    width:36px;
-    height:36px;
-    transform: rotate(0deg);
-    border-radius:10px;
-    left:760px;
-    top:-280px;
+.hero_small_front_rect::after {
+  content: "";
+  background-color: $medBlue;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  transform: rotate(0deg);
+  border-radius: 10px;
+  left: 630px;
+  margin-top: 340px;
+}
+
+.hero_small_front_rect::before {
+  content: "";
+  background-color: $pink;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  transform: rotate(0deg);
+  border-radius: 10px;
+  left: 760px;
+  top: -280px;
 }
 
 // Three card
-h1.homeCard_title{
+h1.homeCard_title {
   font-family: $raleway;
-  font-weight:800 !important;
+  font-weight: 800 !important;
   padding-top: 1rem;
-  padding-bottom:1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-.content{
+.content {
   font-family: $montserrat;
-  font-weight:200 !important;
+  font-weight: 200 !important;
 }
 
-.card{
-  border:none !important;
-  box-shadow:none !important;
-  overflow:hidden;
-  background:none !important;
+.card {
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden;
+  background: none !important;
 }
 
-h1.home_title{
+h1.home_title {
   font-family: $raleway;
-  font-weight: 800;
+  font-weight: 900;
 }

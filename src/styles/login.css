@@ -11598,11 +11598,16 @@ label.panel-block:hover {
 .loginContainer,
 .signupContainer,
 .editProfileContainer {
-  background: grey;
+  background: white;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.editProfile_Title, .signup_Title, .login_Title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
 }
 
 .loginLeft {
@@ -11673,21 +11678,18 @@ textarea {
 }
 
 .signupLeft {
-  background: url("../assets/business-team-meeting-boardroom.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
 }
 
 .loginLeft {
-  background: url("../assets/students-working-on-project.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
 }
 
 .editProfileLeft {
-  background: url("../assets/designers-desk-with-coffee-wireframes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
@@ -11703,5 +11705,40 @@ textarea {
 
 [type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
+}
+
+button.saveProfileBttn, button.loginBttn {
+  background-color: #356af1 !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+button.saveProfileBttn:hover, button.loginBttn:hover {
+  background-color: #2434a1 !important;
+}
+
+button.deleteProfileBttn {
+  background-color: #ffc651 !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+button.deleteProfileBttn:hover {
+  background-color: #ea991a !important;
+}
+
+.editProfile_rect {
+  background-color: #2434a1;
+  border-radius: 30px;
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  margin-top: -800px;
 }
 /*# sourceMappingURL=login.css.map */

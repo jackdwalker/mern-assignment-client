@@ -11669,7 +11669,7 @@ label.panel-block:hover {
 }
 
 .delete::before, .modal-close::before, .delete::after, .modal-close::after {
-  background-color: white;
+  background-color: #ffffff;
   content: "";
   display: block;
   left: 50%;
@@ -11926,7 +11926,7 @@ th:not([align]) {
 }
 
 html {
-  background-color: #EFF0EB;
+  background-color: white;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -11973,7 +11973,7 @@ body {
 }
 
 a {
-  color: #FA7C91;
+  color: #3273dc;
   cursor: pointer;
   text-decoration: none;
 }
@@ -12577,7 +12577,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 
 .is-family-sans-serif {
-  font-family: "Nunito", sans-serif !important;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 .is-family-monospace {
@@ -15771,8 +15771,8 @@ fieldset[disabled] .select select:hover {
 }
 
 .navbar {
-  background-color: #356af1;
-  min-height: 5rem;
+  background-color: white;
+  min-height: 3.25rem;
   position: relative;
   z-index: 30;
 }
@@ -16404,7 +16404,7 @@ fieldset[disabled] .select select:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 5rem;
+  min-height: 3.25rem;
   width: 100%;
 }
 
@@ -16435,12 +16435,12 @@ fieldset[disabled] .select select:hover {
 
 html.has-navbar-fixed-top,
 body.has-navbar-fixed-top {
-  padding-top: 5rem;
+  padding-top: 3.25rem;
 }
 
 html.has-navbar-fixed-bottom,
 body.has-navbar-fixed-bottom {
-  padding-bottom: 5rem;
+  padding-bottom: 3.25rem;
 }
 
 .navbar-brand,
@@ -16453,7 +16453,7 @@ body.has-navbar-fixed-bottom {
   display: flex;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  min-height: 5rem;
+  min-height: 3.25rem;
 }
 
 .navbar-brand a.navbar-item:focus, .navbar-brand a.navbar-item:hover {
@@ -16471,9 +16471,9 @@ body.has-navbar-fixed-bottom {
   color: #4a4a4a;
   cursor: pointer;
   display: block;
-  height: 5rem;
+  height: 3.25rem;
   position: relative;
-  width: 5rem;
+  width: 3.25rem;
   margin-left: auto;
 }
 
@@ -16586,7 +16586,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .navbar-item.is-tab {
   border-bottom: 1px solid transparent;
-  min-height: 5rem;
+  min-height: 3.25rem;
   padding-bottom: calc(0.5rem - 1px);
 }
 
@@ -16658,7 +16658,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     display: none;
   }
   .navbar-menu {
-    background-color: #356af1;
+    background-color: white;
     -webkit-box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
             box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0;
@@ -16684,16 +16684,16 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   .navbar.is-fixed-top .navbar-menu, .navbar.is-fixed-top-touch .navbar-menu {
     -webkit-overflow-scrolling: touch;
-    max-height: calc(100vh - 5rem);
+    max-height: calc(100vh - 3.25rem);
     overflow: auto;
   }
   html.has-navbar-fixed-top-touch,
   body.has-navbar-fixed-top-touch {
-    padding-top: 5rem;
+    padding-top: 3.25rem;
   }
   html.has-navbar-fixed-bottom-touch,
   body.has-navbar-fixed-bottom-touch {
-    padding-bottom: 5rem;
+    padding-bottom: 3.25rem;
   }
 }
 
@@ -16710,7 +16710,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     display: flex;
   }
   .navbar {
-    min-height: 5rem;
+    min-height: 3.25rem;
   }
   .navbar.is-spaced {
     padding: 1rem 2rem;
@@ -16886,19 +16886,19 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   html.has-navbar-fixed-top-desktop,
   body.has-navbar-fixed-top-desktop {
-    padding-top: 5rem;
+    padding-top: 3.25rem;
   }
   html.has-navbar-fixed-bottom-desktop,
   body.has-navbar-fixed-bottom-desktop {
-    padding-bottom: 5rem;
+    padding-bottom: 3.25rem;
   }
   html.has-spaced-navbar-fixed-top,
   body.has-spaced-navbar-fixed-top {
-    padding-top: 7rem;
+    padding-top: 5.25rem;
   }
   html.has-spaced-navbar-fixed-bottom,
   body.has-spaced-navbar-fixed-bottom {
-    padding-bottom: 7rem;
+    padding-bottom: 5.25rem;
   }
   a.navbar-item.is-active,
   .navbar-link.is-active {
@@ -16914,7 +16914,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .hero.is-fullheight-with-navbar {
-  min-height: calc(100vh - 5rem);
+  min-height: calc(100vh - 3.25rem);
 }
 
 .hero {

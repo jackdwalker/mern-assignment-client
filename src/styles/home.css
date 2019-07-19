@@ -1,4 +1,202 @@
-nav.navbar {
-  height: 2100px;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900|Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap");
+.bg_rect {
+  background-color: #ffcbc4;
+  position: absolute;
+  width: 1600px;
+  height: 900px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  border-radius: 80px;
+  left: 400px;
+  margin-top: 1200px;
+  z-index: -2;
+}
+
+body {
+  background: red;
+}
+
+.hero_container {
+  width: 75% !important;
+}
+
+.hero-body {
+  overflow: hidden !important;
+  margin-bottom: 100px;
+}
+
+h1.hero_Title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 4rem !important;
+}
+
+p.hero_blurb {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8rem;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+button.browseBttn {
+  top: 20px;
+  border: none;
+  background-color: #ff6550;
+  color: white;
+  font-weight: 600;
+}
+
+button.browseBttn:hover {
+  background-color: #ec4731;
+  color: white;
+  font-weight: 600;
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.hero_full_contain {
+  overflow: hidden;
+}
+
+.hero_rectangle {
+  margin-top: 100px;
+  background-color: #356af1;
+  border-radius: 100px;
+  width: 1000px;
+  height: 450px;
+  position: absolute;
+  margin-left: 200px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.hero_rectangle::before {
+  content: "";
+  margin-top: -90px;
+  background-color: #2434a1;
+  border-radius: 120px;
+  width: 1200px;
+  height: 660px;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  margin-left: -600px;
+}
+
+.hero_rectangle::after {
+  content: "";
+  margin-top: 500px;
+  background-color: #ffc651;
+  border-radius: 40px;
+  width: 500px;
+  height: 220px;
+  position: absolute;
+  left: -400px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.hero_back_rect {
+  background-color: #ffc651;
+  border-radius: 80px;
+  width: 600px;
+  height: 220px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  right: -200px;
+  top: 50px;
+  position: absolute;
+}
+
+.hero_front_rect {
+  background-color: #356af1;
+  border-radius: 20px;
+  width: 90px;
+  height: 90px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  position: absolute;
+  top: 700px;
+  left: 100px;
+}
+
+.hero_front_rect::after {
+  content: "";
+  background-color: #ffcbc4;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  position: absolute;
+  left: 100px;
+  top: -60px;
+}
+
+.hero_small_front_rect {
+  background-color: #356af1;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  border-radius: 20px;
+  left: 100px;
+  margin-top: 30px;
+}
+
+.hero_small_front_rect::after {
+  content: "";
+  background-color: #356af1;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  border-radius: 10px;
+  left: 630px;
+  margin-top: 340px;
+}
+
+.hero_small_front_rect::before {
+  content: "";
+  background-color: #ffcbc4;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  border-radius: 10px;
+  left: 760px;
+  top: -280px;
+}
+
+h1.homeCard_title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800 !important;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.content {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200 !important;
+}
+
+.card {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  overflow: hidden;
+  background: none !important;
+}
+
+h1.home_title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
 }
 /*# sourceMappingURL=home.css.map */

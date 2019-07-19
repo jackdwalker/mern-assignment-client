@@ -1,28 +1,43 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900|Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap");
-.linkedOutLogo {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+.navbar {
+  height: 90px;
 }
 
-nav.navbar {
-  background-color: #ffffff;
-  height: 5.5rem;
-  padding-left: 60px;
-  padding-right: 60px;
+.navbar-item {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 
-.navbar-menu {
-  width: 80%;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-a.navbar-item {
-  border-bottom: 3px solid white;
-}
-
-a.navbar-item:hover {
+.navbar-item:hover {
   background: none !important;
-  border-bottom: 3px solid black;
+  color: #ff6550 !important;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.nav_container {
+  width: 70%;
+}
+
+.signUpBttn {
+  background: #ff6550 !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.signUpBttn:hover {
+  background: #ec4731 !important;
+  color: #ffffff;
+}
+
+.linkedOut_logo > h1 {
+  font-weight: 900;
+}
+
+.linkedOut_logo > h1:hover {
+  color: #2434a1;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 /*# sourceMappingURL=nav.css.map */
