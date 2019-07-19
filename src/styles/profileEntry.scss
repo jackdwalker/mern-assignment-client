@@ -1,0 +1,52 @@
+$darkBlue: #2434a1;
+$medBlue: #356af1;
+$yellow: #ffc651;
+$pink: #ffcbc4;
+$coral: #ff6550;
+$darkCoral: #ec4731;
+$lightGrey: #e9e9e9;
+$medGrey: #eeeeee;
+$white: #ffffff;
+
+
+.profileList_entry {background:pink;
+}
+
+.profileList_image {
+  overflow:hidden;
+  border-radius: 20px;
+}
+
+h1.profileList_name {
+  margin-bottom:none !important;
+}
+
+h1.profileList_gradType {
+  margin-top:none !important;
+}
+
+.profileList_tagGroup {}
+
+.profileList_blurb{}
+
+.profileList_tag {}
+
+.profileList_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  min-height: 100%;
+}
+
+.profileList_jobTypeList {
+  margin-top: auto;
+  text-align: left;
+}
+
+.profileList_jobType {
+}
+
+.profileList_viewProfileBttn {
+  margin-bottom: auto;
+}

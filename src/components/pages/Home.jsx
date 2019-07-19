@@ -41,7 +41,7 @@ const Home = () => {
                             </CardImage>
                             <CardContent>
                                 <Content>
-                                    <Title isSize={4}>Local Developers</Title>
+                                    <Title className="homeCard_title" isSize={4}>Local Developers</Title>
                                     Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.        </Content>
                             </CardContent>
                         </Card>
@@ -53,7 +53,7 @@ const Home = () => {
                             </CardImage>
                             <CardContent>
                                 <Content>
-                                    <Title isSize={4}>Job-ready skills</Title>
+                                    <Title className="homeCard_title" isSize={4}>Job-ready skills</Title>
                                     Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.        </Content>
                             </CardContent>
                         </Card>          </Column>
@@ -64,7 +64,7 @@ const Home = () => {
                             </CardImage>
                             <CardContent>
                                 <Content>
-                                    <Title isSize={4}>Join our network</Title>
+                                    <Title className="homeCard_title" isSize={4}>Join our network</Title>
                                     Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.        </Content>
                             </CardContent>
                         </Card>          </Column>

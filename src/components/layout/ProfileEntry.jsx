@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Content, Title, Button, Media, MediaContent, MediaLeft, MediaRight, Image, Tag, Icon} from "bloomer"
-import "../../styles/viewall.scss"
+import "../../styles/profileEntry.scss"
 
 const ProfileEntry = () => {
   return (
@@ -15,16 +15,15 @@ const ProfileEntry = () => {
                         <Title isSize={4} className="profileList_name">Student Name</Title>
                         <Title isSize={6} className="profileList_gradType">Fast-Track Graduate</Title>
                       </div>
-                        <p>
+                        <p className="profileList_blurb">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed eros quis est eleifend imperdiet sit amet quis est. Pellentesque id molestie metus. Cras imperdiet ut odio in tristique. Aenean nec lectus velit... (more) </p>
                     </Content>
                     <div className="tags are-small profileList_tagGroup">
-
-                      <Tag isColor='black' className="is-rounded">Javascript</Tag>
-                      <Tag isColor='light' className="is-rounded">Rails</Tag>
-                      <Tag isColor='success' className="is-rounded">HTML5</Tag>
-                      <Tag isColor='danger' className="is-rounded">Ruby</Tag>
-                      <Tag isColor='info' className="is-rounded">CSS3</Tag>
+                      <Tag className="is-rounded">Javascript</Tag>
+                      <Tag className="is-rounded">Rails</Tag>
+                      <Tag className="is-rounded">HTML5</Tag>
+                      <Tag className="is-rounded">Ruby</Tag>
+                      <Tag className="is-rounded">CSS3</Tag>
                     </div>
                 </MediaContent>
                 <div className="profileList_right">
