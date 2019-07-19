@@ -9,7 +9,9 @@ const EditProfile = () => {
     </div>
         <div className="editProfileRight">
         <div className="editProfileBox">
-        <Title isSize={3}>Edit Your Profile</Title>
+                    <div className="editProfile_rect"></div>
+
+        <Title className="editProfile_Title" isSize={3}>Edit Your Profile</Title>
         <br/>
         
         {/* GIVEN NAMES */}
@@ -269,7 +271,11 @@ const EditProfile = () => {
         {/* SUBMIT BUTTON */}
         <Field isGrouped>
             <Control>
-                <Button isColor='primary'>Create Profile</Button>
+                <Button className="saveProfileBttn" isColor='primary'>Save Profile</Button>
+            </Control>
+            <Control>
+
+                <Button className="deleteProfileBttn" isColor='primary'>Delete Profile</Button>
             </Control>
         </Field>
         </div>

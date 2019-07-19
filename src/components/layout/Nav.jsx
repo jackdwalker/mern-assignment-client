@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
 import { setState } from '../WithState'
-import { NavbarBrand, Button, Navbar, NavbarItem, NavbarMenu, NavbarStart, NavbarEnd, Icon, Title } from 'bloomer'
-import bulma from 'bulma'
+import { NavbarBrand, Navbar, NavbarItem, NavbarMenu, NavbarStart, NavbarEnd, Icon, Title, Container, Button } from 'bloomer'
 import { api } from '../../studentAPI';
-import '../../styles/nav.scss'
+import "../../styles/nav.scss"
 
 function NavBarEndLoggedOut() {
     return (
 
         <NavbarEnd>
-            <NavbarItem href='/login'>Log in</NavbarItem>
+            <NavbarItem href='/login'>Login</NavbarItem>
             <NavbarItem href='/signup'>
-                <Button className='signupBttn'>Sign up</Button>
+                <Button className="signUpBttn">Sign Up</Button>
             </NavbarItem>
         </NavbarEnd>
     )
@@ -55,20 +54,21 @@ export default class Nav extends Component {
         }
         return (
             <Navbar>
+                <Container className="nav_container">
                 <NavbarBrand>
-                    <NavbarItem exact href='/' className="linkedOutLogo">
-                        <Title isSize={3}>
-                        <Icon isSize="medium" className="fas fa-link" />  LinkedOut</Title>
+                    <NavbarItem className="linkedOut_logo" exact href='/'>
+                        <Title isSize={3}><Icon isSize="medium" className="fas fa-link" />  LinkedOut</Title>
                     </NavbarItem>
-                </NavbarBrand>
-                <NavbarMenu isActive={""} onClick={""}>
-                    <NavbarStart>
-                        <NavbarItem exact href='/'>Home</NavbarItem>
-                        <NavbarItem href='/about'>About</NavbarItem>
-                        <NavbarItem href='/viewall'>Browse Profiles</NavbarItem>
-                    </NavbarStart>
-                    {navBarEnd}
-                </NavbarMenu>
+                    </NavbarBrand>
+                    <NavbarMenu isActive={""} onClick={""}>
+                        <NavbarStart>
+                            <NavbarItem exact href='/'>Home</NavbarItem>
+                            <NavbarItem href='/about'>About</NavbarItem>
+                            <NavbarItem href='/viewall'>Browse Profiles</NavbarItem>
+                        </NavbarStart>
+                        {navBarEnd}
+                    </NavbarMenu>
+                </Container>
             </Navbar>
         )
     }

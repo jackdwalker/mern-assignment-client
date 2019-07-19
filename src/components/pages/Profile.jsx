@@ -16,6 +16,8 @@ const Profile = () => {
         <Title isSize={4}>
           Student Name
           </Title>
+          <p className="profile_GraduateDate">Graduated: 24/10/2019</p>
+          <br/>
         <Title isSize={6}>Seeking</Title>
           <div className="tags are-medium profile_techGroup">
             <Tag isColor='light' isSize='medium'>Internship</Tag>
@@ -50,6 +52,8 @@ const Profile = () => {
             <span className="tag is-light">CSS</span>
             <span className="tag is-light">HTML</span>
           </div>
+        <Title isSize={6}>Field of Interest</Title>
+                    <Tag isColor='light' isSize='medium'>Front-end</Tag>
       </Box>
     </Column>
     </Columns>

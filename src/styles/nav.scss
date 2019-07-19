@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900|Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap');
+
+// Styling for git component
 
 $raleway: "Raleway",
 sans-serif;
 $montserrat: "Montserrat",
 sans-serif;
+
+$title-family:$raleway;
 
 $darkBlue: #2434a1;
 $medBlue: #356af1;
@@ -15,42 +18,41 @@ $lightGrey: #e9e9e9;
 $medGrey: #eeeeee;
 $white: #ffffff;
 
-.linkedOutLogo > h1 {
-  font-family: $montserrat;
-  font-weight: 700;
+.navbar{
+  height:90px;
 }
 
-nav.navbar {
-  background-color: $white;
-  height: 5.75rem;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.navbar-menu {
-  width: 80%;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-a.navbar-item {
+.navbar-item{
   font-family: $raleway;
-  font-weight:600;
-}
-
-a.navbar-item:hover {
-  background: none !important;
-}
-
-button.signupBttn{
-  background-color: $coral;
-  border:none;
-  color:$white;
   font-weight:700;
 }
+.navbar-item:hover{
+  background:none !important;
+  color:$coral !important;
+  transition: 0.3s ease-out;
+}
 
-button.signupBttn:hover{
+.nav_container{
+  width:70%;
+}
+
+.signUpBttn{
+  background: $coral !important;
+  border:none !important;
+  color: $white !important;
+  font-family: $raleway;
+  font-weight:700;
+}
+.signUpBttn:hover{
+  background: $darkCoral !important;
   color: $white;
-  font-weight:700;
-  background-color: $darkCoral;
+}
+
+.linkedOut_logo > h1{
+  font-weight:900;
+}
+
+.linkedOut_logo > h1:hover{
+  color: $darkBlue;
+  transition: 0.2s ease-out;
 }

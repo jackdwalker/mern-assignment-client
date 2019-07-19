@@ -8,9 +8,10 @@ import PageIndex from "../layout/PageIndex"
 
 const ViewAll = () => {
   return (
-    <Section isCentered>
+    <Section className="profileList_container" isCentered>
+    <div className="profileList_backRect"></div>
       <Container>
-        <Title isSize={3}>View All Profiles</Title>
+        <Title className="profileList_title" isSize={3}>View All Graduate Profiles</Title>
         <Columns isCentered>
           <Column isSize='1/5'>
                     <Panel>
@@ -53,7 +54,7 @@ const ViewAll = () => {
           <ProfileEntry />
 
           {/* Pagination */}
-          <PageIndex />
+          {/* <PageIndex /> */}
           </Column>
         </Columns>
       </Container>

@@ -5,6 +5,7 @@ sans-serif;
 $montserrat: "Montserrat",
 sans-serif;
 
+$title-family:$raleway;
 $darkBlue: #2434a1;
 $medBlue: #356af1;
 $yellow: #ffc651;
@@ -15,6 +16,20 @@ $lightGrey: #e9e9e9;
 $medGrey: #eeeeee;
 $white: #ffffff;
 
+// background rectangles
+.bg_rect{
+    background-color: $pink;
+    position:absolute;
+    width:1600px;
+    height:900px;
+    transform: rotate(20deg);
+    border-radius:80px;
+    left:400px;
+    margin-top:1200px;
+    z-index:-2;
+}
+
+// Hero section
 .hero_container{
   width:75% !important;
 }
@@ -162,4 +177,29 @@ button.browseBttn:hover{
     border-radius:10px;
     left:760px;
     top:-280px;
+}
+
+// Three card
+h1.homeCard_title{
+  font-family: $raleway;
+  font-weight:800 !important;
+  padding-top: 1rem;
+  padding-bottom:1.5rem;
+}
+
+.content{
+  font-family: $montserrat;
+  font-weight:200 !important;
+}
+
+.card{
+  border:none !important;
+  box-shadow:none !important;
+  overflow:hidden;
+  background:none !important;
+}
+
+h1.home_title{
+  font-family: $raleway;
+  font-weight: 800;
 }

@@ -1,22 +1,11 @@
-@import '../../node_modules/bulma/bulma.sass';
+// Style for Single Profile View
 
-$darkBlue: #2434a1;
-$medBlue: #356af1;
-$yellow: #ffc651;
-$pink: #ffcbc4;
-$coral: #ff6550;
-$lightGrey: #e9e9e9;
-$medGrey: #eeeeee;
+// REMOVED 
 
-.grad_Photo {
-  border-radius: 50%;
-  overflow: none;
-}
-
-img {
-  border: none;
-}
-
-.profileList_viewProfileBttn>Button {
-  background-color: $coral;
-}
+.profile_GraduateDate{}
+.profile_techGroup{}
+.profile_linkGroup{}
+.profile_githubLink{}
+.profile_websiteLink{}
+.profile_emailLink{}
+.profile_techGroup{}

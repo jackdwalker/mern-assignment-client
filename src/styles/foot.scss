@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900|Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap');
+
+$raleway: "Raleway",
+sans-serif;
+$montserrat: "Montserrat",
+sans-serif;
+
+$title-family:$raleway;
+
+$darkBlue: #2434a1;
+$medBlue: #356af1;
+$yellow: #ffc651;
+$pink: #ffcbc4;
+$coral: #ff6550;
+$darkCoral: #ec4731;
+$lightGrey: #e9e9e9;
+$medGrey: #eeeeee;
+$white: #ffffff;
+$deepBlue: #162380;
+
+.footer{
+  padding-top:80px;
+  background: $white;
+  height:400px !important;
+  background: $darkBlue;
+  color: $white;
+}
+
+a.linkedOut_link, a.linkedOut_link:hover, a.linkedOut_link:active, a.linkedOut_link:visited, .newsLetter_label {
+  color:$white;
+}
+
+.linkedOut_logo{
+  color: $deepBlue;
+  transition: 0.5s;
+}
+
+.linkedOut_logo:hover{
+  color: $lightGrey;
+}
+
+.footer > .container{
+  width:80%;
+}
+
+.footerTitle, .newsLetter_label{
+  font-family: $raleway;
+  font-weight:800;
+  color: $white;
+}
+
+.footerLink{
+  color: $medGrey;
+  line-height: 2.6rem;
+  transition:0.5s;
+}
+
+a.footerLink:hover{
+  color: $white;
+}
+
+.submitBttn{
+  background-color: $coral !important;
+  font-weight:900;
+}
+
+.submitBttn:hover{
+  background-color: $darkCoral !important;
+}

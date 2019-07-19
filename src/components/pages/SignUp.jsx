@@ -84,11 +84,10 @@ export default class SignUp extends Component {
         return (
             <div className="signupContainer" >
                 <div className="signupLeft">
-                    <img src="/src/assets/tech-meeting-flatlay.jpg" alt="test" />
                 </div>
                 <div className="signupRight">
                     <div className="signupBox">
-                        <Title isSize={4}>Create a Graduate Profile</Title>
+                        <Title className="signup_Title" isSize={4}>Create a Graduate Profile</Title>
                         <br />
                         <form onSubmit={this.handleSubmit}>
 
