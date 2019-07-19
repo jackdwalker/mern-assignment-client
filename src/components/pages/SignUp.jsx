@@ -9,7 +9,7 @@ const SignUp = () => {
     </div>
         <div className="signupRight">
         <div className="signupBox">
-        <Title isSize={3}>Create a Profile</Title>
+        <Title className="signup_Title" isSize={3}>Create a Profile</Title>
         <br/>
         
         {/* GIVEN NAMES */}
@@ -269,7 +269,7 @@ const SignUp = () => {
         {/* SUBMIT BUTTON */}
         <Field isGrouped>
             <Control>
-                <Button isColor='primary'>Create Profile</Button>
+                <Button className="signupBttn" isColor='primary'>Create Profile</Button>
             </Control>
         </Field>
         </div>

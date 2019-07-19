@@ -1,12 +1,35 @@
 // Log In, Sign Up, Edit Profile (duplicates sign up)
+
+$raleway: "Raleway",
+sans-serif;
+$montserrat: "Montserrat",
+sans-serif;
+
+$title-family:$raleway;
+
+$darkBlue: #2434a1;
+$medBlue: #356af1;
+$yellow: #ffc651;
+$pink: #ffcbc4;
+$coral: #ff6550;
+$darkCoral: #ec4731;
+$lightGrey: #e9e9e9;
+$medGrey: #eeeeee;
+$white: #ffffff;
+
+
 .loginContainer,
 .signupContainer,
 .editProfileContainer {
-  background: grey;
+  background: white;
   min-height: 100vh;
   display: flex;
 }
 
+.editProfile_Title, .signup_Title, .login_Title{
+  font-family: $raleway;
+  font-weight:800;
+}
 .loginLeft {
   width: 40%;
   height: 100vh;
@@ -60,21 +83,21 @@ textarea {
 }
 
 .signupLeft {
-  background: url("../assets/business-team-meeting-boardroom.jpg");
+  // background: url("../assets/business-team-meeting-boardroom.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
 }
 
 .loginLeft {
-  background: url("../assets/students-working-on-project.jpg");
+  // background: url("../assets/students-working-on-project.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
 }
 
 .editProfileLeft {
-  background: url("../assets/designers-desk-with-coffee-wireframes.jpg");
+  // background: url("../assets/designers-desk-with-coffee-wireframes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
@@ -91,4 +114,42 @@ textarea {
 
 [type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
+}
+
+.loginBttn {
+
+}
+
+button.saveProfileBttn{
+  background-color: $medBlue !important;
+  transition:0.3s;
+  font-weight:700;
+  font-family: $raleway;
+}
+
+button.saveProfileBttn:hover{
+  background-color: $darkBlue !important;
+}
+
+button.deleteProfileBttn{
+  background-color: $yellow !important;
+  transition:0.3s;
+  font-weight:700;
+  font-family: $raleway;
+}
+
+button.deleteProfileBttn:hover{
+  background-color: #ea991a !important;
+}
+
+// Edit Profile
+
+.editProfile_rect{
+  background-color: $darkBlue;
+  border-radius: 30px;
+  width:1000px;
+  height:500px;
+  position:absolute;
+  transform: rotate(-20deg);
+  margin-top:-800px;
 }

@@ -36,7 +36,7 @@ const Foot = () => {
     </Column>
     <Column isSize='1/3'> 
 <Field>
-    <Label>Subscribe to Newsletter</Label>
+    <Label className="newsLetter_label">Subscribe to Newsletter</Label>
     <Control>
         <Input type="text" placeholder='Text Input' />
     </Control>

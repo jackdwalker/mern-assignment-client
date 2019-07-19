@@ -54,7 +54,7 @@ const ViewAll = () => {
           <ProfileEntry />
 
           {/* Pagination */}
-          <PageIndex />
+          {/* <PageIndex /> */}
           </Column>
         </Columns>
       </Container>

@@ -46,3 +46,12 @@ $white: #ffffff;
   background: $darkCoral !important;
   color: $white;
 }
+
+.linkedOut_logo > h1{
+  font-weight:900;
+}
+
+.linkedOut_logo > h1:hover{
+  color: $darkBlue;
+  transition: 0.2s ease-out;
+}

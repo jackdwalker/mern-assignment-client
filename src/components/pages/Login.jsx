@@ -44,7 +44,7 @@ export default class Login extends Component {
                 <div className="loginRight">
                     <div className="loginBox">
                         <form onSubmit={this.handleSubmit}>
-                            <Title isSize={4}>Sign into your account</Title>
+                            <Title className="login_Title" isSize={4}>Sign into your account</Title>
                             <br />
                             <Field>
                                 <Label>Email</Label>
@@ -65,7 +65,7 @@ export default class Login extends Component {
                             <br />
                             <Field isGrouped>
                                 <Control>
-                                    <Button isColor='primary' type='submit'>Log In</Button>
+                                    <Button className="loginBttn" isColor='primary' type='submit'>Log In</Button>
                                 </Control>
                             </Field>
                         </form>

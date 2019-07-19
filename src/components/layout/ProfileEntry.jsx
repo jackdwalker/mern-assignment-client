@@ -10,13 +10,13 @@ const ProfileEntry = () => {
                     <Image className="profileList_image" isSize='128x128' src='https://via.placeholder.com/128x128' />
                 </MediaLeft>
                 <MediaContent>
-                    <Content>
+                    <Content className="profileList_content">
                       <div>
-                        <Title isSize={4} className="profileList_name">Student Name</Title>
+                        <Title isSize={4} className="profileList_name">Ralph Plaschnick</Title>
                         <Title isSize={6} className="profileList_gradType">Fast-Track Graduate</Title>
                       </div>
                         <p className="profileList_blurb">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed eros quis est eleifend imperdiet sit amet quis est. Pellentesque id molestie metus. Cras imperdiet ut odio in tristique. Aenean nec lectus velit... (more) </p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed eros quis est eleifend imperdiet(more) </p>
                     </Content>
                     <div className="tags are-small profileList_tagGroup">
                       <Tag className="is-rounded">Javascript</Tag>
@@ -33,13 +33,9 @@ const ProfileEntry = () => {
                           <Icon className="fas fa-check-circle" />
                           <span>Internship</span>
                         </Title>
-                        <Title isSize={6} className="profileList_jobType">
-                          <Icon className="fas fa-check-circle" />
-                          <span>Full-time</span>
-                        </Title>
                       </div>
-                    <div className="profileList_viewProfileBttn">
-                      <Button isColor='success'>View Profile</Button>
+                    <div className="profileList_viewProfile">
+                      <Button className="profileList_viewProfileBttn" href="/profile">View Profile</Button>
                     </div>
                   </MediaRight>
                 </div>

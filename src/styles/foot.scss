@@ -26,7 +26,7 @@ $deepBlue: #162380;
   color: $white;
 }
 
-a.linkedOut_link, a.linkedOut_link:hover, a.linkedOut_link:active, a.linkedOut_link:visited, label.label {
+a.linkedOut_link, a.linkedOut_link:hover, a.linkedOut_link:active, a.linkedOut_link:visited, .newsLetter_label {
   color:$white;
 }
 
@@ -43,7 +43,9 @@ a.linkedOut_link, a.linkedOut_link:hover, a.linkedOut_link:active, a.linkedOut_l
   width:80%;
 }
 
-.footerTitle{
+.footerTitle, .newsLetter_label{
+  font-family: $raleway;
+  font-weight:800;
   color: $white;
 }
 
