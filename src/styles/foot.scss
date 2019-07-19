@@ -18,52 +18,57 @@ $medGrey: #eeeeee;
 $white: #ffffff;
 $deepBlue: #162380;
 
-.footer{
-  padding-top:80px;
+.footer {
+  padding-top: 80px;
   background: $white;
-  height:400px !important;
-  background: $darkBlue;
+  height: 400px !important;
+  background: $darkBlue !important;
   color: $white;
 }
 
-a.linkedOut_link, a.linkedOut_link:hover, a.linkedOut_link:active, a.linkedOut_link:visited, .newsLetter_label {
-  color:$white;
+a.linkedOut_link,
+a.linkedOut_link:hover,
+a.linkedOut_link:active,
+a.linkedOut_link:visited,
+.newsLetter_label {
+  color: $white;
 }
 
-.linkedOut_logo{
+.linkedOut_logo {
   color: $deepBlue;
   transition: 0.5s;
 }
 
-.linkedOut_logo:hover{
+.linkedOut_logo:hover {
   color: $lightGrey;
 }
 
-.footer > .container{
-  width:80%;
+.footer>.container {
+  width: 80%;
 }
 
-.footerTitle, .newsLetter_label{
+.footerTitle,
+.newsLetter_label {
   font-family: $raleway;
-  font-weight:800;
+  font-weight: 800;
   color: $white;
 }
 
-.footerLink{
+.footerLink {
   color: $medGrey;
   line-height: 2.6rem;
-  transition:0.5s;
+  transition: 0.5s;
 }
 
-a.footerLink:hover{
+a.footerLink:hover {
   color: $white;
 }
 
-.submitBttn{
+.submitBttn {
   background-color: $coral !important;
-  font-weight:900;
+  font-weight: 900;
 }
 
-.submitBttn:hover{
+.submitBttn:hover {
   background-color: $darkCoral !important;
 }
