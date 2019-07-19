@@ -7,7 +7,7 @@
 $raleway: "Raleway",
 sans-serif;
 $montserrat: "Montserrat",
-sans-serif;
+ssans-serif;
 
 $darkBlue: #2434a1;
 $medBlue: #356af1;
@@ -19,29 +19,11 @@ $lightGrey: #e9e9e9;
 $medGrey: #eeeeee;
 $white: #ffffff;
 
-// Set previous own colour variables
-$primary: #343867;
-$secondary: #FD7447;
-
-// Set own colour variables
-$purple: #8a4d76;
-$pink: #fa7c91;
-$brown: #757763;
-$beige-light: #d0d1cd;
-$beige-lighter: #eff0eb;
-
 // Overwrite Bulma global variables
-$family-sans-serif: 'Nunito',
-sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Overwrite Bulma component variables
-$body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;

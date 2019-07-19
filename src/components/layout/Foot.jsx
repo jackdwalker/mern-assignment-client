@@ -1,6 +1,5 @@
 import React from 'react'
 import {Columns,NavbarItem, Container, Column, Footer, Field, Label,Input, Control, Button, Title, Icon} from 'bloomer'
-import bulma from 'bulma'
 import "../../styles/foot.scss"
 
 const Foot = () => {

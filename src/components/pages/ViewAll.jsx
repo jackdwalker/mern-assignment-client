@@ -1,5 +1,4 @@
 import React from 'react'
-import Bulma from 'bulma'
 import { Section, Columns, Container, Column, Title, Button, PanelIcon, PanelBlock, PanelHeading, Panel, Control, Input} from "bloomer"
 import "../../styles/viewall.scss"
 
