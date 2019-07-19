@@ -72,8 +72,11 @@ export default class SignUp extends Component {
                     setState({ isLoggedIn: localStorage.getItem('isLoggedIn') })
                     this.props.history.push('/')
                 })
-                .catch(error => {
-                    console.log(error)
+                .catch(err => {
+                    if (err.response.status === 401) {
+                        alert('Invalid username or password')
+                    }
+                    console.log(err)
                 })
         } else {
             alert('Passwords do not match, please try again')

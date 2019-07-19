@@ -34,7 +34,7 @@ export default class Login extends Component {
             this.props.history.push('/')
         })
         .catch(error => {
-            console.log(error)
+            alert('Invalid username or password')
         })
     }
     
