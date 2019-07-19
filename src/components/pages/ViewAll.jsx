@@ -31,20 +31,13 @@ export default class ViewAll extends Component {
 
 
   render() {
-    let ProfileEntry
+    let profileEntry
 
     if (this.state.isLoading === true) {
-      ProfileEntry = <p>Not Loaded</p>
+      profileEntry = <p>Not Loaded</p>
     } else {
-      ProfileEntry = 
-      <div>
-        <ProfileEntry name={this.state.studentData['name'][0]} />
-        <ProfileEntry name={this.state.studentData['name'][1]} />
-        <ProfileEntry name={this.state.studentData['name'][2]} />
-      </div>
+      profileEntry = this.state.studentData.map(student => <ProfileEntry studentData={student} />)
     }
-
-
     return (
       <Section isCentered>
         <Container>
@@ -87,7 +80,7 @@ export default class ViewAll extends Component {
             <Column isSize="3/4">
 
               {/* Profile List Entry */}
-              {ProfileEntry} 
+              {profileEntry} 
 
               {/* Pagination */}
               <PageIndex />
