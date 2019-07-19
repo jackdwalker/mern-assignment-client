@@ -1,6 +1,7 @@
 import React from 'react'
-import {Columns,Container, Column, Footer, Field, Label,Input, Control, Button, Title, Icon} from 'bloomer'
+import {Columns,NavbarItem, Container, Column, Footer, Field, Label,Input, Control, Button, Title, Icon} from 'bloomer'
 import bulma from 'bulma'
+import "../../styles/foot.scss"
 
 const Foot = () => {
   return (
@@ -9,26 +10,28 @@ const Foot = () => {
     <Container>
 <Columns isCentered>
     <Column isSize='1/4'>
-            <Title isSize={3}>
+    <a className="linkedOut_link" href='/'>
+            <Title className="linkedOut_logo" isSize={3}>
                 <Icon isSize="medium" className="fas fa-link" />  LinkedOut
             </Title>
+    </a>
     </Column>
     <Column isSize='1/4'>
+    <Title className="footerTitle" isSize="5">Our Graduates</Title>
     <ul>
-        <li><a href="#">Test Link</a></li>
-        <li><a href="#">Test Link</a></li>
-        <li><a href="#">Test Link</a></li>
-        <li><a href="#">Test Link</a></li>
-        <li><a href="#">Test Link</a></li>
+        <li><a className="footerLink" href="#">Browse Graduates</a></li>
+        <li><a className="footerLink" href="#">Sign Up for Profile</a></li>
+        <li><a className="footerLink" href="#">Log into Account</a></li>
+        <li><a className="footerLink" href="#">Terms & Conditions</a></li>
     </ul>    
     </Column>
     <Column isSize='1/4'>
+    <Title className="footerTitle" isSize="5">About Coder Academy</Title>
     <ul>
-        <li><a href="#">Test Link</a></li>
-        <li><a href="#">Test Link</a></li>
-        <li><a href="#">Test Link</a></li>
-        <li><a href="#">Test Link</a></li>
-        <li><a href="#">Test Link</a></li>
+        <li><a className="footerLink" href="#">Who we are</a></li>
+        <li><a className="footerLink" href="#">Our Courses</a></li>
+        <li><a className="footerLink" href="#">Testimonials</a></li>
+        <li><a className="footerLink" href="#">Contact us</a></li>
     </ul>      
     </Column>
     <Column isSize='1/3'> 
@@ -39,7 +42,7 @@ const Foot = () => {
     </Control>
         <br />  
         <Control>
-        <Button isLink>Submit</Button>
+        <Button className="submitBttn" isLink>Submit</Button>
     </Control>
 </Field>
     </Column>

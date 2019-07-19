@@ -2,6 +2,11 @@ import React from 'react'
 import { Container, Hero, HeroBody, Title, Section, Columns, Column, Card, CardImage, CardContent, Content, Image, Media, Button, MediaLeft, MediaContent } from 'bloomer'
 import '../../styles/home.scss'
 
+import local_devs_image from "../../assets/undraw_landing_page_q6hh.svg"
+import jobReady_image from "../../assets/undraw_software_engineer_lvl5.svg"
+import joinNetwork_image from "../../assets/undraw_art_museum_8or4.svg"
+import whyUs_image from "../../assets/undraw_road_sign_mfpo.svg"
+import expect_image from "../../assets/undraw_online_friends_x73e.svg"
 const Home = () => {
     return (
         <div>
@@ -33,7 +38,7 @@ const Home = () => {
                     <Column isSize='1/4'>
                         <Card>
                             <CardImage>
-                            <Image isRatio="3:2" src="/src/assets/designers-desk-with-coffee-wireframes.jpg" />
+                            <Image isRatio="3:2" src={local_devs_image} />
                             </CardImage>
                             <CardContent>
                                 <Content>
@@ -45,7 +50,7 @@ const Home = () => {
                     <Column isSize='1/4'>
                         <Card>
                             <CardImage>
-                                <Image isRatio="3:2" src="https://via.placeholder.com/480x320" />
+                                <Image isRatio="3:2" src={jobReady_image} />
                             </CardImage>
                             <CardContent>
                                 <Content>
@@ -56,7 +61,7 @@ const Home = () => {
                     <Column isSize='1/4'>
                         <Card>
                             <CardImage>
-                                <Image isRatio="3:2" src="https://via.placeholder.com/480x320" />
+                                <Image isRatio="3:2" src={joinNetwork_image} />
                             </CardImage>
                             <CardContent>
                                 <Content>
@@ -128,11 +133,11 @@ const Home = () => {
             <Section>
                 <Columns isCentered>
                     <Column isSize='1/4' offset="2">
-                        <Image isRatio="4:3" src="https://via.placeholder.com/640x480" />
+                        <Image isRatio="4:3" src={whyUs_image} />
                     </Column>
                     <Column isSize='1/2'>
                         <Content>
-                            <Title isSize={2}>Why us?</Title>
+                            <Title isSize={2}>Why Coder Academy grads?</Title>
                             <br />
                             Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.
 <br /><br />
@@ -156,7 +161,7 @@ const Home = () => {
 </Content>
                     </Column>
                     <Column isSize='1/4' offset="2">
-                        <Image isRatio="4:3" src="https://via.placeholder.com/640x480" />
+                        <Image isRatio="4:3" src={expect_image} />
                     </Column>
 
                 </Columns>

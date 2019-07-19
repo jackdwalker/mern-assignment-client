@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { setState } from '../WithState'
-import { NavbarBrand, Navbar, NavbarItem, NavbarMenu, NavbarStart, NavbarEnd, Icon, Title } from 'bloomer'
+import { NavbarBrand, Navbar, NavbarItem, NavbarMenu, NavbarStart, NavbarEnd, Icon, Title, Container } from 'bloomer'
 import { api } from '../../studentAPI';
+import "../../styles/nav.scss"
 
 function NavBarEndLoggedOut() {
     return (
@@ -51,18 +52,20 @@ export default class Nav extends Component {
         }
 
         return (
-            <Navbar style={{ border: 'solid 1px #00D1B2', margin: '0' }}>
+            <Navbar>
+                <Container className="nav_container">
                 <NavbarBrand>
                     <NavbarItem exact href='/'><Title isSize={3}><Icon isSize="medium" className="fas fa-link" />  LinkedOut</Title></NavbarItem>
-                </NavbarBrand>
-                <NavbarMenu isActive={""} onClick={""}>
-                    <NavbarStart>
-                        <NavbarItem exact href='/'>Home</NavbarItem>
-                        <NavbarItem href='/about'>About</NavbarItem>
-                        <NavbarItem href='/viewall'>Browse Profiles</NavbarItem>
-                    </NavbarStart>
-                    {navBarEnd}
-                </NavbarMenu>
+                    </NavbarBrand>
+                    <NavbarMenu isActive={""} onClick={""}>
+                        <NavbarStart>
+                            <NavbarItem exact href='/'>Home</NavbarItem>
+                            <NavbarItem href='/about'>About</NavbarItem>
+                            <NavbarItem href='/viewall'>Browse Profiles</NavbarItem>
+                        </NavbarStart>
+                        {navBarEnd}
+                    </NavbarMenu>
+                </Container>
             </Navbar>
         )
     }
