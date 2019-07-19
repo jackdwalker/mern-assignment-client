@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Content, Title, Button, Media, MediaContent, MediaLeft, MediaRight, Image, Tag, Icon} from "bloomer"
 import "../../styles/viewall.scss"
 
-const ProfileEntry = () => {
+const ProfileEntry = (props) => {
   return (
             <Box className="profileList_entry">
               <Media>
@@ -12,7 +12,7 @@ const ProfileEntry = () => {
                 <MediaContent>
                     <Content>
                       <div>
-                        <Title isSize={4} className="profileList_name">Student Name</Title>
+                        <Title isSize={4} className="profileList_name">{props.name}</Title>
                         <Title isSize={6} className="profileList_gradType">Fast-Track Graduate</Title>
                       </div>
                         <p>
