@@ -1,21 +1,27 @@
 import React from 'react'
 import {Section, Container, Column, Title, Columns, Image, Content } from "bloomer"
+import about_image1 from "../../assets/undraw_code_typing_7jnv.svg"
+import about_image2 from "../../assets/undraw_selection_92i4.svg"
+import '../../styles/about.scss'
 
 const About = () => {
   return (
     <div>
+                  <div class="about_back_rect"></div>
+
       <Section>
-        <Container>
-        <Title isSize={2}>About this application</Title>
+
+        <Container className="about_container">
+        <Title isSize={2}>About Coder Academy</Title>
         </Container>
         <br/><br/>
   <Columns isCentered>
     <Column isSize='1/4' offset="2">
-<Image isRatio="4:3" src="https://via.placeholder.com/640x480" />
+<Image isRatio="4:3" src={about_image1} />
     </Column>
     <Column isSize='1/2'>
         <Content>
-          <Title isSize={2}>Heading 2</Title>
+          <Title isSize={2}>What we do</Title>
           <br/>
 Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.
 <br/><br/>
@@ -29,7 +35,7 @@ Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ul
   <Columns isCentered>
     <Column isSize='1/2'>
         <Content>
-          <Title isSize={2}>Heading 3</Title>
+          <Title isSize={2}>What we offer</Title>
           <br/>
 Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.
 <br/><br/>
@@ -38,7 +44,7 @@ Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ul
 </Content>
     </Column>
     <Column isSize='1/4' offset="2">
-<Image isRatio="4:3" src="https://via.placeholder.com/640x480" />
+<Image isRatio="4:3" src={about_image2} />
     </Column>
     
     </Columns>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { setState } from '../WithState'
-import { NavbarBrand, Navbar, NavbarItem, NavbarMenu, NavbarStart, NavbarEnd, Icon, Title, Container } from 'bloomer'
+import { NavbarBrand, Navbar, NavbarItem, NavbarMenu, NavbarStart, NavbarEnd, Icon, Title, Container, Button } from 'bloomer'
 import { api } from '../../studentAPI';
 import "../../styles/nav.scss"
 
@@ -8,7 +8,9 @@ function NavBarEndLoggedOut() {
     return (
         <NavbarEnd>
             <NavbarItem href='/login'>Login</NavbarItem>
-            <NavbarItem href='/signup'>Signup</NavbarItem>
+            <NavbarItem href='/signup'>
+                <Button className="signUpBttn">Sign Up</Button>
+            </NavbarItem>
         </NavbarEnd>
     )
 }
@@ -55,7 +57,9 @@ export default class Nav extends Component {
             <Navbar>
                 <Container className="nav_container">
                 <NavbarBrand>
-                    <NavbarItem exact href='/'><Title isSize={3}><Icon isSize="medium" className="fas fa-link" />  LinkedOut</Title></NavbarItem>
+                    <NavbarItem className="linkedOut_logo" exact href='/'>
+                        <Title isSize={3}><Icon isSize="medium" className="fas fa-link" />  LinkedOut</Title>
+                    </NavbarItem>
                     </NavbarBrand>
                     <NavbarMenu isActive={""} onClick={""}>
                         <NavbarStart>

@@ -21,8 +21,28 @@ $white: #ffffff;
   height:90px;
 }
 
-.nav_container{
-  width:70%;
-  background:pink;
+.navbar-item{
+  font-family: $raleway;
+  font-weight:700;
+}
+.navbar-item:hover{
+  background:none !important;
+  color:$coral !important;
+  transition: 0.3s ease-out;
 }
 
+.nav_container{
+  width:70%;
+}
+
+.signUpBttn{
+  background: $coral !important;
+  border:none !important;
+  color: $white !important;
+  font-family: $raleway;
+  font-weight:700;
+}
+.signUpBttn:hover{
+  background: $darkCoral !important;
+  color: $white;
+}

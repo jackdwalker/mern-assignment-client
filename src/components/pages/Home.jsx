@@ -10,8 +10,7 @@ import expect_image from "../../assets/undraw_online_friends_x73e.svg"
 const Home = () => {
     return (
         <div>
-                            <div className="bg_rect"></div>
-
+            <div className="bg_rect"></div>
             <Hero className="hero_full_contain" isSize='medium'>
                 <div className="hero_back_rect"></div>
                 <div className="hero_rectangle"></div>

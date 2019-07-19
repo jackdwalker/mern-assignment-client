@@ -1,4 +1,29 @@
 // Style for VIEW ALL PROFILES page
+
+$darkBlue: #2434a1;
+$medBlue: #356af1;
+$yellow: #ffc651;
+$pink: #ffcbc4;
+$coral: #ff6550;
+$darkCoral: #ec4731;
+$lightGrey: #e9e9e9;
+$medGrey: #eeeeee;
+$white: #ffffff;
+
+.profileList_backRect{
+  background: $yellow;
+  height:400px;
+  width: 1200px;
+  transform: rotate(-16deg);
+  border-radius:80px;
+  margin-top:-380px; 
+  margin-left:-50px;
+  position:absolute;
+}
+.profileList_container{
+  width:80%;
+  margin:auto;
+}
 .profileList_entry {}
 
 .profileList_image {}
@@ -30,4 +55,8 @@
 
 .profileList_viewProfileBttn {
   margin-bottom: auto;
+}
+
+h1.title{
+  padding-top:none;
 }
