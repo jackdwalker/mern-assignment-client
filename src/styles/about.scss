@@ -41,23 +41,23 @@ $deepBlue: #162380;
   z-index: -1;
   background-color: $yellow;
   width: 1000px;
-  height: 900px;
+  height: 850px;
   border-radius: 60px;
-  margin-top:100px;
-  position:absolute;
+  margin-top: 100px;
+  position: absolute;
   transform: rotate(-20deg);
   margin-left: 1000px;
 }
 
-.about_front_rect::after{
-  content:"";
-  width:90px;
-  height:90px;
+.about_front_rect::after {
+  content: "";
+  width: 90px;
+  height: 90px;
   background-color: $medGrey;
-  position:absolute;
+  position: absolute;
   border-radius: 30px;
   margin-top: 80px;
-  margin-left:-800px;
+  margin-left: -800px;
 }
 
 h1.about_headTitle {
