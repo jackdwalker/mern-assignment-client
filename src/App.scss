@@ -22,23 +22,17 @@ $white: #ffffff;
 // Overwrite Bulma global variables
 $widescreen-enabled: false;
 $fullhd-enabled: false;
-
-// Overwrite Bulma component variables
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
-// Import what is needed from Bulma
-@import '../node_modules/bulma/sass/utilities/_all.sass';
-@import '../node_modules/bulma/sass/base/_all.sass';
-@import '../node_modules/bulma/sass/elements/button.sass';
-@import '../node_modules/bulma/sass/elements/container.sass';
-@import '../node_modules/bulma/sass/form/_all.sass';
-@import '../node_modules/bulma/sass/elements/_all.sass';
-@import '../node_modules/bulma/sass/components/navbar.sass';
-@import '../node_modules/bulma/sass/layout/hero.sass';
-@import '../node_modules/bulma/sass/layout/section.sass';
-@import '../node_modules/bulma/sass/layout/footer.sass';
-@import '../node_modules/bulma/sass/grid/_all.sass';
-@import '../node_modules/bulma/sass/grid/columns.sass';
-@import '../node_modules/bulma/sass/grid/tiles.sass';
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";

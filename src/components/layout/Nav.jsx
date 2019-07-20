@@ -6,6 +6,7 @@ import "../../styles/nav.scss"
 
 function NavBarEndLoggedOut() {
     return (
+
         <NavbarEnd>
             <NavbarItem href='/login'>Login</NavbarItem>
             <NavbarItem href='/signup'>
@@ -25,7 +26,6 @@ class NavBarEndLoggedIn extends Component {
         .then(result => {
             localStorage.setItem('isLoggedIn', false)
             setState({ isLoggedIn: localStorage.getItem('isLoggedIn') })
-            window.location.reload()
         })
         .catch(err => {
             console.log(err.message)
@@ -52,7 +52,6 @@ export default class Nav extends Component {
         } else {
             navBarEnd = <NavBarEndLoggedOut />
         }
-
         return (
             <Navbar>
                 <Container className="nav_container">

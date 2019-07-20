@@ -1,3 +1,13 @@
+@import "../../node_modules/bulma/bulma.sass";
+
+$darkBlue: #2434a1;
+$medBlue: #356af1;
+$yellow: #ffc651;
+$pink: #ffcbc4;
+$coral: #ff6550;
+$lightGrey: #e9e9e9;
+$medGrey: #eeeeee;
+
 // Log In, Sign Up, Edit Profile (duplicates sign up)
 
 $raleway: "Raleway",
@@ -34,12 +44,14 @@ $white: #ffffff;
   height: 100vh;
 }
 
-.signupLeft, .editProfileLeft {
+.signupLeft,
+.editProfileLeft {
   width: 35%;
   height: 100vh;
 }
 
-.signupRight, .editProfileRight {
+.signupRight,
+.editProfileRight {
   background: white;
   width: 65%;
   min-height: 100vh;
@@ -57,7 +69,8 @@ $white: #ffffff;
   justify-content: center;
 }
 
-.signupBox, .editProfileBox {
+.signupBox,
+.editProfileBox {
   width: 660px;
   min-height: 100vh;
   padding-top: 50px;

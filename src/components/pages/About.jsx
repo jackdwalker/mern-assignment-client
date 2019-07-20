@@ -10,7 +10,6 @@ const About = () => {
                   <div class="about_back_rect"></div>
 
       <Section>
-
         <Container className="about_container">
         <Title isSize={2}>About Coder Academy</Title>
         </Container>
