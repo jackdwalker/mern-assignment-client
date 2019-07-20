@@ -7,13 +7,12 @@ const ProfileEntry = () => {
             <Box className="profileList_entry">
               <Media>
                 <MediaLeft>
-                    <Image className="profileList_image" isSize='128x128' src='https://via.placeholder.com/128x128' />
+                    <Image className="profileList_image" isSize='128x128' src="https://via.placeholder.com/128x128" />
                 </MediaLeft>
                 <MediaContent>
                     <Content className="profileList_content">
                       <div>
-                        <Title isSize={4} className="profileList_name">Ralph Plaschnick</Title>
-                        <Title isSize={6} className="profileList_gradType">Fast-Track Graduate</Title>
+                        <Title isSize={4} className="profileList_name">Student Name</Title>
                       </div>
                         <p className="profileList_blurb">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed eros quis est eleifend imperdiet(more) </p>

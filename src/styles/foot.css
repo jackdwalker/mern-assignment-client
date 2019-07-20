@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900|Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap");
+.footer {
+  padding-top: 80px;
+  background: #ffffff;
+  height: 400px !important;
+  background: #2434a1 !important;
+  color: #ffffff;
+}
+
+a.linkedOut_link,
+a.linkedOut_link:hover,
+a.linkedOut_link:active,
+a.linkedOut_link:visited,
+.newsLetter_label {
+  color: #ffffff;
+}
+
+.linkedOut_logo {
+  color: #162380;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.linkedOut_logo:hover {
+  color: #e9e9e9;
+}
+
+.footer > .container {
+  width: 80%;
+}
+
+.footerTitle,
+.newsLetter_label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.footerLink {
+  color: #eeeeee;
+  line-height: 2.6rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a.footerLink:hover {
+  color: #ffffff;
+}
+
+.submitBttn {
+  background-color: #ff6550 !important;
+  font-weight: 900;
+}
+
+.submitBttn:hover {
+  background-color: #ec4731 !important;
+}
+/*# sourceMappingURL=foot.css.map */

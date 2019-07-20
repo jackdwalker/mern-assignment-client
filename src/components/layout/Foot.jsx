@@ -6,7 +6,7 @@ const Foot = () => {
   return (
     <div>
       <Footer id='footer'>
-    <Container>
+    <Container className="footer_container">
 <Columns isCentered>
     <Column isSize='1/4'>
     <a className="linkedOut_link" href='/'>

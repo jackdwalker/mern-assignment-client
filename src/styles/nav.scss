@@ -26,14 +26,14 @@ $white: #ffffff;
   font-weight: 700;
 }
 
+div.nav_container {
+  background: pink;
+}
+
 .navbar-item:hover {
   background: none !important;
   color: $coral !important;
   transition: 0.3s ease-out;
-}
-
-.nav_container {
-  width: 70%;
 }
 
 .signUpBttn {

@@ -34,21 +34,22 @@ a.linkedOut_link:visited,
   color: $white;
 }
 
-.linkedOut_logo {
+h1.linkedOut_logo {
   color: $deepBlue;
   transition: 0.5s;
+  font-weight: 800;
 }
 
-.linkedOut_logo:hover {
+h1.linkedOut_logo:hover {
   color: $lightGrey;
 }
 
-.footer>.container {
+.footer_container {
   width: 80%;
 }
 
-.footerTitle,
-.newsLetter_label {
+h1.footerTitle,
+h1.newsLetter_label {
   font-family: $raleway;
   font-weight: 800;
   color: $white;

@@ -1,9 +1,8 @@
 import React from 'react'
-import { Section, Columns, Container, Column, Title, Button, PanelIcon, PanelBlock, PanelHeading, Panel, Control, Input} from "bloomer"
+import { Section, Columns, Container, Column, Title, Button, PanelIcon, PanelBlock, PanelHeading, Panel, Control, Input, Icon} from "bloomer"
 import "../../styles/viewall.scss"
 
 import ProfileEntry from "../layout/ProfileEntry"
-import PageIndex from "../layout/PageIndex"
 
 const ViewAll = () => {
   return (
@@ -16,32 +15,12 @@ const ViewAll = () => {
                     <Panel>
             <PanelHeading>Search Graduates</PanelHeading>
             <PanelBlock>
-                <Control hasIcons='left'>
+                <Control>
                     <Input isSize='small' placeholder='Search' />
                 </Control>
             </PanelBlock>
-            <PanelBlock isActive>
-                <PanelIcon className="fas fa-angle-double-right" />
-                Internships
-            </PanelBlock>
             <PanelBlock>
-                <PanelIcon className="fas fa-angle-double-right" />
-                Remote
-            </PanelBlock>
-            <PanelBlock>
-                <PanelIcon className="fas fa-angle-double-right" />
-                Contract
-            </PanelBlock>
-            <PanelBlock>
-                <PanelIcon className="fas fa-angle-double-right" />
-                Full-Time
-            </PanelBlock>
-            <PanelBlock>
-                <PanelIcon className="fas fa-angle-double-right" />
-                Part-Time
-            </PanelBlock>
-            <PanelBlock>
-                <Button isOutlined isFullWidth isColor='primary'> Reset Search Filters</Button>
+                <Button isOutlined isFullWidth isColor='primary'>Search</Button>
             </PanelBlock>
         </Panel>
           </Column>
