@@ -7,7 +7,7 @@ const Foot = () => {
   return (
     <div>
       <Footer id='footer'>
-    <Container>
+    <Container className='footer_container'>
 <Columns isCentered>
     <Column isSize='1/4'>
     <a className="linkedOut_link" href='/'>
@@ -22,7 +22,7 @@ const Foot = () => {
         <li><a className="footerLink" href="#">Browse Graduates</a></li>
         <li><a className="footerLink" href="#">Sign Up for Profile</a></li>
         <li><a className="footerLink" href="#">Log into Account</a></li>
-        <li><a className="footerLink" href="#">Terms & Conditions</a></li>
+        <li><a className="footerLink" href="#">Terms and Conditions</a></li>
     </ul>    
     </Column>
     <Column isSize='1/4'>
@@ -38,7 +38,7 @@ const Foot = () => {
 <Field>
     <Label className="newsLetter_label">Subscribe to Newsletter</Label>
     <Control>
-        <Input type="text" placeholder='Text Input' />
+        <Input type="text" placeholder='No spam, only quality graduates' />
     </Control>
         <br />  
         <Control>
