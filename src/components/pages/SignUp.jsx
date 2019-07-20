@@ -260,9 +260,9 @@ export default class SignUp extends Component {
                                     <Field>
                                         <Control>
                                             <Select name="fieldOfInterest" value={this.state.fieldOfInterest} onChange={this.handleSingleSelect}>
-                                                <option id="frontend" value="frontEnd">Front-end</option>
-                                                <option id="backend" value="backEnd">Back-end</option>
-                                                <option id="frontBack" value="both">I like both</option>
+                                                <option id="frontend" value="Front-End">Front-end</option>
+                                                <option id="backend" value="Back-End">Back-end</option>
+                                                <option id="frontBack" value="Front-End/Back-End">I like both</option>
                                             </Select>
                                         </Control>
                                     </Field>
@@ -277,14 +277,14 @@ export default class SignUp extends Component {
                                 <FieldBody>
                                     <div class="select is-multiple">
                                         <select multiple size="3" name="techStack" value={this.state.techStack} onChange={this.handleMultipleSelect}>
-                                            <option value="ruby">Ruby</option>
-                                            <option value="html">HTML</option>
-                                            <option value="css">CSS</option>
-                                            <option value="javascript">Javascript</option>
-                                            <option value="mongo">Mongo</option>
-                                            <option value="express">Express</option>
-                                            <option value="react">React</option>
-                                            <option value="node">Node</option>
+                                            <option value="Ruby">Ruby</option>
+                                            <option value="HTML">HTML</option>
+                                            <option value="CSS">CSS</option>
+                                            <option value="Javascript">Javascript</option>
+                                            <option value="Mongo">Mongo</option>
+                                            <option value="Express">Express</option>
+                                            <option value="React">React</option>
+                                            <option value="Node">Node</option>
                                         </select>
                                     </div>
                                 </FieldBody>
@@ -298,12 +298,12 @@ export default class SignUp extends Component {
                                 <FieldBody>
                                     <div class="select is-multiple">
                                         <select multiple size="3" name="seeking" value={this.state.seeking} onChange={this.handleMultipleSelect}>
-                                            <option value="internship">Internship</option>
-                                            <option value="fullTime">FT Onsite</option>
-                                            <option value="partTime">PT Onsite</option>
-                                            <option value="contract">Contract</option>
-                                            <option value="remote">Remote</option>
-                                            <option value="unavailable">Unavailable</option>
+                                            <option value="Internship">Internship</option>
+                                            <option value="Full Time">FT Onsite</option>
+                                            <option value="Part Time">PT Onsite</option>
+                                            <option value="Contract">Contract</option>
+                                            <option value="Remote">Remote</option>
+                                            <option value="Unavailable">Unavailable</option>
                                         </select>
                                     </div>
                                 </FieldBody>
