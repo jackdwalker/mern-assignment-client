@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../styles/profile.scss"
-import {Container, Columns, Column, Notification, Section, Tag, Box, Image, Icon, Content, Title, Button} from "bloomer"
+import {Container, Columns, Column, Section, Tag, Box, Image, Icon, Content, Title, Button} from "bloomer"
 import {Link} from "react-router-dom"
 
 const Profile = () => {
