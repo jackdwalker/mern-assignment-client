@@ -55,7 +55,7 @@ export default class Login extends Component {
                 <div className="loginRight">
                     <div className="loginBox">
                         <form onSubmit={this.handleSubmit}>
-                            <Title className="login_Title" isSize={3}>Sign into your account</Title>
+                            <Title className="login_Title" isSize={2}>Log in to your account</Title>
                             <br />
                             <Field>
                                 <Label>Email</Label>

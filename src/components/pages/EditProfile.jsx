@@ -1,17 +1,25 @@
 import React from 'react'
-import {Title, FieldBody, Radio, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button} from 'bloomer'
+import {Title, FieldBody, Radio, Icon, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button} from 'bloomer'
 import "../../styles/login.scss"
 
 const EditProfile = () => { 
   return (
 <div className="editProfileContainer" >
+    <div className="editProfile_back_rect"></div>
+    <div className="editProfile_front_rect"></div>
+    <div className="editProfile_haticon">
+        <Icon className="edit_wizardHat fas fa-hat-wizard fa-3x" />
+    </div>
+    <div className="editProfile_giticon">
+        <Icon className="edit_githubalt fab fa-github-alt fa-3x" />
+    </div>
     <div className="editProfileLeft">
     </div>
         <div className="editProfileRight">
         <div className="editProfileBox">
                     <div className="editProfile_rect"></div>
 
-        <Title className="editProfile_Title" isSize={3}>Edit Your Profile</Title>
+        <Title className="editProfile_Title" isSize={2}>Edit Your Profile</Title>
         <br/>
         
         {/* GIVEN NAMES */}
