@@ -78,7 +78,7 @@ $white: #ffffff;
   margin-left: 350px;
 }
 
-.fa-github {
+.signupgithub {
   transform: rotate(-20deg);
 }
 
@@ -104,10 +104,6 @@ $white: #ffffff;
   border-radius: 20px;
 }
 
-.signup_Title,
-.signup_blurb {
-  color: black !important;
-}
 
 .signUp_back_low_rect {
   z-index: -1;
@@ -143,6 +139,113 @@ $white: #ffffff;
   margin-left: 70px;
   background-color: $pink;
 
+}
+
+/* Log in rectangle */
+.login_back_rect {
+  position: absolute;
+  width: 1500px;
+  height: 900px;
+  background-color: $pink;
+  border-radius: 230px;
+  transform: rotate(-20deg);
+  z-index: -10;
+  margin-top: -680px;
+}
+
+.login_back_rect::before {
+  content: "";
+  position: absolute;
+  background-color: $darkBlue;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  margin-top: 870px;
+  margin-left: 980px;
+  z-index: -1;
+}
+
+.login_front_rect {
+  position: absolute;
+  width: 700px;
+  height: 600px;
+  background-color: $medGrey;
+  border-radius: 120px;
+  z-index: -10;
+  transform: rotate(-20deg);
+  margin-left: 900px;
+  margin-top: 300px;
+}
+
+.login_front_rect::before {
+  content: "";
+  background-color: $medBlue;
+  position: absolute;
+  margin-left: -220px;
+  margin-top: 140px;
+  width: 490px;
+  height: 500px;
+  border-radius: 120px;
+}
+
+.login_front_rect::after {
+  content: "";
+  background-color: $lightGrey;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  margin-left: -110px;
+}
+
+.login_gradcap {
+  background: $medGrey;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transform: rotate(-20deg);
+  position: absolute;
+  margin-top: 420px;
+  margin-left: 180px;
+}
+
+.login_gradcap::before {
+  content: "";
+  position: absolute;
+  background: $white;
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  margin-top: -150px;
+  margin-left: 160px;
+}
+
+.login_laptop {
+  background: $yellow;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  transform: rotate(-20deg);
+  margin-top: 500px;
+  margin-left: 300px;
+  position: absolute;
+}
+
+.loginGradCap,
+.loginLaptop {
+  color: $white;
+  transform: rotate(20deg);
+}
+
+.signup_Title,
+.signup_blurb {
+  color: black !important;
 }
 
 .signup_blurb {

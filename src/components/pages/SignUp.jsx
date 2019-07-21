@@ -85,7 +85,7 @@ export default class SignUp extends Component {
                 <div className="signUp_back_rect"></div>
                 <div className="signUp_back_low_rect"></div>
                 <div className="signup_small_rect">
-                    <Icon className="fab fa-github fa-4x" />
+                    <Icon className="signupgithub fab fa-github fa-4x" />
                 </div>
                 <div className="signupLeft">
 
