@@ -37,7 +37,7 @@ export default class ViewAll extends Component {
     } else {
       profileEntry = Array.from(this.state.studentData).map(student => <ProfileEntry studentData={student} />)
     }
-    
+
     return (
       <Section className="profileList_container" isCentered>
         <div className="profileList_backRect"></div>

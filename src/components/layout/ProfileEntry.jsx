@@ -55,7 +55,7 @@ export default class ProfileEntry extends Component {
                 {seeking}
               </div>
               <div className="profileList_viewProfile">
-                <Button className="profileList_viewProfileBttn" href="/profile">View Profile</Button>
+                <Button className="profileList_viewProfileBttn" studentData={this.props.studentData} href={'/profile/' + `${this.props.studentData._id}`}>View Profile</Button>
               </div>
             </MediaRight>
           </div>
