@@ -53,7 +53,7 @@ const Profile = () => {
             <span className="tag is-light">HTML</span>
           </div>
         <Title isSize={6}>Field of Interest</Title>
-                    <Tag isColor='light' isSize='medium'>Front-end</Tag>
+            <Tag isColor='light' isSize='medium'>Front-end</Tag>
       </Box>
     </Column>
     </Columns>

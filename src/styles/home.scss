@@ -58,19 +58,22 @@ p.hero_blurb {
   font-size: 1.2rem;
 }
 
-button.browseBttn {
+.browseBttn {
   top: 20px;
-  border: none;
-  background-color: $coral;
-  color: white;
-  font-weight: 600;
+  border: none !important;
+  background-color: $coral !important;
+  color: white !important;
+  font-weight: 700;
+  font-family: $raleway;
+  transition: 0.3s;
 }
 
-button.browseBttn:hover {
-  background-color: $darkCoral;
+.browseBttn:hover {
+  background-color: $darkCoral !important;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
 }
+
 
 .hero {
   overflow: hidden;

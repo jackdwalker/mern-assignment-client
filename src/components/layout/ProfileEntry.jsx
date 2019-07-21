@@ -13,7 +13,6 @@ const ProfileEntry = (props) => {
           <Content className="profileList_content">
             <div>
               <Title isSize={4} className="profileList_name">{props.studentData.name}</Title>
-              <Title isSize={6} className="profileList_gradType">Fast-Track Graduate</Title>
             </div>
             <p className="profileList_blurb">{props.studentData.bio.substring(0, 244)}...</p>
           </Content>
