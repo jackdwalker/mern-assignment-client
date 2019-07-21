@@ -243,15 +243,128 @@ $white: #ffffff;
   transform: rotate(20deg);
 }
 
-.signup_Title,
-.signup_blurb {
-  color: black !important;
+/* Edit Profile rectangles */
+
+.editProfile_back_rect {
+  background: $medBlue;
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  border-radius: 90px;
+  margin-left: -100px;
+  transform: rotate(-20deg);
+  z-index: -20;
+
+}
+
+.editProfile_back_rect::after {
+  content: "";
+  width: 700px;
+  height: 400px;
+  background: $darkBlue;
+  border-radius: 120px;
+  position: absolute;
+  margin-top: -120px;
+  margin-left: 100px;
+}
+
+
+.editProfile_back_rect::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: $pink;
+  border-radius: 14px;
+  position: absolute;
+  margin-top: 260px;
+  margin-left: 200px;
+  z-index: 1;
+}
+
+.editProfile_front_rect {
+  background: $pink;
+  width: 1200px;
+  height: 900px;
+  border-radius: 200px;
+  position: absolute;
+  z-index: -20;
+  margin-top: 600px;
+  margin-left: 400px;
+  transform: rotate(-20deg);
+}
+
+.editProfile_giticon {
+  background: $medGrey;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  position: absolute;
+  transform: rotate(-20deg);
+  margin-top: 440px;
+  margin-left: 350px;
+}
+
+.editProfile_giticon::before {
+  content: "";
+  position: absolute;
+  background: $lightGrey;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  margin-left: -280px;
+  margin-top: -70px;
+}
+
+.editProfile_haticon {
+  background: $yellow;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  position: absolute;
+  transform: rotate(-20deg);
+  margin-top: 550px;
+  margin-left: 520px;
+}
+
+.editProfile_haticon::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  background: $medGrey;
+  margin-top: -150px;
+}
+
+.editProfile_haticon::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+  background: $medGrey;
+  margin-top: -40px;
+  margin-left: -180px;
+}
+
+.edit_githubalt,
+.edit_wizardHat {
+  color: $white;
+  transform: rotate(20deg);
 }
 
 .signup_blurb {
   font-size: 1.2rem;
   font-family: $montserrat;
   font-weight: 100;
+  color: black !important;
+
 }
 
 .signupLeft {
@@ -278,6 +391,7 @@ h1.signup_Title,
 h1.login_Title {
   font-family: $raleway;
   font-weight: 800;
+  color: black;
 }
 
 .loginLeft {
@@ -368,7 +482,8 @@ textarea {
 }
 
 button.createProfileBttn,
-button.loginBttn {
+button.loginBttn,
+button.saveProfileBttn {
   background-color: $coral !important;
   transition: 0.3s;
   font-weight: 700;
@@ -377,19 +492,20 @@ button.loginBttn {
 }
 
 button.createProfileBttn:hover,
-button.loginBttn:hover {
+button.loginBttn:hover,
+button.saveProfileBttn:hover {
   background-color: $darkCoral !important;
 }
 
 button.deleteProfileBttn {
-  background-color: $yellow !important;
+  background-color: $medBlue !important;
   transition: 0.3s;
   font-weight: 700;
   font-family: $raleway;
 }
 
 button.deleteProfileBttn:hover {
-  background-color: #ea991a !important;
+  background-color: $darkBlue !important;
 }
 
 // Edit Profile
