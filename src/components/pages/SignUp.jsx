@@ -301,9 +301,9 @@ export default class SignUp extends Component {
                                     <Field>
                                         <Control>
                                             <Select name="location" value={this.state.location} onChange={this.handleSingleSelect}>
-                                                <option value="brisbane">Brisbane</option>
-                                                <option value="melbourne">Melbourne</option>
-                                                <option value="sydney">Sydney</option>
+                                                <option value="Brisbane">Brisbane</option>
+                                                <option value="Melbourne">Melbourne</option>
+                                                <option value="Sydney">Sydney</option>
                                             </Select>
                                         </Control>
                                     </Field>

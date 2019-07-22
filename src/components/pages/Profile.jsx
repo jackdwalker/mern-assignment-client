@@ -52,14 +52,65 @@ export default class Profile extends Component {
     }
 
     {/* Github Conditional Render */ }
+    let github
+
+    if (this.state.studentData.githubURL != '') {
+      github = 
+        <a className="profile_githubLink" href={this.state.studentData.githubURL}>
+          <Icon isSize="large" className="fab fa-github fa-2x" />
+        </a>
+    } else {
+      github = ''
+    }
 
     {/* Twitter Conditional Render */ }
+    let twitter
+
+    if (this.state.studentData.twitterURL != '') {
+      twitter = 
+        <a className="profile_twitterLink" href={this.state.studentData.twitterURL}>
+          <Icon isSize="large" className="fab fa-twitter fa-2x" />
+        </a>
+    } else {
+      twitter = ''
+    }
 
     {/* LinkedIn Conditional Render*/ }
+    let linkedIn
+
+    if (this.state.studentData.linkedInURL != '') {
+        linkedIn = 
+          <a className="profile_linkedInLink" href={this.state.studentData.linkedInURL}>
+            <Icon isSize="large" className="fab fa-linkedin-in fa-2x" />
+          </a> 
+    } else {
+      linkedIn = ''
+    }
 
     {/* Personal Website Conditional Render */ }
+    let personalWebsite
+
+    if (this.state.studentData.websiteURL != '') {
+      personalWebsite = 
+        <a className="profile_linkedInLink" href={this.state.studentData.websiteURL}>
+          <Icon isSize="large" className="fas fa-chevron-circle-right fa-2x" />
+        </a>  
+    } else {
+      personalWebsite = ''
+    }
 
     {/* Contact Email Conditional Render */ }
+
+    let email
+
+    if (this.state.studentData.email != '') {
+      email = 
+        <a className="profile_emailLink" href={`mailto:${this.state.studentData.email}`}>
+          <Icon isSize="large" className="fas fa-envelope-open-text fa-2x" />
+        </a>
+    } else {
+      email = ''
+    }
 
     {/* Whole Profile Conditional Rendering */ }
     let profile
@@ -73,26 +124,20 @@ export default class Profile extends Component {
           <div className="profile_frontrect"></div>
           <Columns isCentered>
             <Column isSize='1/4' offset="2">
-              <Gravatar md5={this.state.studentData.gravatar} size={640} />
+              <Gravatar className="profile_image" md5={this.state.studentData.gravatar} size={640} />
               <div>
-                <Title className="profile_name" isSize={3}>
-                  Student Name
-                </Title>
+                <Title className="profile_name" isSize={3}>{this.state.studentData.name}</Title>
+                <Title className="profile_location" isSize={5}>{this.state.studentData.location}</Title>
                 <Title isSize={6} className="profile_smalltitle">Seeking</Title>
                 <div className="tags are-medium profile_techGroup">
-                  <Tag isColor='light' isSize='medium'>Internship</Tag>
-                  <Tag isColor='light' isSize='medium'>Full Time</Tag>
+                  {seeking}
                 </div>
                 <div className="profile_linkGroup">
-                  <a className="profile_githubLink" href="http://www.github.com/rachelwong">
-                    <Icon isSize="large" className="fab fa-github fa-2x" />
-                  </a>
-                  <a className="profile_websiteLink" href="http://www.google.com">
-                    <Icon isSize="large" className="fas fa-chevron-circle-right fa-2x" />
-                  </a>
-                  <a className="profile_emailLink" href="mailto:hello.rachelwong@gmail.com">
-                    <Icon isSize="large" className="fas fa-envelope-open-text fa-2x" />
-                  </a>
+                  {personalWebsite}
+                  {github}
+                  {twitter}
+                  {linkedIn}
+                  {email}
                 </div>
               </div>
             </Column>
@@ -106,14 +151,10 @@ export default class Profile extends Component {
               <div>
                 <Title isSize={6} className="profile_smalltitle">Tech Stack</Title>
                 <div className="tags are-medium profile_techGroup">
-                  <span className="tag is-primary">Javascript</span>
-                  <span className="tag is-warning">Ruby</span>
-                  <span className="tag is-danger">Rails</span>
-                  <span className="tag is-light">CSS</span>
-                  <span className="tag is-light">HTML</span>
+                 {techStack}
                 </div>
                 <Title isSize={6} className="profile_smalltitle">Field of Interest</Title>
-                <Tag isColor='light' isSize='medium'>Front-end</Tag>
+                <Tag isColor='light' isSize='medium'>{this.state.studentData.fieldOfInterest}</Tag>
               </div>
             </Column>
           </Columns>
