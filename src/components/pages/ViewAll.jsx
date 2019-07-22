@@ -9,11 +9,10 @@ export default class ViewAll extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isLoading: true,
-      studentData: {}
-    }
-  }
-
+      isLoading: true,  
+      studentData: {}, 
+=    }
+  }  
   componentDidMount() {
     api.get('/students/all-students')
       .then(result => {
@@ -51,7 +50,7 @@ export default class ViewAll extends Component {
                   </Control>
                 </PanelBlock>
                 <PanelBlock>
-                  <Button className="searchBttn" isFullWidth isColor='primary'> Search</Button>
+                  <Button className="searchBttn" type="submit" isFullWidth isColor='primary'> Search</Button>
                 </PanelBlock>
               </Panel>
             </Column>

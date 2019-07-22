@@ -1,7 +1,7 @@
 import React from 'react';
 import WithState from './components/WithState'
 import './App.scss';
-import {BrowserRouter as Router, Route, Redirect, Switch} from "react-router-dom"
+import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom"
 import Nav from "./components/layout/Nav"
 import Foot from "./components/layout/Foot"
 import About from "./components/pages/About"
@@ -11,6 +11,7 @@ import LogIn from "./components/pages/Login"
 import ViewAll from "./components/pages/ViewAll"
 import Profile from "./components/pages/Profile"
 import EditProfile from "./components/pages/EditProfile"
+import Error from "./components/layout/Error"
 
 export default WithState(() => {
   return (
@@ -25,7 +26,7 @@ export default WithState(() => {
               <Route path="/viewall" component={ViewAll} />
               <Route path="/profile" component={Profile} />
               <Route path="/editprofile" component={EditProfile} />
-              <Redirect from="*" to="/" />
+              <Redirect from="*" to="/error"  componetn={Error}/>
             </Switch>
           </Router>
       <Foot />

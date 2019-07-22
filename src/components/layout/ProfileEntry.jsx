@@ -32,7 +32,7 @@ export default class ProfileEntry extends Component {
     <Box className="profileList_entry">
       <Media>
         <MediaLeft>
-          <Image className="profileList_image" isSize='128x128' src='https://via.placeholder.com/128x128' />
+          <Gravatar className="profileList_image" md5={this.props.studentData.gravatar} size={128}/>
         </MediaLeft>
         <MediaContent>
           <Content className="profileList_content">
