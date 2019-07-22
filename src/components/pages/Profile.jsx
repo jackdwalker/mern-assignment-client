@@ -28,6 +28,19 @@ export default class Profile extends Component {
   }
 
   render() {
+
+    {/* Seeking Status Conditional Rendering */}
+    let seeking
+
+    if (this.state.studentData.seeking) {
+      seeking = this.state.studentData.seeking.map(seeking =>
+        <Tag isColor='light' isSize='medium'>{seeking}</Tag>
+      )
+    } else {
+      seeking = ''
+    }
+
+    {/* Tech Stack Conditional Rendering*/}
     let techStack
 
     if (this.state.studentData.techStack) {
@@ -38,6 +51,17 @@ export default class Profile extends Component {
       techStack = ''
     }
 
+    {/* Github Conditional Render */}
+
+    {/* Twitter Conditional Render */}
+
+    {/* LinkedIn Conditional Render*/}
+
+    {/* Personal Website Conditional Render */}
+
+    {/* Contact Email Conditional Render */}
+
+    {/* Whole Profile Conditional Rendering */}
     let profile
 
     if (this.state.isLoading === 'true') {
@@ -57,8 +81,7 @@ export default class Profile extends Component {
                 <br />
                 <Title isSize={6}>Seeking</Title>
                 <div className="tags are-medium profile_techGroup">
-                  <Tag isColor='light' isSize='medium'>Internship</Tag>
-                  <Tag isColor='light' isSize='medium'>Full Time</Tag>
+                  {seeking} 
                 </div>
                 <div className="profile_linkGroup">
                   <a className="profile_githubLink" href={this.state.studentData.githubURL} target="_blank">
