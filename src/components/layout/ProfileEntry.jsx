@@ -28,43 +28,38 @@ export default class ProfileEntry extends Component {
       seeking = ''
     }
 
-  return (
-    <Box className="profileList_entry">
-      <Media>
-        <MediaLeft>
-          <Gravatar className="profileList_image" md5={this.props.studentData.gravatar} size={128}/>
-        </MediaLeft>
-        <MediaContent>
-          <Content className="profileList_content">
-            <div>
-              <Title isSize={4} className="profileList_name">{this.props.studentData.name}</Title>
-            </div>
-            <p className="profileList_blurb">{this.props.studentData.bio.substring(0, 244)}...</p>
-          </Content>
-          <div className="tags are-small profileList_tagGroup">
-            {this.props.studentData.techStack.map(language =>
-              <Tag className="is-rounded">{language}</Tag>
-            )}
-          </div>
-        </MediaContent>
-        <div className="profileList_right">
-          <MediaRight>
-            <div className="profileList_jobTypeList">
-              {this.props.studentData.seeking.map(seeking =>
-                <Title isSize={6} className="profileList_jobType">
-                  <Icon className="fas fa-check-circle" />
-                  <span>{seeking}</span>
-                </Title>
+    return (
+      <Box className="profileList_entry">
+        <Media>
+          <MediaLeft>
+            <Gravatar className="profileList_image" md5={this.props.studentData.gravatar} size={128} />
+          </MediaLeft>
+          <MediaContent>
+            <Content className="profileList_content">
+              <div>
+                <Title isSize={4} className="profileList_name">{this.props.studentData.name}</Title>
+              </div>
+              <p className="profileList_blurb">{this.props.studentData.bio.substring(0, 244)}...</p>
+            </Content>
+            <div className="tags are-small profileList_tagGroup">
+              {this.props.studentData.techStack.map(language =>
+                <Tag className="is-rounded">{language}</Tag>
               )}
             </div>
-            <div className="profileList_viewProfile">
-              <Button className="profileList_viewProfileBttn" href="/profile">View Profile</Button>
-            </div>
-          </MediaRight>
-        </div>
-      </Media>
-    </Box>
-  )
-}
+          </MediaContent>
+          <div className="profileList_right">
+            <MediaRight>
+              <div className="profileList_jobTypeList">
+                {seeking}
+              </div>
+              <div className="profileList_viewProfile">
+                <Button className="profileList_viewProfileBttn" studentData={this.props.studentData} href={'/profile/' + `${this.props.studentData._id}`}>View Profile</Button>
+              </div>
+            </MediaRight>
+          </div>
+        </Media>
+      </Box>
+    )
+  }
 
 }
