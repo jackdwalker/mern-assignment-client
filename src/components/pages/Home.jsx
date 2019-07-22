@@ -23,7 +23,7 @@ const Home = () => {
                         <Container hasTextAlign='centered'>
                             <Title className="hero_Title" isSize={1}>Coder Academy <br/>Talent Board</Title>
                             <p className="hero_blurb">Matching our Graduates of <br/>Fast-track and Gen-Tech Diplomas <br/>with Internship opportunities <br/>in Brisbane, Melbourne and Sydney</p>
-                            <Button isSize={"medium"} className='browseBttn'>Start Browsing</Button>
+                            <Button isSize={"medium"} className='browseBttn' href="/viewall">Start Browsing</Button>
                         </Container>
                     </Column>
                     <Column isSize='1/2'></Column>
