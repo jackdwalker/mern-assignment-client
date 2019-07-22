@@ -39,7 +39,7 @@ export default class ProfileEntry extends Component {
               <div>
                 <Title isSize={4} className="profileList_name">{this.props.studentData.name}</Title>
               </div>
-              <p className="profileList_blurb">{this.props.studentData.bio.substring(0, 244)}...</p>
+              <p className="profileList_blurb">{bio}</p>
             </Content>
             <div className="tags are-small profileList_tagGroup">
               {this.props.studentData.techStack.map(language =>
