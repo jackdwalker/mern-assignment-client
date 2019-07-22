@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Section, Columns, Container, Column, Title, Button, PanelIcon, PanelBlock, PanelHeading, Panel, Control, Input } from "bloomer"
+import { Section, Columns, Container, Column, Title, Button, PanelBlock, PanelHeading, Panel, Control, Input } from "bloomer"
 import "../../styles/viewall.scss"
 import { api } from '../../studentAPI'
 
@@ -11,7 +11,7 @@ export default class ViewAll extends Component {
     this.state = {
       isLoading: true,  
       studentData: {}, 
-=    }
+   }
   }  
   componentDidMount() {
     api.get('/students/all-students')

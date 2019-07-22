@@ -1,0 +1,35 @@
+$raleway: "Raleway",
+sans-serif;
+$montserrat: "Montserrat",
+sans-serif;
+
+$darkBlue: #2434a1;
+$medBlue: #356af1;
+$yellow: #ffc651;
+$pink: #ffcbc4;
+$coral: #ff6550;
+$darkCoral: #ec4731;
+$lightGrey: #e9e9e9;
+$medGrey: #eeeeee;
+$white: #ffffff;
+
+.unauthorised_container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+
+  .notify_image {
+    width: 50%;
+    margin: auto;
+  }
+
+  .unauthorised_title {
+    font-family: $raleway;
+    color: black;
+    font-weight: 900;
+  }
+
+  .unauthorised_title:nth-child(2) {
+    font-weight: 600;
+  }
+}

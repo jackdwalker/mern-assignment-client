@@ -11,7 +11,8 @@ import LogIn from "./components/pages/Login"
 import ViewAll from "./components/pages/ViewAll"
 import Profile from "./components/pages/Profile"
 import EditProfile from "./components/pages/EditProfile"
-import Error from "./components/layout/Error"
+import Error from "./components/pages/Error"
+import Unauthorised from "./components/pages/Unauthorised"
 
 export default WithState(() => {
   return (
@@ -26,7 +27,8 @@ export default WithState(() => {
               <Route path="/viewall" component={ViewAll} />
               <Route path="/profile" component={Profile} />
               <Route path="/editprofile" component={EditProfile} />
-              <Redirect from="*" to="/error"  componetn={Error}/>
+              <Route path="/401" component={Unauthorised} />
+              <Route path="/*" component={Error} />
             </Switch>
           </Router>
       <Foot />
