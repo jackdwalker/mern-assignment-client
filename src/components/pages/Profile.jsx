@@ -1,24 +1,22 @@
 import React from 'react'
 import "../../styles/profile.scss"
-import {Container, Columns, Column, Section, Tag, Box, Image, Icon, Content, Title, Button} from "bloomer"
+import { Columns, Column, Section, Tag, Image, Icon, Content, Title, Button} from "bloomer"
 import {Link} from "react-router-dom"
 
 const Profile = () => {
   return (
     <div>
-      <Section>
-        <Columns isCentered>
-        </Columns>
+      <Section className="profile_Container">
+        <div className="profile_backrect"></div>
+        <div className="profile_frontrect"></div>
   <Columns isCentered>
     <Column isSize='1/4' offset="2">
-      <Image isRatio="4:3" src="https://via.placeholder.com/640x480" />
-      <Box style={{marginTop: "20px"}}>
-        <Title isSize={4}>
+      <Image className="profile_image" isRatio="4:3" src="https://via.placeholder.com/640x480" />
+      <div>
+        <Title className="profile_name" isSize={3}>
           Student Name
           </Title>
-          <p className="profile_GraduateDate">Graduated: 24/10/2019</p>
-          <br/>
-        <Title isSize={6}>Seeking</Title>
+        <Title isSize={6} className="profile_smalltitle">Seeking</Title>
           <div className="tags are-medium profile_techGroup">
             <Tag isColor='light' isSize='medium'>Internship</Tag>
             <Tag isColor='light' isSize='medium'>Full Time</Tag>
@@ -34,17 +32,17 @@ const Profile = () => {
               <Icon isSize="large" className="fas fa-envelope-open-text fa-2x" />
             </a>
           </div>
-      </Box>
+      </div>
     </Column>
     <Column isSize='1/2'>
-        <Content>
+        <Content className="profile_bio">
             <p>Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget ipsum sagittis, malesuada ligula a, placerat dui. Nullam venenatis mauris vitae erat hendrerit, in condimentum diam varius. Praesent in rutrum augue, a eleifend odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc sed ligula id dui luctus pharetra. Praesent porttitor orci eu dolor dapibus, non dignissim dolor tincidunt. Cras pharetra placerat urna ac vestibulum. In hac habitasse platea dictumst. Praesent gravida facilisis hendrerit.</p>
         </Content>
     </Column>
     <Column isSize='1/4'>
-      <Box>
-        <Title isSize={6}>Tech Stack</Title>
+      <div>
+        <Title isSize={6} className="profile_smalltitle">Tech Stack</Title>
           <div className="tags are-medium profile_techGroup">
             <span className="tag is-primary">Javascript</span>
             <span className="tag is-warning">Ruby</span>
@@ -52,9 +50,9 @@ const Profile = () => {
             <span className="tag is-light">CSS</span>
             <span className="tag is-light">HTML</span>
           </div>
-        <Title isSize={6}>Field of Interest</Title>
-            <Tag isColor='light' isSize='medium'>Front-end</Tag>
-      </Box>
+        <Title isSize={6} className="profile_smalltitle">Field of Interest</Title>
+          <Tag isColor='light' isSize='medium'>Front-end</Tag>
+      </div>
     </Column>
     </Columns>
 </Section>
