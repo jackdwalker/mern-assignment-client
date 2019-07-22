@@ -16,6 +16,7 @@ const Profile = () => {
         <Title className="profile_name" isSize={3}>
           Student Name
           </Title>
+        <Title className="profile_location" isSize={5}>A Location</Title>
         <Title isSize={6} className="profile_smalltitle">Seeking</Title>
           <div className="tags are-medium profile_techGroup">
             <Tag isColor='light' isSize='medium'>Internship</Tag>

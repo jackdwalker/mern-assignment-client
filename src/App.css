@@ -11669,7 +11669,7 @@ label.panel-block:hover {
 }
 
 .delete::before, .modal-close::before, .delete::after, .modal-close::after {
-  background-color: white;
+  background-color: #ffffff;
   content: "";
   display: block;
   left: 50%;
