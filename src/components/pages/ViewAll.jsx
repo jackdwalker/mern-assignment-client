@@ -11,8 +11,16 @@ export default class ViewAll extends Component {
     this.state = {
       isLoading: true,  
       studentData: {}, 
+      filter: ""
    }
   }  
+
+  updateFilter = (event) => {
+    this.setState({
+      filter: event.target.value
+    })
+  }
+
   componentDidMount() {
     api.get('/students/all-students')
       .then(result => {
@@ -31,6 +39,10 @@ export default class ViewAll extends Component {
 
     if (this.state.isLoading === 'true') {
       profileEntry = <p>Not Loaded</p>
+    } else if (this.state.filter != '') {
+      let regexp = new RegExp(this.state.filter, 'i')
+      let filteredResults = Array.from(this.state.studentData).filter(student => regexp.test(Object.values(student)))
+      profileEntry = filteredResults.map(student => <ProfileEntry studentData={student} />)
     } else {
       profileEntry = Array.from(this.state.studentData).map(student => <ProfileEntry studentData={student} />)
     }
@@ -46,7 +58,8 @@ export default class ViewAll extends Component {
                 <PanelHeading>Search Graduates</PanelHeading>
                 <PanelBlock>
                   <Control hasIcons='left'>
-                    <Input isSize='small' placeholder='Name, keywords, tech stack' />
+                    <Input isSize='small' placeholder='Name, keywords, tech stack' value={this.state.filter}
+                    onChange={this.updateFilter} />
                   </Control>
                 </PanelBlock>
                 <PanelBlock>
