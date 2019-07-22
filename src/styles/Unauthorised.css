@@ -1,0 +1,21 @@
+.unauthorised_container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.unauthorised_container .notify_image {
+  width: 50%;
+  margin: auto;
+}
+
+.unauthorised_container .unauthorised_title {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-weight: 900;
+}
+
+.unauthorised_container .unauthorised_title:nth-child(2) {
+  font-weight: 600;
+}
+/*# sourceMappingURL=Unauthorised.css.map */

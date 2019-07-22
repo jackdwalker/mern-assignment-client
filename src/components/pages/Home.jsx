@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Hero, HeroBody, Title, Section, Columns, Column, Card, CardImage, CardContent, Content, Image, Media, Button, MediaLeft, MediaContent } from 'bloomer'
+import { Container, Hero, HeroBody, Title, Section, Columns, Column, Card, CardImage, CardContent, Content, Image, Button } from 'bloomer'
 import '../../styles/home.scss'
 
 import local_devs_image from "../../assets/undraw_landing_page_q6hh.svg"
@@ -23,7 +23,7 @@ const Home = () => {
                         <Container hasTextAlign='centered'>
                             <Title className="hero_Title" isSize={1}>Coder Academy <br/>Talent Board</Title>
                             <p className="hero_blurb">Matching our Graduates of <br/>Fast-track and Gen-Tech Diplomas <br/>with Internship opportunities <br/>in Brisbane, Melbourne and Sydney</p>
-                            <Button isSize={"medium"} className='browseBttn'>Start Browsing</Button>
+                            <Button isSize={"medium"} className='browseBttn' href="/viewall">Start Browsing</Button>
                         </Container>
                     </Column>
                     <Column isSize='1/2'></Column>

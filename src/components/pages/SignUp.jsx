@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { setState } from '../WithState'
 import { api } from '../../studentAPI'
-import { Title, FieldBody, Radio, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button } from 'bloomer'
+import { Title, Icon, FieldBody, Radio, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button } from 'bloomer'
 import { thisExpression } from '@babel/types';
 import "../../styles/login.scss"
 
@@ -82,11 +82,20 @@ export default class SignUp extends Component {
     render() {
         return (
             <div className="signupContainer" >
+                <div className="signUp_back_rect"></div>
+                <div className="signUp_back_low_rect"></div>
+                <div className="signup_small_rect">
+                    <Icon className="signupgithub fab fa-github fa-4x" />
+                </div>
                 <div className="signupLeft">
+
                 </div>
                 <div className="signupRight">
                     <div className="signupBox">
-                        <Title className="signup_Title" isSize={4}>Create a Graduate Profile</Title>
+                                            <div className="signup_title_container">
+                     <Title className="signup_Title" isSize={2}>Create a Graduate Profile</Title>
+                     <p className="signup_blurb">Showcase your best work with the other Coder Academy cohorts</p>
+                     </div>
                         <br />
                         <form onSubmit={this.handleSubmit}>
 
@@ -319,7 +328,7 @@ export default class SignUp extends Component {
                             {/* SUBMIT BUTTON */}
                             <Field isGrouped>
                                 <Control>
-                                    <Button isColor='primary' type="submit">Create Profile</Button>
+                                    <Button isColor='primary' className="createProfileBttn" type="submit">Create Profile</Button>
                                 </Control>
                             </Field>
 

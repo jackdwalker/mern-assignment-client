@@ -7,7 +7,6 @@ export default class ProfileEntry extends Component {
   constructor(props) {
     super(props)
   }
-
   render() {
     let bio
 
@@ -33,15 +32,14 @@ export default class ProfileEntry extends Component {
       <Box className="profileList_entry">
         <Media>
           <MediaLeft>
-            <Gravatar className="profileList_image" md5={this.props.studentData.gravatar} size={128}/>
+            <Gravatar className="profileList_image" md5={this.props.studentData.gravatar} size={128} />
           </MediaLeft>
           <MediaContent>
             <Content className="profileList_content">
               <div>
                 <Title isSize={4} className="profileList_name">{this.props.studentData.name}</Title>
-                <Title isSize={6} className="profileList_gradType">Fast-Track Graduate</Title>
               </div>
-              <p className="profileList_blurb">{bio}</p>
+              <p className="profileList_blurb">{this.props.studentData.bio.substring(0, 244)}...</p>
             </Content>
             <div className="tags are-small profileList_tagGroup">
               {this.props.studentData.techStack.map(language =>
@@ -63,4 +61,5 @@ export default class ProfileEntry extends Component {
       </Box>
     )
   }
+
 }

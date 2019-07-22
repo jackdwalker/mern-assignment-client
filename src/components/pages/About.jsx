@@ -7,11 +7,11 @@ import '../../styles/about.scss'
 const About = () => {
   return (
     <div>
-                  <div class="about_back_rect"></div>
-
       <Section>
+          <div className="about_back_rect"></div>
+          <div className='about_front_rect'></div>
         <Container className="about_container">
-        <Title isSize={2}>About Coder Academy</Title>
+        <Title className="about_headTitle" isSize={2}>About Coder Academy</Title>
         </Container>
         <br/><br/>
   <Columns isCentered>

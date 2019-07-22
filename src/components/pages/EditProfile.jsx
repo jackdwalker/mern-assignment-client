@@ -1,17 +1,25 @@
 import React from 'react'
-import {Title, FieldBody, Radio, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button} from 'bloomer'
+import {Title, FieldBody, Radio, Icon, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button} from 'bloomer'
 import "../../styles/login.scss"
 
 const EditProfile = () => { 
   return (
 <div className="editProfileContainer" >
+    <div className="editProfile_back_rect"></div>
+    <div className="editProfile_front_rect"></div>
+    <div className="editProfile_haticon">
+        <Icon className="edit_wizardHat fas fa-hat-wizard fa-3x" />
+    </div>
+    <div className="editProfile_giticon">
+        <Icon className="edit_githubalt fab fa-github-alt fa-3x" />
+    </div>
     <div className="editProfileLeft">
     </div>
         <div className="editProfileRight">
         <div className="editProfileBox">
                     <div className="editProfile_rect"></div>
 
-        <Title className="editProfile_Title" isSize={3}>Edit Your Profile</Title>
+        <Title className="editProfile_Title" isSize={2}>Edit Your Profile</Title>
         <br/>
         
         {/* GIVEN NAMES */}
@@ -137,31 +145,6 @@ const EditProfile = () => {
                         <TextArea className="editProfileInput" placeholder='Your goals, achievements in the course, what you are interested in, the direction you want to take your career' />
                     </Control>
                 </Field>
-            </FieldBody>
-        </Field>
-
-        {/* UPLOAD IMAGE FILE */}
-        <Field isHorizontal>
-            <FieldLabel isNormal>
-                <Label>Photo: </Label>
-            </FieldLabel>
-            <FieldBody>
-            <div class="file has-name">
-                <label class="file-label">
-                    <input class="file-input" type="file" name="resume" />
-                    <span class="file-cta">
-                        <span class="file-icon">
-                            <i class="fas fa-upload"></i>
-                        </span>
-                        <span class="file-label">
-                            Select JPG / PNG
-                        </span>
-                    </span>
-                    <span class="file-name">
-                        filename.png
-                    </span>
-                </label>
-                </div>
             </FieldBody>
         </Field>
 
