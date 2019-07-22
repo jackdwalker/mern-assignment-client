@@ -37,12 +37,12 @@ export default class ProfileEntry extends Component {
         <MediaContent>
           <Content className="profileList_content">
             <div>
-              <Title isSize={4} className="profileList_name">{props.studentData.name}</Title>
+              <Title isSize={4} className="profileList_name">{this.props.studentData.name}</Title>
             </div>
-            <p className="profileList_blurb">{props.studentData.bio.substring(0, 244)}...</p>
+            <p className="profileList_blurb">{this.props.studentData.bio.substring(0, 244)}...</p>
           </Content>
           <div className="tags are-small profileList_tagGroup">
-            {props.studentData.techStack.map(language =>
+            {this.props.studentData.techStack.map(language =>
               <Tag className="is-rounded">{language}</Tag>
             )}
           </div>
@@ -50,7 +50,7 @@ export default class ProfileEntry extends Component {
         <div className="profileList_right">
           <MediaRight>
             <div className="profileList_jobTypeList">
-              {props.studentData.seeking.map(seeking =>
+              {this.props.studentData.seeking.map(seeking =>
                 <Title isSize={6} className="profileList_jobType">
                   <Icon className="fas fa-check-circle" />
                   <span>{seeking}</span>
@@ -62,6 +62,9 @@ export default class ProfileEntry extends Component {
             </div>
           </MediaRight>
         </div>
-    )
-  }
+      </Media>
+    </Box>
+  )
+}
+
 }
