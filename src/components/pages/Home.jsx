@@ -19,14 +19,12 @@ const Home = () => {
                 <HeroBody>
                 <Container className="hero_container">
                 <Columns>
-                    <Column isSize='1/2'>
-                        <Container hasTextAlign='centered'>
-                            <Title className="hero_Title" isSize={1}>Coder Academy <br/>Talent Board</Title>
+                    <Column className="hero_leftCol" isSize='1/2'>
+                            <Title hasTextAlign='centered' className="hero_Title" isSize={1}>Coder Academy <br/>Talent Board</Title>
                             <p className="hero_blurb">Matching our Graduates of <br/>Fast-track and Gen-Tech Diplomas <br/>with Internship opportunities <br/>in Brisbane, Melbourne and Sydney</p>
                             <Button isSize={"medium"} className='browseBttn' href="/viewall">Start Browsing</Button>
-                        </Container>
                     </Column>
-                    <Column isSize='1/2'></Column>
+                    <Column className="hero_rightCol" isSize='1/2'></Column>
                 </Columns>
                 </Container>
                 </HeroBody>
