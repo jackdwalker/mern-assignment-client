@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { setState } from '../WithState'
-import { NavbarBrand, Navbar, NavbarItem, NavbarMenu, NavbarStart, NavbarEnd, Icon, Title, Container, Button } from 'bloomer'
+import { NavbarBrand, Navbar, NavbarItem, NavbarMenu, NavbarStart, NavbarEnd,NavbarBurger, Icon, Title, Container, Button } from 'bloomer'
 import { api } from '../../studentAPI';
 import "../../styles/nav.scss"
 
@@ -43,10 +43,8 @@ class NavBarEndLoggedIn extends Component {
 }
 
 export default class Nav extends Component {
-
     render() {
         let navBarEnd
-
         if (localStorage.getItem('isLoggedIn') === 'true') {
             navBarEnd = <NavBarEndLoggedIn />
         } else {
@@ -60,6 +58,7 @@ export default class Nav extends Component {
                         <Title isSize={3}><Icon isSize="medium" className="fas fa-link" />  LinkedOut</Title>
                     </NavbarItem>
                     </NavbarBrand>
+                    {/* <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} /> */}
                     <NavbarMenu isActive={""} onClick={""}>
                         <NavbarStart>
                             <NavbarItem exact href='/'>Home</NavbarItem>

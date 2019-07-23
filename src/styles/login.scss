@@ -519,7 +519,7 @@ button.deleteProfileBttn:hover {
   margin-top: -800px;
 }
 
-/*********** MEDIUM [TABLET] SCREEN SIZE ***************/
+/*************** MEDIUM [TABLET] SCREEN SIZE ***************/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
   .loginLeft,
@@ -545,7 +545,6 @@ button.deleteProfileBttn:hover {
   }
 
   .signupBox>form {
-    margin: auto !important;
     width: 80%;
   }
 
@@ -560,7 +559,11 @@ button.deleteProfileBttn:hover {
 
   select {
     width: 600px !important;
-    font-size: 1.2rem !important; 
+    font-size: 1.2rem !important;
+  }
+
+  input.loginInput {
+    width: 100%;
   }
 
   .control {
@@ -569,7 +572,8 @@ button.deleteProfileBttn:hover {
 
   .createProfileBttn,
   .saveProfileBttn,
-  .deleteProfileBttn {
+  .deleteProfileBttn,
+  .loginBttn {
     width: 100%;
     height: 60px;
     font-size: 1.4rem;
@@ -583,7 +587,7 @@ button.deleteProfileBttn:hover {
   }
 
   label {
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -596,5 +600,4 @@ button.deleteProfileBttn:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
-
 }
