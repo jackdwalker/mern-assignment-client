@@ -79,27 +79,13 @@ h1.profile_name {
 
 }
 
-.profile_techGroup {}
-
-.profile_linkGroup {}
-
-.profile_githubLink,
-.profile_websiteLink,
-.profile_emailLink {
+.profile_iconLink {
   color: black;
 }
 
-.profile_githubLink:hover,
-.profile_websiteLink:hover,
-.profile_emailLink:hover {
+.profile_iconLink:hover {
   color: $darkBlue;
 }
-
-.profile_websiteLink {}
-
-.profile_emailLink {}
-
-.profile_techGroup {}
 
 .profile_bio {
   font-size: 1.04rem;
