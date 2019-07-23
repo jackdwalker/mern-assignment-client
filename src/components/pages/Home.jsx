@@ -32,7 +32,7 @@ const Home = () => {
             <br /><br />
             <Section>
                 <Columns isCentered>
-                    <Column isSize='1/4'>
+                    <Column className="home_card" isSize='1/4'>
                         <Card>
                             <CardImage>
                             <Image isRatio="3:2" src={local_devs_image} />
@@ -44,7 +44,7 @@ const Home = () => {
                             </CardContent>
                         </Card>
                     </Column>
-                    <Column isSize='1/4'>
+                    <Column className="home_card" isSize='1/4'>
                         <Card>
                             <CardImage>
                                 <Image isRatio="3:2" src={jobReady_image} />
@@ -55,7 +55,7 @@ const Home = () => {
                                     Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies. Duis ut molestie metus, in fermentum nulla. Vivamus ac porttitor magna. In ultrices aliquam placerat. Nam mattis nunc turpis.        </Content>
                             </CardContent>
                         </Card>          </Column>
-                    <Column isSize='1/4'>
+                    <Column className="home_card" isSize='1/4'>
                         <Card>
                             <CardImage>
                                 <Image isRatio="3:2" src={joinNetwork_image} />
