@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "../../styles/profile.scss"
-import { Columns, Column, Section, Tag, Image, Icon, Content, Title, Button } from "bloomer"
+import { Columns, Column, Section, Tag, Icon, Content, Title } from "bloomer"
 import { api } from '../../studentAPI'
 import Gravatar from 'react-gravatar'
 
@@ -56,7 +56,7 @@ export default class Profile extends Component {
 
     if (this.state.studentData.githubURL != '') {
       github = 
-        <a className="profile_githubLink" href={this.state.studentData.githubURL}>
+        <a className="profile_iconLink" href={this.state.studentData.githubURL}>
           <Icon isSize="large" className="fab fa-github fa-2x" />
         </a>
     } else {
@@ -68,7 +68,7 @@ export default class Profile extends Component {
 
     if (this.state.studentData.twitterURL != '') {
       twitter = 
-        <a className="profile_twitterLink" href={this.state.studentData.twitterURL}>
+        <a className="profile_iconLink" href={this.state.studentData.twitterURL}>
           <Icon isSize="large" className="fab fa-twitter fa-2x" />
         </a>
     } else {
@@ -80,7 +80,7 @@ export default class Profile extends Component {
 
     if (this.state.studentData.linkedInURL != '') {
         linkedIn = 
-          <a className="profile_linkedInLink" href={this.state.studentData.linkedInURL}>
+          <a className="profile_iconLink" href={this.state.studentData.linkedInURL}>
             <Icon isSize="large" className="fab fa-linkedin-in fa-2x" />
           </a> 
     } else {
@@ -89,11 +89,10 @@ export default class Profile extends Component {
 
     {/* Personal Website Conditional Render */ }
     let personalWebsite
-
     if (this.state.studentData.websiteURL != '') {
       personalWebsite = 
-        <a className="profile_linkedInLink" href={this.state.studentData.websiteURL}>
-          <Icon isSize="large" className="fas fa-chevron-circle-right fa-2x" />
+        <a className="profile_iconLink" href={this.state.studentData.websiteURL}>
+          <Icon isSize="large" className="fas fa-code fa-2x" />
         </a>  
     } else {
       personalWebsite = ''
@@ -105,7 +104,7 @@ export default class Profile extends Component {
 
     if (this.state.studentData.email != '') {
       email = 
-        <a className="profile_emailLink" href={`mailto:${this.state.studentData.email}`}>
+        <a className="profile_iconLink" href={`mailto:${this.state.studentData.email}`}>
           <Icon isSize="large" className="fas fa-envelope-open-text fa-2x" />
         </a>
     } else {

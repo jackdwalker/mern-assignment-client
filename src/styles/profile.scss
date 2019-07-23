@@ -17,6 +17,16 @@ $lightGrey: #e9e9e9;
 $medGrey: #eeeeee;
 $white: #ffffff;
 
+/** Tech Stack Colours */
+$tag_html: #1c1b1d;
+$tag_css: $medGrey;
+$tag_ruby: #f7529e;
+$tag_javascript:#efbd3e;
+$tag_react: #8e42fb;
+$tag_express: #38caf7;
+$tag_node: $darkBlue;
+$tag_mongo: #2cbf66;
+
 .profile_Container {
   z-index: 20;
   width: 80% !important;
@@ -26,7 +36,7 @@ $white: #ffffff;
 .profile_backrect {
   width: 600px;
   height: 200px;
-  border-radius: 60px;
+  border-radius: 290px;
   background: $medGrey;
   z-index: -12;
   position: absolute;
@@ -79,29 +89,56 @@ h1.profile_name {
 
 }
 
-.profile_techGroup {}
-
-.profile_linkGroup {}
-
-.profile_githubLink,
-.profile_websiteLink,
-.profile_emailLink {
+.profile_iconLink {
   color: black;
 }
 
-.profile_githubLink:hover,
-.profile_websiteLink:hover,
-.profile_emailLink:hover {
+.profile_iconLink:hover {
   color: $darkBlue;
 }
-
-.profile_websiteLink {}
-
-.profile_emailLink {}
-
-.profile_techGroup {}
 
 .profile_bio {
   font-size: 1.04rem;
   padding: 0 20px 0 20px;
+}
+
+.cssTag {
+  background: $tag_css;
+  color: black;
+}
+
+.htmlTag {
+  background: $tag_html;
+  color: white;
+}
+
+.javascriptTag {
+  background: $tag_javascript;
+  color: white;
+}
+
+.mongoTag {
+  background: $tag_mongo;
+  color: black;
+}
+
+.expressTag {
+  background: $tag_express;
+  color: white;
+}
+
+.nodeTag {
+  background: $tag_node;
+  color: white;
+
+}
+
+.rubyTag {
+  background: $tag_ruby;
+  color: black;
+}
+
+.reactTag {
+  background: $tag_react;
+  color: white;
 }

@@ -518,3 +518,68 @@ button.deleteProfileBttn:hover {
   transform: rotate(-20deg);
   margin-top: -800px;
 }
+
+/*********** MEDIUM [TABLET] SCREEN SIZE ***************/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  .loginLeft,
+  .signupLeft {
+    display: none;
+  }
+
+  .loginRight,
+  .signupRight {
+    width: 100% !important;
+  }
+
+  .signupBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .signupBox>form {
+    margin: auto !important;
+    width: 80%;
+  }
+
+  .field {
+    width: 100%;
+  }
+
+  .field-body {
+    width: 100% !important;
+
+  }
+
+  select {
+    width: 600px !important;
+    font-size: 1rem !important;
+  }
+
+  .control {
+    width: 100%;
+  }
+
+  .createProfileBttn {
+    width: 100%;
+    height: 60px;
+    font-size: 1.4rem;
+  }
+}
+
+/************ SMALLEST [MOBILE] SCREEN SIZE *************/
+@media only screen and (max-width: 400px) {
+
+  .loginRight,
+  .signupRight {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
