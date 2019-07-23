@@ -523,12 +523,14 @@ button.deleteProfileBttn:hover {
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
   .loginLeft,
-  .signupLeft {
+  .signupLeft,
+  .editProfileLeft {
     display: none;
   }
 
   .loginRight,
-  .signupRight {
+  .signupRight,
+  .editProfileRight {
     width: 100% !important;
   }
 
@@ -558,17 +560,30 @@ button.deleteProfileBttn:hover {
 
   select {
     width: 600px !important;
-    font-size: 1rem !important;
+    font-size: 1.2rem !important; 
   }
 
   .control {
     width: 100%;
   }
 
-  .createProfileBttn {
+  .createProfileBttn,
+  .saveProfileBttn,
+  .deleteProfileBttn {
     width: 100%;
     height: 60px;
     font-size: 1.4rem;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .editProfileButton {
+    display: block !important;
+  }
+
+  label {
+    font-size: 1.4rem !important;
   }
 }
 

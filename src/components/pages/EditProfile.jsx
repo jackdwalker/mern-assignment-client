@@ -281,11 +281,11 @@ export default class EditProfile extends Component {
                             <br />
 
                             {/* SUBMIT BUTTON */}
-                            <Field isGrouped>
-                                <Control>
+                            <Field isGrouped className="editProfileButton">
+                                <Control className="editProfileButton">
                                     <Button className="saveProfileBttn" isColor='primary' type="submit">Save Profile</Button>
                                 </Control>
-                                <Control>
+                                <Control className="editProfileButton">
                                     <Button className="deleteProfileBttn" isColor='primary'>Delete Profile</Button>
                                 </Control>
                             </Field>
