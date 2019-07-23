@@ -42,6 +42,7 @@ body {
 .hero-body {
   overflow: hidden !important;
   margin-bottom: 100px;
+  width: 100% !important;
 }
 
 h1.hero_Title {
@@ -49,6 +50,7 @@ h1.hero_Title {
   font-weight: 800;
   color: $white;
   font-size: 4rem !important;
+  width: 100% !important;
 }
 
 p.hero_blurb {
@@ -214,7 +216,7 @@ h1.homeCard_title {
 }
 
 /*********** MEDIUM [TABLET] SCREEN SIZE ***************/
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 401px) and (max-width: 970px) {
   .hero_container {
     width: 100% !important;
   }
@@ -225,6 +227,14 @@ h1.homeCard_title {
 
   .hero_rightCol {
     display: none;
+  }
+
+  div.home_card {
+    display: block !important;
+  }
+
+  .hero_Title {
+    width: 100% !important;
   }
 }
 
