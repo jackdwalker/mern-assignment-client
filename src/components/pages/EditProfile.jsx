@@ -252,11 +252,11 @@ const EditProfile = () => {
         </Field>
         <br/>
         {/* SUBMIT BUTTON */}
-        <Field isGrouped>
-            <Control>
+        <Field isGrouped className="editProfileButton">
+            <Control className="editProfileButton">
                 <Button className="saveProfileBttn" isColor='primary'>Save Profile</Button>
             </Control>
-            <Control>
+            <Control className="editProfileButton">
 
                 <Button className="deleteProfileBttn" isColor='primary'>Delete Profile</Button>
             </Control>
