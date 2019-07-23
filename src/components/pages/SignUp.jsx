@@ -317,8 +317,8 @@ export default class SignUp extends Component {
                                 </FieldLabel>
                                 <FieldBody>
                                     <Control>
-                                        <Radio name="hireable" value="yes" onClick={this.handleChange}> Yes </Radio>
-                                        <Radio name="hireable" value="no" onClick={this.handleChange}> No </Radio>
+                                        <Radio name="hireable" value="yes" onClick={this.handleChange}>Yes</Radio>
+                                        <Radio name="hireable" value="no" onClick={this.handleChange}>No</Radio>
                                     </Control>
                                 </FieldBody>
                             </Field>

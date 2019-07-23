@@ -63,7 +63,7 @@ export default class ViewAll extends Component {
                   </Control>
                 </PanelBlock>
                 <PanelBlock>
-                  <Button className="searchBttn" type="submit" isFullWidth isColor='primary'> Search</Button>
+                  <Button className="searchBttn" type="submit" isFullWidth isColor='primary'>Search</Button>
                 </PanelBlock>
               </Panel>
             </Column>

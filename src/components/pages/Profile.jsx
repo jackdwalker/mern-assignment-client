@@ -141,10 +141,7 @@ export default class Profile extends Component {
               </div>
             </Column>
             <Column isSize='1/2'>
-              <Content className="profile_bio">
-                <p>Proin sed tellus sed nunc luctus tristique. Curabitur dapibus risus eget urna ullamcorper posuere. Quisque gravida nunc porttitor pellentesque ultricies.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget ipsum sagittis, malesuada ligula a, placerat dui. Nullam venenatis mauris vitae erat hendrerit, in condimentum diam varius. Praesent in rutrum augue, a eleifend odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc sed ligula id dui luctus pharetra. Praesent porttitor orci eu dolor dapibus, non dignissim dolor tincidunt. Cras pharetra placerat urna ac vestibulum. In hac habitasse platea dictumst. Praesent gravida facilisis hendrerit.</p>
-              </Content>
+              <Content className="profile_bio">{this.state.studentData.bio}</Content>
             </Column>
             <Column isSize='1/4'>
               <div>
