@@ -35,7 +35,7 @@ class NavBarEndLoggedIn extends Component {
     render() {
         return (
             <NavbarEnd>
-                <NavbarItem href='/'>Edit Profile</NavbarItem>
+                <NavbarItem href='/editprofile'>Edit Profile</NavbarItem>
                 <NavbarItem href='/' onClick={this.handleClick}>Logout</NavbarItem>
             </NavbarEnd>
         )
