@@ -59,3 +59,12 @@ $white: #ffffff;
   color: $darkBlue;
   transition: 0.2s ease-out;
 }
+
+/*********** FULL [DESKTOP] SCREEN SIZE ***************/
+@media only screen and (min-width: 961px) {}
+
+/*********** MEDIUM [TABLET] SCREEN SIZE ***************/
+@media only screen and (min-width: 401px) and (max-width: 960px) {}
+
+/************ SMALLEST [MOBILE] SCREEN SIZE *************/
+@media only screen and (max-width: 400px) {}

@@ -8,14 +8,14 @@ const Foot = () => {
       <Footer id='footer'>
     <Container className='footer_container'>
 <Columns isCentered>
-    <Column isSize='1/4'>
+    <Column className="footer_column" isSize='1/4'>
     <a className="linkedOut_link" href='/'>
             <Title className="linkedOut_logo" isSize={3}>
                 <Icon isSize="medium" className="fas fa-link" />  LinkedOut
             </Title>
     </a>
     </Column>
-    <Column isSize='1/4'>
+    <Column className="footer_column" isSize='1/4'>
     <Title className="footerTitle" isSize="5">Our Graduates</Title>
     <ul>
         <li><a className="footerLink" href="/">Browse Graduates</a></li>
@@ -24,7 +24,7 @@ const Foot = () => {
         <li><a className="footerLink" href="/">Terms and Conditions</a></li>
     </ul>    
     </Column>
-    <Column isSize='1/4'>
+    <Column className="footer_column" isSize='1/4'>
     <Title className="footerTitle" isSize="5">About Coder Academy</Title>
     <ul>
         <li><a className="footerLink" href="/">Who we are</a></li>
@@ -33,7 +33,7 @@ const Foot = () => {
         <li><a className="footerLink" href="/">Contact us</a></li>
     </ul>      
     </Column>
-    <Column isSize='1/3'> 
+    <Column className="footer_column" isSize='1/3'> 
 <Field>
     <Label className="newsLetter_label">Subscribe to Newsletter</Label>
     <Control>
