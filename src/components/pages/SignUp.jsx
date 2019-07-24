@@ -17,10 +17,10 @@ export default class SignUp extends Component {
             twitterURL: '',
             githubURL: '',
             bio: '',
-            fieldOfInterest: 'frontEnd',
+            fieldOfInterest: 'Front-End',
             techStack: '',
             seeking: '',
-            location: 'brisbane'
+            location: 'Brisbane'
         }
     }
 
