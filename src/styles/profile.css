@@ -1,3 +1,4 @@
+/** Tech Stack Colours */
 .profile_Container {
   z-index: 20;
   width: 80% !important;
@@ -6,8 +7,8 @@
 
 .profile_backrect {
   width: 600px;
-  height: 200px;
-  border-radius: 60px;
+  height: 380px;
+  border-radius: 290px;
   background: #eeeeee;
   z-index: -12;
   position: absolute;
@@ -60,20 +61,68 @@ h1.profile_name {
   font-weight: 700 !important;
 }
 
-.profile_githubLink,
-.profile_websiteLink,
-.profile_emailLink {
+.profile_iconLink {
   color: black;
 }
 
-.profile_githubLink:hover,
-.profile_websiteLink:hover,
-.profile_emailLink:hover {
+.profile_iconLink:hover {
   color: #2434a1;
 }
 
 .profile_bio {
   font-size: 1.04rem;
   padding: 0 20px 0 20px;
+}
+
+.cssTag {
+  background: #eeeeee;
+  color: black;
+}
+
+.htmlTag {
+  background: #1c1b1d;
+  color: white;
+}
+
+.javascriptTag {
+  background: #efbd3e;
+  color: white;
+}
+
+.mongoTag {
+  background: #2cbf66;
+  color: black;
+}
+
+.expressTag {
+  background: #38caf7;
+  color: white;
+}
+
+.nodeTag {
+  background: #2434a1;
+  color: white;
+}
+
+.rubyTag {
+  background: #f7529e;
+  color: black;
+}
+
+.reactTag {
+  background: #8e42fb;
+  color: white;
+}
+
+.loaderbox {
+  width: "100%";
+  height: "80%";
+  display: "flex";
+  -webkit-box-pack: "center";
+      -ms-flex-pack: "center";
+          justify-content: "center";
+  -webkit-box-align: "center";
+      -ms-flex-align: "center";
+          align-items: "center";
 }
 /*# sourceMappingURL=profile.css.map */

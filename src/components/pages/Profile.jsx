@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "../../styles/profile.scss"
 import { Columns, Column, Section, Tag, Icon, Content, Title } from "bloomer"
 import { api } from '../../studentAPI'
+import Loader from '../layout/Loader'
 import Gravatar from 'react-gravatar'
 
 export default class Profile extends Component {
@@ -55,7 +56,7 @@ export default class Profile extends Component {
     let github
 
     if (this.state.studentData.githubURL !== '') {
-      github = 
+      github =
         <a className="profile_iconLink" href={this.state.studentData.githubURL}>
           <Icon isSize="large" className="fab fa-github fa-2x" />
         </a>
@@ -67,7 +68,7 @@ export default class Profile extends Component {
     let twitter
 
     if (this.state.studentData.twitterURL !== '') {
-      twitter = 
+      twitter =
         <a className="profile_iconLink" href={this.state.studentData.twitterURL}>
           <Icon isSize="large" className="fab fa-twitter fa-2x" />
         </a>
@@ -79,10 +80,10 @@ export default class Profile extends Component {
     let linkedIn
 
     if (this.state.studentData.linkedInURL !== '') {
-        linkedIn = 
-          <a className="profile_iconLink" href={this.state.studentData.linkedInURL}>
-            <Icon isSize="large" className="fab fa-linkedin-in fa-2x" />
-          </a> 
+      linkedIn =
+        <a className="profile_iconLink" href={this.state.studentData.linkedInURL}>
+          <Icon isSize="large" className="fab fa-linkedin-in fa-2x" />
+        </a>
     } else {
       linkedIn = ''
     }
@@ -90,10 +91,10 @@ export default class Profile extends Component {
     // Personal Website Conditional Render
     let personalWebsite
     if (this.state.studentData.websiteURL !== '') {
-      personalWebsite = 
+      personalWebsite =
         <a className="profile_iconLink" href={this.state.studentData.websiteURL}>
           <Icon isSize="large" className="fas fa-code fa-2x" />
-        </a>  
+        </a>
     } else {
       personalWebsite = ''
     }
@@ -102,7 +103,7 @@ export default class Profile extends Component {
     let email
 
     if (this.state.studentData.email !== '') {
-      email = 
+      email =
         <a className="profile_iconLink" href={`mailto:${this.state.studentData.email}`}>
           <Icon isSize="large" className="fas fa-envelope-open-text fa-2x" />
         </a>
@@ -113,8 +114,13 @@ export default class Profile extends Component {
     // Whole Profile Conditional Render
     let profile
 
-    if (this.state.isLoading === 'true') {
-      profile = <p>Not Loaded</p>
+    if (this.state.isLoading === true) {
+      profile =
+        <Section className="profile_Container">
+          <div className="profile_backrect"></div>
+          <div className="profile_frontrect"></div>
+          <Loader />
+        </Section>
     } else {
       profile =
         <Section className="profile_Container">
@@ -146,7 +152,7 @@ export default class Profile extends Component {
               <div>
                 <Title isSize={6} className="profile_smalltitle">Tech Stack</Title>
                 <div className="tags are-medium profile_techGroup">
-                 {techStack}
+                  {techStack}
                 </div>
                 <Title isSize={6} className="profile_smalltitle">Field of Interest</Title>
                 <Tag isColor='light' isSize='medium'>{this.state.studentData.fieldOfInterest}</Tag>
