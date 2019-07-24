@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import setState from '../WithState'
 import { Title, FieldBody, Radio, Icon, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button } from 'bloomer'
 import "../../styles/login.scss"
 import { api } from '../../studentAPI';
@@ -75,9 +76,31 @@ export default class EditProfile extends Component {
         })
     }
 
-    // handleDeleteProfile = (event) => {
+    handleDeleteProfile = (event) => {
+        event.preventDefault()
 
-    // }
+        let deleteConfirmation = window.confirm('DANGER: Are you sure you want to delete your account? There is no going back!')
+        if (deleteConfirmation) {
+            api.post('/students/delete-profile', 
+            {
+                _id: this.state.studentData._id
+            },
+            {
+                withCredentials: true
+            })
+            .then(result => {
+                localStorage.setItem('isLoggedIn', false)
+                setState({ isLoggedIn: localStorage.getItem('isLoggedIn') })
+                this.props.history.push('/#')
+            })
+            .catch(error => {
+                console.log(error)
+                if (error.response.status === 401) {
+                    this.props.history.push('/401')
+                }
+            })
+        }
+    }
 
     render() {
         return (
@@ -286,7 +309,7 @@ export default class EditProfile extends Component {
                                     <Button className="saveProfileBttn" isColor='primary' type="submit">Save Profile</Button>
                                 </Control>
                                 <Control className="editProfileButton">
-                                    <Button className="deleteProfileBttn" isColor='primary'>Delete Profile</Button>
+                                    <Button className="deleteProfileBttn" isColor='primary' onClick={this.handleDeleteProfile}>Delete Profile</Button>
                                 </Control>
                             </Field>
                         </form>

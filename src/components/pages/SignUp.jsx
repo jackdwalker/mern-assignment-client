@@ -69,7 +69,7 @@ export default class SignUp extends Component {
                 .then(result => {
                     localStorage.setItem('isLoggedIn', true)
                     setState({ isLoggedIn: localStorage.getItem('isLoggedIn') })
-                    this.props.history.push('/')
+                    this.props.history.push('/#')
                 })
                 .catch(error => {
                     console.log(error)
