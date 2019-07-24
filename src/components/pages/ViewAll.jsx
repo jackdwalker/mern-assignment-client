@@ -38,7 +38,7 @@ export default class ViewAll extends Component {
   render() {
     let profileEntry
 
-    if (this.state.isLoading === 'true') {
+    if (this.state.isLoading === true) {
       profileEntry = <Loader />
     } else if (this.state.filter !== '') {
       let regexp = new RegExp(this.state.filter, 'i')
