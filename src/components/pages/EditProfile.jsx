@@ -59,7 +59,6 @@ export default class EditProfile extends Component {
             techStack: this.state.studentData.techStack,
             seeking: this.state.studentData.seeking,
             location: this.state.studentData.location,
-            hireable: this.state.studentData.hireable,
             _id: this.state.studentData._id
         },
         {
@@ -288,20 +287,6 @@ export default class EditProfile extends Component {
                                     </Field>
                                 </FieldBody>
                             </Field>
-
-                            {/* HIREABLE */}
-                            <Field isHorizontal>
-                                <FieldLabel isNormal>
-                                    <Label>Hireable?</Label>
-                                </FieldLabel>
-                                <FieldBody>
-                                    <Control>
-                                        <Radio name="hireable" value="yes" onClick={this.handleChange}>Yes</Radio>
-                                        <Radio name="hireable" value="no" onClick={this.handleChange}>No</Radio>
-                                    </Control>
-                                </FieldBody>
-                            </Field>
-                            <br />
 
                             {/* SUBMIT BUTTON */}
                             <Field isGrouped className="editProfileButton">

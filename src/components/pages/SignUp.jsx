@@ -61,7 +61,6 @@ export default class SignUp extends Component {
                     techStack: this.state.techStack,
                     seeking: this.state.seeking,
                     location: this.state.location,
-                    hireable: this.state.hireable
                 },
                 {
                     withCredentials: true
@@ -307,19 +306,6 @@ export default class SignUp extends Component {
                                             </Select>
                                         </Control>
                                     </Field>
-                                </FieldBody>
-                            </Field>
-
-                            {/* HIREABLE */}
-                            <Field isHorizontal>
-                                <FieldLabel isNormal>
-                                    <Label>Hireable?</Label>
-                                </FieldLabel>
-                                <FieldBody>
-                                    <Control>
-                                        <Radio name="hireable" value="yes" onClick={this.handleChange}>Yes</Radio>
-                                        <Radio name="hireable" value="no" onClick={this.handleChange}>No</Radio>
-                                    </Control>
                                 </FieldBody>
                             </Field>
 
