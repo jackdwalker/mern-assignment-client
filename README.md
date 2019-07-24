@@ -130,6 +130,8 @@ A recruiter who regularly attends Women Who Code Melbourne meetup has met a few 
 #### Project Plan and Timeline
 
 #### Client Diary
+*day 1*
+Discuss with client 
 
 #### Project Charter
 
