@@ -61,5 +61,4 @@ export default class ProfileEntry extends Component {
       </Box>
     )
   }
-
 }
