@@ -412,6 +412,7 @@ h1.login_Title {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 50;
 }
 
 .loginRight {
@@ -420,6 +421,7 @@ h1.login_Title {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 50;
 }
 
 .signupBox,
