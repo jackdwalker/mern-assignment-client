@@ -39,7 +39,7 @@ export default class ViewAll extends Component {
 
     if (this.state.isLoading === 'true') {
       profileEntry = <p>Not Loaded</p>
-    } else if (this.state.filter != '') {
+    } else if (this.state.filter !== '') {
       let regexp = new RegExp(this.state.filter, 'i')
       let filteredResults = Array.from(this.state.studentData).filter(student => regexp.test(Object.values(student)))
       profileEntry = filteredResults.map(student => <ProfileEntry studentData={student} />)

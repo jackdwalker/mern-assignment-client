@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { setState } from '../WithState'
 import { api } from '../../studentAPI'
-import { Title, Icon, FieldBody, Radio, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button } from 'bloomer'
-import { thisExpression } from '@babel/types';
+import { Title, Icon, FieldBody, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button } from 'bloomer'
 import "../../styles/login.scss"
 
 export default class SignUp extends Component {
@@ -71,7 +70,7 @@ export default class SignUp extends Component {
                     this.props.history.push('/#')
                 })
                 .catch(error => {
-                    console.log(error)
+                    alert('Email has already been registered, please try again.')
                 })
         } else {
             alert('Passwords do not match, please try again')

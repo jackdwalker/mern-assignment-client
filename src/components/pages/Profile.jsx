@@ -29,7 +29,7 @@ export default class Profile extends Component {
 
   render() {
 
-    {/* Seeking Status Conditional Rendering */ }
+    // Seeking Status Conditional Rendering
     let seeking
 
     if (this.state.studentData.seeking) {
@@ -40,7 +40,7 @@ export default class Profile extends Component {
       seeking = ''
     }
 
-    {/* Tech Stack Conditional Rendering*/ }
+    // Tech Stack Conditional Rendering
     let techStack
 
     if (this.state.studentData.techStack) {
@@ -51,10 +51,10 @@ export default class Profile extends Component {
       techStack = ''
     }
 
-    {/* Github Conditional Render */ }
+    // Github Conditional Render
     let github
 
-    if (this.state.studentData.githubURL != '') {
+    if (this.state.studentData.githubURL !== '') {
       github = 
         <a className="profile_iconLink" href={this.state.studentData.githubURL}>
           <Icon isSize="large" className="fab fa-github fa-2x" />
@@ -63,10 +63,10 @@ export default class Profile extends Component {
       github = ''
     }
 
-    {/* Twitter Conditional Render */ }
+    // Twitter Conditional Render
     let twitter
 
-    if (this.state.studentData.twitterURL != '') {
+    if (this.state.studentData.twitterURL !== '') {
       twitter = 
         <a className="profile_iconLink" href={this.state.studentData.twitterURL}>
           <Icon isSize="large" className="fab fa-twitter fa-2x" />
@@ -75,10 +75,10 @@ export default class Profile extends Component {
       twitter = ''
     }
 
-    {/* LinkedIn Conditional Render*/ }
+    // LinkedIn Conditional Render
     let linkedIn
 
-    if (this.state.studentData.linkedInURL != '') {
+    if (this.state.studentData.linkedInURL !== '') {
         linkedIn = 
           <a className="profile_iconLink" href={this.state.studentData.linkedInURL}>
             <Icon isSize="large" className="fab fa-linkedin-in fa-2x" />
@@ -87,9 +87,9 @@ export default class Profile extends Component {
       linkedIn = ''
     }
 
-    {/* Personal Website Conditional Render */ }
+    // Personal Website Conditional Render
     let personalWebsite
-    if (this.state.studentData.websiteURL != '') {
+    if (this.state.studentData.websiteURL !== '') {
       personalWebsite = 
         <a className="profile_iconLink" href={this.state.studentData.websiteURL}>
           <Icon isSize="large" className="fas fa-code fa-2x" />
@@ -98,11 +98,10 @@ export default class Profile extends Component {
       personalWebsite = ''
     }
 
-    {/* Contact Email Conditional Render */ }
-
+    // Contact Email Conditional Render
     let email
 
-    if (this.state.studentData.email != '') {
+    if (this.state.studentData.email !== '') {
       email = 
         <a className="profile_iconLink" href={`mailto:${this.state.studentData.email}`}>
           <Icon isSize="large" className="fas fa-envelope-open-text fa-2x" />
@@ -111,7 +110,7 @@ export default class Profile extends Component {
       email = ''
     }
 
-    {/* Whole Profile Conditional Rendering */ }
+    // Whole Profile Conditional Render
     let profile
 
     if (this.state.isLoading === 'true') {

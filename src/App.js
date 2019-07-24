@@ -1,12 +1,7 @@
 import React from 'react';
 import WithState from './components/WithState'
 import './App.scss';
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch
-} from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Nav from "./components/layout/Nav"
 import Foot from "./components/layout/Foot"
 import About from "./components/pages/About"
@@ -25,18 +20,18 @@ export default WithState(() => {
       <Nav />
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} /> 
-          <Route path="/about" component={About} /> 
-          <Route path="/signup" component={SignUp} /> 
-          <Route path="/login" component={LogIn} /> 
-          <Route path="/viewall" component={ViewAll} /> 
-          <Route path="/profile" component={Profile} /> 
-          <Route path="/editprofile" component={EditProfile} /> 
-          <Route path="/401" component={Unauthorised} /> 
-          <Route path="/*" component={Error} /> 
-          </Switch> 
-          </Router> 
-          <Foot />
-          </div>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/signup" component={SignUp} />
+          <Route path="/login" component={LogIn} />
+          <Route path="/viewall" component={ViewAll} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/editprofile" component={EditProfile} />
+          <Route path="/401" component={Unauthorised} />
+          <Route path="/*" component={Error} />
+        </Switch>
+      </Router>
+      <Foot />
+    </div>
   )
 })
