@@ -56,4 +56,19 @@ a.footerLink:hover {
 .submitBttn:hover {
   background-color: #ec4731 !important;
 }
+
+/*********** MEDIUM [TABLET] SCREEN SIZE ***************/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .footer {
+    display: block;
+    height: 100% !important;
+    background: #2434a1;
+  }
+  .footer_column {
+    display: block !important;
+    height: 100%;
+  }
+}
+
+/************ SMALLEST [MOBILE] SCREEN SIZE *************/
 /*# sourceMappingURL=foot.css.map */

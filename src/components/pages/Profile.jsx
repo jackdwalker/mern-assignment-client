@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "../../styles/profile.scss"
 import { Columns, Column, Section, Tag, Icon, Content, Title } from "bloomer"
 import { api } from '../../studentAPI'
+import Loader from '../layout/Loader'
 import Gravatar from 'react-gravatar'
 
 export default class Profile extends Component {
@@ -114,7 +115,7 @@ export default class Profile extends Component {
     let profile
 
     if (this.state.isLoading === 'true') {
-      profile = <p>Not Loaded</p>
+      profile = <Loader /> 
     } else {
       profile =
         <Section className="profile_Container">

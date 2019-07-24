@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Section, Columns, Container, Column, Title, Button, PanelBlock, PanelHeading, Panel, Control, Input } from "bloomer"
 import "../../styles/viewall.scss"
 import { api } from '../../studentAPI'
+import Loader from '../layout/Loader'
 
 import ProfileEntry from "../layout/ProfileEntry"
 
@@ -38,7 +39,7 @@ export default class ViewAll extends Component {
     let profileEntry
 
     if (this.state.isLoading === 'true') {
-      profileEntry = <p>Not Loaded</p>
+      profileEntry = <Loader />
     } else if (this.state.filter !== '') {
       let regexp = new RegExp(this.state.filter, 'i')
       let filteredResults = Array.from(this.state.studentData).filter(student => regexp.test(Object.values(student)))
