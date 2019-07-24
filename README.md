@@ -9,7 +9,11 @@
   - [Wireframes](#wireframes)
   - [ERD](#erd)
   - [DFD](#dfd)
-  - [Object orient](#object-orient)
+  - [Object Orientated Design component](#object-orientated-design-component)
+- [Project Management and Planning](#project-management-and-planning)
+  - [Project Plan and Timeline](#project-plan-and-timeline)
+  - [Client Diary](#client-diary)
+  - [Project Charter](#project-charter)
 
 ##### LinkedOut can be found [here](https://linkedout.netlify.com/) 
 ##### Server can be found [here](https://github.com/jackdwalker/mern-assignment-server)
@@ -110,12 +114,31 @@ A recruiter who regularly attends Women Who Code Melbourne meetup has met a few 
 
 
 #### ERD
-
+*Entity Relationship Diagram*
+![Image of the entity relationship diagram](/assets/Design-process/ERD.png)
 
 
 #### DFD
+*Data Flow Diagram*
+![Image of the Data Flow Diagram]()
 
-#### Object orient
+#### Object Orientated Design component
+
+
+### Project Management and Planning 
+
+#### Project Plan and Timeline
+
+#### Client Diary
+
+#### Project Charter
+
+####
+
+####Client Communication 
+
+####Trello Screenshots
+
 
 
 
