@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
-import { Box, Content, Title, Button, Media, MediaContent, MediaLeft, MediaRight, Image, Tag, Icon } from "bloomer"
+import { Box, Content, Title, Button, Media, MediaContent, MediaLeft, MediaRight, Tag, Icon } from "bloomer"
 import Gravatar from 'react-gravatar'
 import "../../styles/profileEntry.scss"
 
 export default class ProfileEntry extends Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     let bio
 
@@ -18,7 +15,7 @@ export default class ProfileEntry extends Component {
 
     let seeking
 
-    if (this.props.studentData.seeking[0] != '') {
+    if (this.props.studentData.seeking[0] !== '') {
       seeking = this.props.studentData.seeking.map(seeking =>
         <Title isSize={6} className="profileList_jobType">
           <Icon className="fas fa-check-circle" />
@@ -53,7 +50,7 @@ export default class ProfileEntry extends Component {
                 {seeking}
               </div>
               <div className="profileList_viewProfile">
-                <Button className="profileList_viewProfileBttn" studentData={this.props.studentData} href={'/profile/' + `${this.props.studentData._id}`}>View Profile</Button>
+                <Button className="profileList_viewProfileBttn" studentData={this.props.studentData} href={`/profile/${this.props.studentData._id}`}>View Profile</Button>
               </div>
             </MediaRight>
           </div>

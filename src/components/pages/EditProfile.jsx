@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import setState from '../WithState'
-import { Title, FieldBody, Radio, Icon, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button } from 'bloomer'
+import { Title, FieldBody, Icon, Select, FieldLabel, TextArea, Field, Label, Control, Input, Button } from 'bloomer'
 import "../../styles/login.scss"
 import { api } from '../../studentAPI';
 
@@ -90,10 +90,9 @@ export default class EditProfile extends Component {
             .then(result => {
                 localStorage.setItem('isLoggedIn', false)
                 setState({ isLoggedIn: localStorage.getItem('isLoggedIn') })
-                this.props.history.push('/#')
+                this.props.history.push('/')
             })
             .catch(error => {
-                console.log(error)
                 if (error.response.status === 401) {
                     this.props.history.push('/401')
                 }
