@@ -31,10 +31,12 @@ export default class Login extends Component {
         .then(result => {
             localStorage.setItem('isLoggedIn', true)
             setState({ isLoggedIn: localStorage.getItem('isLoggedIn') })
-            this.props.history.push('/')
+            this.props.history.push('/#')
         })
         .catch(error => {
-            console.log(error)
+            if(error.response.status === 401) {
+                alert('Invalid username or password please try again')
+            }
         })
     }
     
