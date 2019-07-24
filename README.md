@@ -66,3 +66,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## LinkedOut
+
+##### LinkedOut can be found at [here](https://linkedout.netlify.com/)
+##### Server can be found [here](https://github.com/jackdwalker/mern-assignment-server)
+##### Client repo [here](https://github.com/jackdwalker/mern-assignment-client)
+
+###Problem Definition & Purpose 
+
+The problem that was identified was an existing gap for Coder Academy to reach a broader audience  industry partnerships and internships. Our client approached us with the brief to create a talent-board style app for current students and graduates to advertise their skills, the type of engagement they are seeking (internship or paid employment). 
+
+The purpose of app is to provide a space online for Coder Academy and industry professionals to engage with each other for mutual benefit. 
+
+###
