@@ -91,6 +91,7 @@ export default class EditProfile extends Component {
                 localStorage.setItem('isLoggedIn', false)
                 setState({ isLoggedIn: localStorage.getItem('isLoggedIn') })
                 this.props.history.push('/')
+                window.location.reload()
             })
             .catch(error => {
                 if (error.response.status === 401) {
