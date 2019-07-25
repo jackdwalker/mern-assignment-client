@@ -1,7 +1,13 @@
 ## LinkedOut :sparkles: <!-- omit in toc -->
 
-###Table of Contents
+### Table of Contents
+- [Table of Contents](#table-of-contents)
+    - [LinkedOut can be found here](#linkedout-can-be-found-here)
+    - [Server can be found here](#server-can-be-found-here)
+    - [Client repo here](#client-repo-here)
+    - [For advanced server configuration see individual file comments](#for-advanced-server-configuration-see-individual-file-comments)
 - [Functions & Features :clipboard:](#functions--features-clipboard)
+  - [Original stretch goals :hatching_chick:](#original-stretch-goals-hatchingchick)
 - [Tech Stack :computer:](#tech-stack-computer)
 - [Design Process](#design-process)
   - [Style Guide](#style-guide)
@@ -31,7 +37,7 @@
 * Create a new terminal window to cd into the frontend folder, run terminal command ‘npm start’
 * The application will initialise on your default browser for ‘localhost:3000’ 
   
-#####For advanced server configuration see individual file comments 
+##### For advanced server configuration see individual file comments 
 
 
 ###Problem Definition & Purpose :bulb:
@@ -58,7 +64,7 @@ The portal can also incidentally raise the public profile of Coder Academy withi
 * Session management for logged in users (users stay logged in for a      reasonable period of time after successful authentication)
 * Basic data validation in the sign up and edit profile forms
  
-####Original stretch goals :hatching_chick:
+#### Original stretch goals :hatching_chick:
 * Allow employers to create a “employer” type of account, which has similar profile fields (bio, website, twitter, tech stack, hiring?)
 * Employer account-holders will have the additional functionality of      being able to engage in direct messaging with student account holders
 * Only users with an email address with the domain of coderacademy.edu.au can sign up for an account
@@ -98,24 +104,24 @@ A recruiter who regularly attends Women Who Code Melbourne meetup has met a few 
 
 
 #### Workflow of Users Journey
-![Image of User Journey](/assets/Design-process/Screen&#32;Shot&#32;2019-07-09&#32;at&#32;1.39.48&#32;pm&#32;(1).png)
+![Image of User Journey](/docs/Design-process/Screen&#32;Shot&#32;2019-07-09&#32;at&#32;1.39.48&#32;pm&#32;(1).png)
 
 #### Wireframes
 *Homescreen*
-![Image of Homescreen](/assets/wireframes/Home&#32;-&#32;public.png)
+![Image of Homescreen](/docs/wireframes/Home&#32;-&#32;public.png)
 *Profile View*
-![Image of Profile View page](/assets/wireframes/Student&#32;Profile&#32;View&#32;(public_private).png)
+![Image of Profile View page](/docs/wireframes/Student&#32;Profile&#32;View&#32;(public_private).png)
 *Browse Profiles*
-![Image of Browse Profile View page](/assets/wireframes/Alternate&#32;Browse&#32;Student&#32;-&#32;(Admin_Private).png)
+![Image of Browse Profile View page](/docs/wireframes/Alternate&#32;Browse&#32;Student&#32;-&#32;(Admin_Private).png)
 *Edit Profile View*
-![Image of Edit/Signup View page](/assets/wireframes/Edit&#32;Profile&#32;-STudent.png)
+![Image of Edit/Signup View page](/docs/wireframes/Edit&#32;Profile&#32;-STudent.png)
 *Future iteration to include a messenger feature*
-![Image of messaging feature for future iteration](/assets/wireframes/Messaging&#32;-&#32;Stretch.png)
+![Image of messaging feature for future iteration](/docs/wireframes/Messaging&#32;-&#32;Stretch.png)
 
 
 #### ERD
 *Entity Relationship Diagram*
-![Image of the entity relationship diagram](/assets/Design-process/ERD.png)
+![Image of the entity relationship diagram](/docs/Design-process/ERD.png)
 
 
 #### DFD
