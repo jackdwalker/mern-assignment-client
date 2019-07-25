@@ -34,6 +34,7 @@
   - [What libraries are being used in the app and why?](#what-libraries-are-being-used-in-the-app-and-why)
     - [Front End Dependencies](#front-end-dependencies)
     - [Back end dependencies](#back-end-dependencies)
+  - [A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?](#a-team-is-about-to-engage-in-a-project-developing-a-website-for-a-small-business-what-knowledge-and-skills-would-they-need-in-order-to-develop-the-project)
 
 ##### LinkedOut can be found [here](https://linkedout.netlify.com/) 
 ##### Server can be found [here](https://github.com/jackdwalker/mern-assignment-server)
@@ -403,6 +404,37 @@ __Super Test__
 
 
 __Nodemon__
+
+#### A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
+
+To develop a functional product to fulfil business needs and end-user preferences, a team needs a balance of business development skills, project management and technical proficiency. 
+
+__Technical Skills__
+HTML/CSS3 to write responsive, semantic UI mark-up
+Understanding of authentication and authorisation, particularly JWToken, headers in api calls, salting, secret hashing of passwords, how payloads can be decoded and user details withdrawn to authenticate for protected routes
+Javascript basics particularly callback functions, prototype and native methods, asynchronous functions
+Setting API endpoints on server 
+Server-side data validation
+Understand the structure of No-SQL nature of Mongo database and Mongoose methods
+Structuring the client-side of a web application using props, data interpolation and components on ReactJS 
+Test driven development using framework-specific packages such as Jest, Supertest, Enzyme, Jasmine, 
+Clear grasp of pull request etiquette, commit history practices using git source control 
+
+__Business Development Skills__
+Market research and user needs discovery
+Understanding prevailing trends on what the tech industry looks for in junior graduates, the profile of Coder Academy student cohorts, and the overall business direction for Coder Academy helped the team flesh out the MVP functionalities - what information should the student profile contain, style guide and visual direction, to name a few.
+
+__Client liaison to ensure everyone has shared understanding of delivery on expectations__
+The team kept the client regularly updated on project progress, difficulties and roadblocks with daily standups. The client was also able to provide workaround solutions to roadblocks, for example Damian suggested the Gravatar service when the team experienced persistent issues with setting up a Cloudinary connection with the NodeJS server.
+
+__Project management (both technical and client) Skills__
+Ability to identify resource-appropriate MVP features
+Recognise and constrain scope creep of MVP features as development and discussions with client progress 
+Documenting “nice-to-have” features, identify extensible features (unresolved issues) for future improvement
+Equally distribute work amongst team members, and keeping track of time spent on a specific feature or problem.
+Communication skills to mesh well with team member personalities, different communication styles and work practices. 
+
+
 
 
 
