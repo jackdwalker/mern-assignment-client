@@ -104,7 +104,7 @@ A recruiter who regularly attends Women Who Code Melbourne meetup has met a few 
 
 
 #### Workflow of Users Journey
-![Image of User Journey](/docs/Design-process/Screen&#32;Shot&#32;2019-07-09&#32;at&#32;1.39.48&#32;pm&#32;(1).png)
+![Image of User Journey](/docs/Design-process/User_journey.png)
 
 #### Wireframes
 *Homescreen*
