@@ -210,7 +210,7 @@ export default class SignUp extends Component {
                                 <FieldBody>
                                     <Field isGrouped>
                                         <Control isExpanded>
-                                            <Input className="signupInput" type="text" placeholder='Your Twitter account handle' name="twitterURL"
+                                            <Input className="signupInput" type="text" placeholder='Full Twitter URL' name="twitterURL"
                                                 value={this.state.twitterURL} onChange={this.handleChange} />
                                         </Control>
                                     </Field>
