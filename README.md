@@ -1,18 +1,20 @@
 ## LinkedOut :sparkles: <!-- omit in toc -->
 
-### Table of Contents
-- [Table of Contents](#table-of-contents)
+### Table of Contents :bookmark_tabs:
+- [Table of Contents :bookmark_tabs:](#table-of-contents-bookmarktabs)
     - [LinkedOut can be found here](#linkedout-can-be-found-here)
     - [Server can be found here](#server-can-be-found-here)
     - [Client repo here](#client-repo-here)
     - [For advanced server configuration see individual file comments](#for-advanced-server-configuration-see-individual-file-comments)
 - [Functions & Features :clipboard:](#functions--features-clipboard)
   - [Original stretch goals :hatching_chick:](#original-stretch-goals-hatchingchick)
+  - [Post Project Review](#post-project-review)
 - [Tech Stack :computer:](#tech-stack-computer)
-- [Design Process](#design-process)
+- [Design Process :paintbrush:](#design-process-paintbrush)
   - [Style Guide](#style-guide)
   - [Workflow of Users Journey](#workflow-of-users-journey)
   - [Wireframes](#wireframes)
+  - [Screenshots of LinkedOut MVP](#screenshots-of-linkedout-mvp)
   - [ERD](#erd)
   - [DFD](#dfd)
   - [Object Orientated Design component](#object-orientated-design-component)
@@ -86,6 +88,60 @@ The portal can also incidentally raise the public profile of Coder Academy withi
 * Allow employers to create a “employer” type of account, which has similar profile fields (bio, website, twitter, tech stack, hiring?)
 * Employer account-holders will have the additional functionality of      being able to engage in direct messaging with student account holders
 * Only users with an email address with the domain of coderacademy.edu.au can sign up for an account
+
+#### Post Project Review
+
+__What we did well__
+*Team Communication*
+The team communicated well with the client via daily stand up and any problems with development was raised early. 
+
+*MVP Scoping project*
+Early wireframes ranged too far beyond the resource capabilities of the team. The team was able to trim down to a more achievable product that can still meet user needs. 
+
+*Clear Design Vision*
+
+*Individual programming and pair programming*
+There was an equal combination of individual and pair programming work to build up the codebase. Everyone had an opportunity to learn something from the project experience. 
+
+*Good/equitable work allocation*
+With reasonable MVP scoping, work was allocated more-or-less equally amongst team members which meant work progressed at-pace without burn-out. 
+
+*Good time management*
+Daily class standups and reporting to the client kept all team members accountable. 
+
+__Lessons Learnt__
+*Blocking out work on Trello cards*
+
+Work was identified in far too general terms on trello cards, making it often difficult to move individual cards through from backlog to completion in an efficient manner. This is because each card often involved more moving parts that touched on both the client-side and server-side. For example, a trello card to show profile would require work on React and ExpressJS. 
+
+Learning from this experience, work allocation in future could be improved by:
+* Setting up trello cards for user stories separated by back-end or client-side 
+* Set up additional notes inside individual trello cards identifying all the sub-features required to action it. 
+
+The team could benefit from more time to learn the tech stack and be more comfortable with the basic fundamentals. 
+ 
+__Extensible Features__
+Due to the timeframe for this project, the project focussed on hitting the baseline MVP functionalities. For this reason, a number of extensible features has been identified for future.
+
+* Error alerts for incorrect completion of the signup and edit fields.
+* Consider setting up a dedicated static assets cloud storage for uploading users’ avatar images instead of relying on an external service like Gravatar. Gravatar is a reliable global service however the current set up means that users need to first sign up for a gravatar account, upload an avatar image, before that image is available on LinkedOut.
+
+* Increased test coverage for front and back ends of the application
+* Adding an Admin panel 
+
+__Identified Risks to this prototype__
+A number of risks were identified and communicated to the client early on in the project via the charter. 
+
+Risks that may specifically affect this prototype application include:
+
+*Cloud services outage*
+The project relies on cloud services provided by Netlify, Heroku, MongoAtlas to host the application and underlying database. In the case of outage, the team has identified AWS, Azure as possible alternatives for redeployment. It is not likely that there would be serious outage.
+
+*Data leaks*
+The web application does store confidential information such as email, names, social media account URLs. Future expansion of this prototype should look into further securing user input for the forms and storage of data. 
+
+MongoAtlas database that holds the user data already has a number of in-built security features, including end-to-end encryption. 
+
  
 
 ### Tech Stack :computer:
@@ -98,7 +154,7 @@ The portal can also incidentally raise the public profile of Coder Academy withi
 * MongoDB and MongoAtlas for the student detail database hosted on the    cloud
 
 
-### Design Process 
+### Design Process :paintbrush:
 
 #### Style Guide
 The font families, font weights, colour palette to be used as standard in the application can be viewed [here](https://docs.google.com/document/d/1iM8JI7sCzEalgNGBUJXbwQizQ2EEFjuER4mN0veOTWA/edit)
@@ -135,6 +191,16 @@ A recruiter who regularly attends Women Who Code Melbourne meetup has met a few 
 ![Image of Edit/Signup View page](/docs/wireframes/Edit&#32;Profile&#32;-STudent.png)
 *Future iteration to include a messenger feature*
 ![Image of messaging feature for future iteration](/docs/wireframes/Messaging&#32;-&#32;Stretch.png)
+
+#### Screenshots of LinkedOut MVP
+
+![404 page](/docs/linkedout/404-screenshot.png)
+![about screen](/docs/linkedout/about-screenshot.png)
+![login screen](/docs/linkedout/login-screenshot.png)
+![profile screen](/docs/linkedout/profile-screenshot.png)
+![viewall screen](/docs/linkedout/viewall-screenshot.png)
+
+
 
 
 #### ERD
@@ -403,10 +469,10 @@ __Mongoose__
 Mongoose provides modelling (schema, model) to work with data stored in MongoDB. Mongoose uses object data model that represents data as Javascript objects and then mapped to the underlying Mongo database.
  
 __Super Test__
-
-
+Super test is a node module that allows you to test API endpoints by making HTTP requests. 
 
 __Nodemon__
+Nodemon is used to detect changes to the server source code and restart the server. 
 
 #### A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
@@ -452,14 +518,16 @@ One other important skill that I’m sure most people will probably reference is
 
 __Raph__
 
+The project required a well rounded understanding of the 
+
 
 __Rachel__
 
 
-Debugging
+*Debugging*
 I needed an efficient means of researching for solutions to coding problems following previous assignment. Knowing the right search terminology, trial & error, pair programming and having a good grasp of fundamentals should help toward the debugging process. 
 
-Learning basic concepts in compressed scenarios
+*Learning basic concepts in compressed scenarios*
 Just like previous assessments, the pace and timeframe means learning basic concepts will have to happen at the same time as building the assignment. This assignment is especially challenging as I came to the team with very poor understanding of classwork. 
 
 #### Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?
@@ -473,6 +541,8 @@ One theme I have seen over both Rails and this assessment is a definite need to 
 The example I would use is authentication. I knew how cookies, salting, hashing, and authentication worked on a very basic level, but getting CORS to allow cookies generated by JWT, from valid logins authenticated by PassportJS was actually a real challenge. Were I to have made an application with authentication before starting this assessment I may have been able to implement authentication a little more easily, and maybe done it in a more suitable way e.g. passing the JWT through authorization headers avoiding the headache of httpOnly cookie management.
 
 __Raph__
+
+
 
 __Rachel__
 Beyond basic HTML/CSS3, I was unable to make effective contribution towards the team project due to lack of fundamental understanding of the MERN tech stack, key principles of deployment, interactions between server and client. I attempted to contribute towards visual design, client liaison, technical documentation, HTML5/CSS3 basic UI component set up - areas with preexisting skillsets and knowledge from my previous work experiences. I tried to look for a way to navigate through the tech stack and be self sufficient in solving problems but unfortunately I never found it in this course. 
