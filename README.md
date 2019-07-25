@@ -214,6 +214,8 @@ A recruiter who regularly attends Women Who Code Melbourne meetup has met a few 
 
 #### Object Orientated Design component
 
+A link to the Object Orientated Design Component breakdown can be found [here](/docs/Design-process/OODesign.docx)
+
 
 ### Project Management and Planning 
 
