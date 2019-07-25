@@ -190,7 +190,7 @@ export default class EditProfile extends Component {
                                 <FieldBody>
                                     <Field isGrouped>
                                         <Control isExpanded>
-                                            <Input className="editProfileInput" type="text" placeholder='Your Twitter account handle' name="twitterURL"
+                                            <Input className="editProfileInput" type="text" placeholder='Full Twitter URL' name="twitterURL"
                                             value={this.state.studentData.twitterURL} onChange={this.handleChange} />
                                         </Control>
                                     </Field>
