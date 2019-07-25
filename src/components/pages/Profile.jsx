@@ -53,7 +53,7 @@ export default class Profile extends Component {
     }
 
     // Github Conditional Render
-    let github3
+    let github
 
     if (this.state.studentData.githubURL !== '') {
       github =
