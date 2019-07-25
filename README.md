@@ -35,6 +35,9 @@
     - [Front End Dependencies](#front-end-dependencies)
     - [Back end dependencies](#back-end-dependencies)
   - [A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?](#a-team-is-about-to-engage-in-a-project-developing-a-website-for-a-small-business-what-knowledge-and-skills-would-they-need-in-order-to-develop-the-project)
+  - [Within your own project what knowledge or skills were required to complete your project, and overcome challenges?](#within-your-own-project-what-knowledge-or-skills-were-required-to-complete-your-project-and-overcome-challenges)
+  - [Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?](#evaluate-how-effective-your-knowledge-and-skills-were-this-project-using-examples-and-suggest-changes-or-improvements-for-future-projects-of-a-similar-nature)
+    - [Open Source Attribution](#open-source-attribution)
 
 ##### LinkedOut can be found [here](https://linkedout.netlify.com/) 
 ##### Server can be found [here](https://github.com/jackdwalker/mern-assignment-server)
@@ -433,6 +436,61 @@ Recognise and constrain scope creep of MVP features as development and discussio
 Documenting “nice-to-have” features, identify extensible features (unresolved issues) for future improvement
 Equally distribute work amongst team members, and keeping track of time spent on a specific feature or problem.
 Communication skills to mesh well with team member personalities, different communication styles and work practices. 
+
+
+#### Within your own project what knowledge or skills were required to complete your project, and overcome challenges?
+
+__Jack__
+
+For me this task required a baseline understanding of the fundamental aspects of MERN application development, project management, and design processes. That might seem like a pretty broad statement, but successfully completing this assessment within our time constraint, required us all to wear many hats to hit our deliverables.
+
+The fundamentals that were most pertinent to me with regards to building the application itself were being able to build an Express server on-top of Node on the back-end, and how to manage state and make API requests on the front-end.
+
+I had to learn some of the more technical elements of authentication specifically handling cookies, and how they move from the server to the client and vice versa. I developed an understanding of how to use the encrypted JWT payload to verify specific users and use that to pass filtered data back to the end-user.
+
+One other important skill that I’m sure most people will probably reference is the ability to find ways around problems, and overcome challenges, usually with the help of the wonderful search engine known as Google, and the very helpful participants of StackOverflow.
+
+__Raph__
+
+
+__Rachel__
+
+
+Debugging
+I needed an efficient means of researching for solutions to coding problems following previous assignment. Knowing the right search terminology, trial & error, pair programming and having a good grasp of fundamentals should help toward the debugging process. 
+
+Learning basic concepts in compressed scenarios
+Just like previous assessments, the pace and timeframe means learning basic concepts will have to happen at the same time as building the assignment. This assignment is especially challenging as I came to the team with very poor understanding of classwork. 
+
+#### Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?
+
+__Jack__
+
+I think in the initial design phase I was a bit overwhelmed by the idea of needing to build an entire front-to-back end application without the help of the so-called ‘magic’ helpers of Rails. That being said I think now that we’re close to being finished, having seen both the server and client-side of the application come together it has been a fantastic lesson in full stack web application development and how those two components come together to provide the end-user experience.
+
+One theme I have seen over both Rails and this assessment is a definite need to practice the skills we learn in class and practice building full applications (even small ones) that incorporate many elements from our lessons, and getting an understanding of how they integrate with one another. I feel like I had a good theoretical/conceptual understanding of the fundamentals of MERN coming into this assessment but I really had to work hard over the last couple of weeks to understand how each part of the application comes together/interacts nicely (i.e. no borking) with one another.
+
+The example I would use is authentication. I knew how cookies, salting, hashing, and authentication worked on a very basic level, but getting CORS to allow cookies generated by JWT, from valid logins authenticated by PassportJS was actually a real challenge. Were I to have made an application with authentication before starting this assessment I may have been able to implement authentication a little more easily, and maybe done it in a more suitable way e.g. passing the JWT through authorization headers avoiding the headache of httpOnly cookie management.
+
+__Raph__
+
+__Rachel__
+Beyond basic HTML/CSS3, I was unable to make effective contribution towards the team project due to lack of fundamental understanding of the MERN tech stack, key principles of deployment, interactions between server and client. I attempted to contribute towards visual design, client liaison, technical documentation, HTML5/CSS3 basic UI component set up - areas with preexisting skillsets and knowledge from my previous work experiences. I tried to look for a way to navigate through the tech stack and be self sufficient in solving problems but unfortunately I never found it in this course. 
+
+Early wireframing of the project also indicated I had an incomplete understanding of project requirements and how to scope for MVP. Hopefully this could be something that can be improved with experience over time. 
+
+For future projects, I would like to bring to the table a better understanding of the specified tech stack to keep in pace with my teammates. It is not clear at present stage what it takes to improve my own adaptability and general aptitude towards learning tech stack as a junior developer.
+
+Alternatively, build in sufficient buffer in the project timeline to allow for directed learning and general trial & error. This means I can help deliver a more well-considered product rather than a slipshod effort that may accrue technical debt down the track. 
+
+
+
+##### Open Source Attribution
+Aside from npm packages and library dependencies, the team credits the following open-source resources.
+* __Bulma & Bloomer__: The user interface of the application relied on the pre-styled CSS and design of these css framework and react components. 
+* __Google Fonts__: Montserrat and Raleway were used for the text of the web application
+* __Undraw__: SVG illustrations were used as graphics.
+
 
 
 
