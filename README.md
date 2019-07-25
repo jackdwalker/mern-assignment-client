@@ -126,7 +126,7 @@ A recruiter who regularly attends Women Who Code Melbourne meetup has met a few 
 
 #### DFD
 *Data Flow Diagram*
-![Image of the Data Flow Diagram]()
+![Image of the Data Flow Diagram](/docs/Design-process/New&#32;User&#32;DFD&#32;LinkedOut.png)
 
 #### Object Orientated Design component
 
